@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Coaching</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Full-width footer container */
+      .footer-container {
+        width: 100%;
+        background: rgb(255, 255, 255);
+      }
+
+      /* Inner content container */
+      .content-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      /* Subscribe Section */
+      .subscribe-section {
+        background-color: #FAF8F6;
+        padding: 60px 160px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 50px;
+        flex-direction: row;
+      }
+
+      .subscribe-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+        flex-direction: row;
+      }
+
+      .subscribe-text {
+        min-width: 50%;
+        flex: 1 1 50%;
+      }
+
+      .subscribe-text h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .subscribe-text p {
+        font-size: 20px;
+        color: #5a5d77;
+        font-weight: 400;
+      }
+
+      .subscribe-form {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+      }
+
+      .subscribe-form input {
+        flex: 1;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        outline: none;
+        min-width: 350px;
+      }
+
+      .subscribe-form button {
+        padding: 16px 32px;
+        background-color: #20ad96;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      /* Main Footer Content */
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 60px 100px;
+        width: 100%;
+      }
+
+      .brand-info {
+        width: 30%;
+        min-width: 250px;
+      }
+
+      .logo {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        background-color: #ddd;
+        border-radius: 8px;
+      }
+
+      .brand-info p {
+        font-size: 14px;
+        color: #5a5d77;
+        max-width: 250px;
+        line-height: 1.7;
+      }
+
+      .footer-links {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+      }
+
+      .links-column {
+        width: 45%;
+      }
+
+      .links-column h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .links-column ul {
+        list-style: none;
+      }
+
+      .links-column li {
+        margin-bottom: 12px;
+      }
+
+      .links-column a,
+      .contact-info p {
+        font-size: 14px;
+        color: #5a5d77;
+        text-decoration: none;
+      }
+
+      .contact-info p {
+        margin-bottom: 12px;
+      }
+
+      /* Footer Bottom */
+      .footer-bottom {
+        border-top: 1px solid #e5e5e5;
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 70px;
+        width: 90%;
+        padding: 30px 30px;
+      }
+
+      .copyright {
+        font-size: 14px;
+        color: #5a5d77;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        background-color: #ddd;
+        border-radius: 50%;
+      }
+
+     /* Tablet and Mobile Screens */
+@media (max-width: 768px) {
+  .subscribe-section {
+    padding: 40px 5vw;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .subscribe-text {
+    text-align: left;
+    width: 100%;
+  }
+
+  .subscribe-text h2 {
+    font-size: 22px;
+  }
+
+  .subscribe-text p {
+    font-size: 14px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 5vw;
+    margin: 40px 0;
+  }
+
+  .brand-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .brand-info p {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links-column {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 5vw;
+    margin: 0;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Very Small Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+  .subscribe-text h2 {
+    font-size: 20px;
+  }
+
+  .subscribe-text p {
+    font-size: 13px;
+  }
+
+  .subscribe-form input {
+    min-width: auto;
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  .subscribe-form button {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="footer-container">
+      <div class="content-wrapper">
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+          <div class="subscribe-container">
+            <div class="subscribe-text">
+              <h2>Get notified when I publish new articles</h2>
+              <p>
+                Stay up to date with the latest news, announcements, and
+                articles.
+              </p>
+            </div>
+            <form class="subscribe-form">
+              <input type="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+          <div class="brand-info">
+            <div class="logo"></div>
+            <p>
+              Design amazing digital experiences that create more happy in the
+              world.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="links-column">
+              <h3>Pages</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Extra Sales/Landingpage</a></li>
+                <li><a href="#">Free guide</a></li>
+              </ul>
+            </div>
+
+            <div class="links-column contact-info">
+              <h3>Contact</h3>
+              <p>+123 456 789</p>
+              <p>hello@happydigital.nl</p>
+              <p>Instagram</p>
+              <p>LinkedIn</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p class="copyright">Made with a © by HappyDigital</p>
+          <div class="social-links">
+            <div class="social-icon"></div>
+            <div class="social-icon"></div>
+            <div class="social-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

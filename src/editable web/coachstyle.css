@@ -1,0 +1,701 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  padding: sticky;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.6;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+}
+.vector p {
+  color: #18692e;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  display: flex;
+  background-color: #f7f4f2;
+  padding: 40px 0px 0 0;
+}
+
+.herobg {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Left Side */
+.leftside1 {
+  flex: 1 1 50%;
+  min-width: 300px;
+  padding: 15px 0 0 10px;
+}
+
+.vector img {
+  width: 110px;
+  height: 18px;
+  margin-bottom: 3px;
+}
+.herotext {
+  padding: 60px;
+}
+
+.herotext h6 {
+  font-size: 17px;
+  font-weight: 200;
+  color: #afafb0;
+  margin-bottom: 1px;
+}
+
+.herotext h1 {
+  font-size: 76px;
+  color: #333461;
+  font-weight: 2000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext p {
+  font-size: 20px;
+  color: #5a5d77;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.freeguideframe {
+ width: 190px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20ad96;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Right Side */
+.right {
+  flex: 1 1 50%;
+  display: flex;
+  padding-left: 120px;
+}
+.heroimg {
+  width: 80%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.heroimg img {
+  width: 480px;
+  height: 620px;
+}
+
+/* Success badge */
+.success {
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  transform: translateX(-50%);
+  display: flex;
+  height: 100%;
+  width: 10%;
+}
+
+.success img {
+  width: 140px;
+  height: 60px;
+}
+
+/* Intro Section */
+.intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 50px 200px 0 160px;
+}
+.introtext {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0 0 0 20px; */
+}
+.introheading {
+  display: flex;
+  flex: 1 1 50%;
+  font-size: 34px;
+  color: #333461;
+  margin-bottom: 20px;
+  padding: 70px 0px 0 30px;
+}
+.introparagraph {
+  display: flex;
+  flex: 1 1 50%;
+
+  font-size: 16px;
+  color: #5a5d77;
+  margin-bottom: 20px;
+  padding: 70px 0px 0 30px;
+}
+.introservices {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  justify-content: space-around;
+  padding: 30px 50px 60px 0;
+}
+.introservices div {
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.introservices div img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.introservices div h3 {
+  font-size: 20px;
+  color: #333461;
+  margin-top: 10px;
+}
+.introservices div p {
+  font-size: 16px;
+  color: #5a5d77;
+  margin-top: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf8f6;
+  padding: 90px;
+}
+.reviewtext {
+  display: flex;
+  width: 100%;
+
+  font-size: 24px;
+  color: #333461;
+  margin-bottom: 20px;
+  padding: 40px 0 0 30px;
+  line-height: normal;
+}
+.reviewcards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  padding: 20px;
+}
+.reviewcard1,
+.reviewcard2,
+.reviewcard3 {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.reviewcard1text,
+.reviewcard2text,
+.reviewcard3text {
+  font-size: 16px;
+  color: #5a5d77;
+}
+.reviewcard1 img,
+.reviewcard2 img,
+.reviewcard3 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.reviewcard1 h3,
+.reviewcard2 h3,
+.reviewcard3 h3 {
+  font-size: 20px;
+  color: #333461;
+  margin-top: 10px;
+}
+.reviewcard1 p,
+.reviewcard2 p,
+.reviewcard3 p {
+  font-size: 16px;
+  color: #5a5d77;
+  margin-top: 10px;
+}
+.reviewcard1 img,
+.reviewcard2 img,
+.reviewcard3 img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.reviewcard1rating {
+  width: 120px;
+  height: 20px;
+}
+.reviewcard1rating img {
+  width: 120px;
+  height: 20px;
+}
+/* Blogs Section */
+.blogs {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.blogtext {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  font-size: 24px;
+  color: #323363;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.blogcards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  padding: 20px;
+}
+.blogcard1,
+.blogcard2,
+.blogcard3 {
+  width: 30%;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+}
+.blogcard1 img,
+.blogcard2 img,
+.blogcard3 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.blogcard1 h3,
+.blogcard2 h3,
+.blogcard3 h3 {
+  font-size: 20px;
+  color: #333461;
+  margin-top: 10px;
+}
+.blogcard1 p,
+.blogcard2 p,
+.blogcard3 p {
+  font-size: 16px;
+  color: #5a5d77;
+  margin-top: 10px;
+}
+.moreblogframe {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.moreblogframe button {
+  background-color: #20ad96;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Free Guide Section */
+.freeguide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 70px;
+  margin: 39px;
+}
+.freeguideright {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex: 1 1 50%;
+  justify-content: center;
+  align-items: center;
+}
+.freeguideicon {
+  width: 100px;
+  height: 100px;
+  left: 10px;
+}
+.freeguideicon img {
+  position: static;
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+.freeguideproduct {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.freeguideproduct img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.freeguideleft {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.freeguidetext {
+  margin-bottom: 20px;
+}
+.freeguidetext h2 {
+  font-size: 24px;
+  color: #333461;
+  margin-bottom: 20px;
+}
+.freeguidetext p {
+  font-size: 16px;
+  color: #5a5d77;
+  margin-bottom: 20px;
+}
+/* CTA Section */
+.cta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px 15px 55px 15px;
+}
+.ctacontainer {
+  display: flex;
+  width: 85%;
+  height: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f6f0ea;
+  padding: 20px 0px 0px 60px;
+  border-radius: 15px;
+}
+.ctaleft {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex: 1 1 50%;
+  flex-direction: column;
+}
+.ctaleft h2 {
+  font-size: 36px;
+  color: #333461;
+  font-weight: 800;
+  line-height: 100%;
+  padding-bottom: 15px;
+}
+.ctaleft p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: rgba(74, 85, 108, 0.5);
+}
+.ctaimg {
+  width: 550px;
+  height: 500px;
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+.ctaimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ctaright {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: end;
+}
+
+.booknow {
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20ad96;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+/*responsive design */
+@media (max-width: 992px) {
+  .herotext{
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .leftside1,
+  .right {
+    flex: 1 1 100%;
+    min-width: unset;
+    text-align: center;
+  }
+
+  .heroimg img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .success {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .herotext {
+    padding: 20px;
+  }
+
+  .heroimg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .introtext,
+  .introheading,
+  .introparagraph {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .introservices div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .reviewcards,
+  .blogcards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviewcard1,
+  .reviewcard2,
+  .reviewcard3,
+  .blogcard1,
+  .blogcard2,
+  .blogcard3 {
+    width: 90%;
+  }
+
+  .freeguide {
+    flex-direction: column;
+  }
+
+  .freeguideright,
+  .freeguideleft {
+    width: 100%;
+    height: auto;
+  }
+
+  .freeguideproduct img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ctacontainer {
+    width: 90%;
+  }
+}
+/* Hide menu by default on small screens */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .hero,
+  .intro,
+  .freeguide,
+  .cta,
+  .ctacontainer {
+    flex-direction: column;
+  }
+
+  .herotext,
+  .heroimg,
+  .introheading,
+  .introparagraph,
+  .freeguideright,
+  .freeguideleft,
+  .ctaleft,
+  .ctaright {
+    width: 100%;
+  }
+  .herotext h1 {
+    font-size: 32px;
+  }
+
+  .herotext {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .heroimg img {
+    width: 90%;
+  }
+
+  .introheading,
+  .introparagraph {
+    font-size: 18px;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .introservices div {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .reviewcard1,
+  .reviewcard2,
+  .reviewcard3,
+  .blogcard1,
+  .blogcard2,
+  .blogcard3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .freeguide {
+    padding: 20px;
+  }
+
+  .ctaimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .subscribebutton {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .subscribebutton input,
+  .subscribebutton button {
+    width: 100%;
+  }
+}

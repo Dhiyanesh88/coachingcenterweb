@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  padding: sticky;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.6;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("./fonts/Kumbh_Sans/KumbhSans-Regular.ttf") format("truetype");
+}
+/* 
