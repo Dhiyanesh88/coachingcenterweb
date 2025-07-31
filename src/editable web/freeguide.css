@@ -23,4 +23,170 @@ body {
   font-family: "Kumbh Sans";
   src: url("./fonts/Kumbh_Sans/KumbhSans-Regular.ttf") format("truetype");
 }
-/* 
+/* freeguide */
+.freeguide {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.freeguideleft {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  flex: 1 1 50%;
+  width: 90%;
+}
+.freeguideright {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF8F6;
+  flex: 1 1 50%;
+  align-items: center;
+}
+.freeguidetext {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px 90px;
+}
+
+.freeguidecontainer {
+  flex-direction: column;
+  width: 50%;
+}
+.freeguidetext h2 {
+  color: #333461;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -2%;
+  margin-bottom: 15px;
+  width: 90%;
+}
+.freeguidetext p {
+  color: rgba(74, 85, 108, 0.7);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  width: 85%;
+  margin-bottom: 20px;
+}
+.boxcontainer {
+  flex-direction: column;
+  width: 55%;
+}
+.boxcontainer input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.boxcontainer button {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #20C997;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.boxcontainer button:hover {
+  background-color: #1aaa89;
+}
+
+.boxcontainer p {
+  font-size: 14px;
+  color: rgba(74, 85, 108, 0.7);
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.Product {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  padding: 0;
+  margin-right: 0;
+}
+.freeguidecontainer {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 30px;
+  margin-right: 1em;
+  align-items: center;
+}
+.Ellipse {
+  position: absolute;
+  top: -20px;
+  right: -50px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+  background-color: #20AD96; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freetext {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 3;
+  position: relative; /* now inside the circle */
+  transform: none;
+  top: 0;
+  right: 0;
+}
+/* Review */
+.reviews {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.reviewcards {
+  display: flex;
+  width: 62%;
+  height: auto;
+  padding: 20px;
+  flex-direction: row;
+}
+.block {
+  flex-direction: column;
+  margin: 15px;
+  width: 80%;
+}
+.reviewcard {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  border: #eaeaea solid 1px;
+  text-align: center;
+  margin: 15px;
+  padding: 10px;
+}

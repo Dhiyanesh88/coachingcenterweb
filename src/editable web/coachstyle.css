@@ -9,6 +9,8 @@ html {
   height: 100%;
   padding: sticky;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -16,6 +18,11 @@ body {
   height: auto;
   max-width: 100%;
   margin: auto;
+  overflow-x: hidden;
+  width: 100%;
+   margin: 0;
+  padding: 0;
+
 }
 .vector p {
   color: #18692e;
@@ -91,7 +98,7 @@ body {
 
 /* Right Side */
 .right {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
   display: flex;
   justify-content: center;
   padding-left: 120px;
@@ -211,22 +218,21 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 50%;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-evenly;
+  padding: 30px;
 }
 .reviewcard1,
 .reviewcard2,
 .reviewcard3 {
-  width: 30%;
+  width: 25%;
+  height: 320px;
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
+  padding: 40px;
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.reviewcard1text,
-.reviewcard2text,
-.reviewcard3text {
+.reviewcard1text {
   font-size: 16px;
   color: #5a5d77;
 }
@@ -236,7 +242,7 @@ body {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 25px;
 }
 .reviewcard1 h3,
 .reviewcard2 h3,
@@ -364,29 +370,46 @@ body {
   justify-content: center;
   align-items: center;
 }
-.freeguideicon {
-  width: 100px;
-  height: 100px;
-  left: 10px;
-}
-.freeguideicon img {
-  position: static;
-  width: 50px;
-  height: 50px;
-  margin: 10px auto;
-}
-.freeguideproduct {
+.Product {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  display: block;
+  border-radius: 10px;
+  padding: 0;
+  margin-right: 0;
 }
-.freeguideproduct img {
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
+.freeguidecontainer {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 30px;
+  margin-right: 1em;
+  align-items: center;
+}
+.Ellipse {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  z-index: 2;
+  background-color: #20AD96; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.freetext {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 3;
+  position: relative; /* now inside the circle */
+  transform: none;
+  top: 0;
+  right: 0;
 }
 .freeguideleft {
   display: flex;
@@ -399,16 +422,31 @@ body {
 }
 .freeguidetext {
   margin-bottom: 20px;
+  margin-top: 65px;
 }
 .freeguidetext h2 {
-  font-size: 24px;
+  font-size: 48px;
   color: #333461;
   margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 58px;
+  letter-spacing: -1%;
+  width: 90%;
 }
 .freeguidetext p {
-  font-size: 16px;
   color: #5a5d77;
   margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  width: 85%;
+}
+.p1{
+  font-size: 22px;
+  line-height: 33px;
+}
+.p2 {
+  font-size: 17px;
+  line-height: 100%;
 }
 /* CTA Section */
 .cta {
@@ -430,7 +468,7 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #f6f0ea;
+  background-color: #FAF8F6;
   padding: 20px 0px 0px 60px;
   border-radius: 15px;
 }
@@ -493,49 +531,38 @@ body {
 }
 /*responsive design */
 @media (max-width: 992px) {
-  .herotext,
-  .hero,
-  .leftside1,
-  .right,
-  .heroimg,
-  .heroimg img,
-  .image-container,
-  .success,
-  .introtext,
-  .introheading,
-  .introparagraph,
-  .introservices div,
-  .reviewcards,
-  .blogcards,
-  .reviewcard1,
-  .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3,
-  .freeguide,
-  .freeguideright,
-  .freeguideleft,
-  .freeguideproduct img,
-  .cta,
-  .ctacontainer {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
 
+  /* 🟦 Hero Section  */
   .hero {
     flex-direction: column !important;
     align-items: center !important;
     padding: 20px 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
   }
 
+  .herobg {
+    flex-direction: column !important;
+  }
+
+  .vector {
+    height: auto;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .herotext,
   .leftside1,
-  .right {
-    flex: 1 1 100% !important;
+  .right,
+  .image-container,
+  .heroimg {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
     text-align: center !important;
-    padding: 0 !important;
   }
 
   .heroimg img {
@@ -543,49 +570,185 @@ body {
     height: auto !important;
     display: block !important;
     margin: 0 auto !important;
+    max-width: 100% !important;
+    overflow: hidden;
   }
 
   .success {
     position: absolute !important;
     top: 10px !important;
     left: 10px !important;
-    transform: none !important;
     width: auto !important;
     height: auto !important;
+    transform: none !important;
+  }
+
+  /* 🟩 Intro Section – Stacked Content, Full Width */
+  .intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  .introtext,
+  .introheading,
+  .introparagraph,
+  .introservices div {
+    width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+    box-sizing: border-box;
   }
 
   .introservices div {
     margin-bottom: 20px !important;
+    display: block;
   }
 
-  .reviewcards,
-  .blogcards,
-  .freeguide,
-  .cta {
+  /* 🟨 Reviews Section – Vertical Cards, Centered */
+  .reviews {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  .reviewcards {
     flex-direction: column !important;
     align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
   }
 
   .reviewcard1,
   .reviewcard2,
-  .reviewcard3,
+  .reviewcard3 {
+    width: 90% !important;
+    margin: 10px auto !important;
+    box-sizing: border-box;
+  }
+
+  .reviewtext,
+  .reviewcard1text {
+    font-size: medium !important;
+    line-height: 1.5 !important;
+    text-align: center;
+  }
+
+  .reviewcard1rating {
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* 🟧 Blog Section – Vertical Cards, Centered */
+  .blogs {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+  .blogtext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+  }
+
+
+  .blogcards {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+  }
+
   .blogcard1,
   .blogcard2,
   .blogcard3 {
     width: 90% !important;
     margin: 10px auto !important;
+    box-sizing: border-box;
+  }
+
+  .moreblogframe {
+    text-align: center !important;
+    width: auto !important;
+    cursor: pointer !important;
+  }
+
+  /* 🟪 Free Guide Section – Column Layout, Full Width */
+  .freeguide {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  .freeguideleft,
+  .freeguideright,
+  .freeguideproduct img {
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  .freeguideproduct {
+    display: block;
+    height: auto;
+    width: 100%;
   }
 
   .freeguideproduct img {
-    width: 100% !important;
     height: auto !important;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
+  .freeguideicon {
+    max-width: 60px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .freeguidetext {
+    line-height: 1.6 !important;
+    text-align: center !important;
+  }
+
+  /* 🟥 CTA Section – Column Layout, Centered */
+  .cta,
   .ctacontainer {
-    width: 90% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box;
+  }
+
+  .ctaleft,
+  .ctaright {
+    max-width: 90% !important;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .ctaimg {
+    height: auto;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .booknow {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 10px 20px;
+    display: inline-block;
   }
 }
-
 /* Hide menu by default on small screens */
 
 @media (max-width: 768px) {
@@ -596,266 +759,576 @@ body {
   .menu {
     display: none;
     width: 100%;
+    box-sizing: border-box;
   }
+
+  /* ============================== */
+  /* ========== HERO ============== */
   .hero {
     flex-direction: column;
     padding: 30px;
     text-align: center;
     display: flex;
-  }
-  .menu.open {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 10px;
+    box-sizing: border-box;
   }
 
-  .menu nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  .herobg {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    height: auto;
+    overflow: hidden;
   }
 
-  .menu ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    padding-left: 0;
+  .herotext h1 {
+    font-size: 40px;
+    line-height: 1.2;
   }
 
-  .menu li {
-    padding: 10px 20px;
-    width: 100%;
+  .herotext p {
+    font-size: 18px;
+    line-height: 1.5;
   }
 
-  .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
+  .vector {
+    width: 100% ;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
   }
-   .image-container {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 30px;
-    padding: 0 10px;
+
+  .herotext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    box-sizing: border-box;
+    padding: 0 15px;
   }
 
   .heroimg {
     width: 100%;
     max-width: 100%;
     margin-top: 20px;
+    box-sizing: border-box;
   }
-  .herotext h1 {
-    font-size: 40px;
+
+  .image-container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
-  .herotext p {
-    font-size: 18px;
+
+  .leftside1,
+  .right {
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
   }
+
   .success {
     top: 0px;
     left: 0px;
     width: 140px;
     height: 60px;
-  }
-
-  .right .leftside1{
-    padding: 0;
-    justify-content: center;
-  }
-  .intro {
-    flex-direction: column;
-  }
-}
-@media (max-width: 480px) {
-  .hero,
-  .intro,
-  .freeguide,
-  .cta,
-  .ctacontainer {
-    flex-direction: column;
-  }
-  .hero {
-    padding: 20px;
-  }
-  .success {
-    top: 10px;
-    left: 10px;
-    width: 80px;
-  }
-
-  .herotext,
-  .heroimg,
-  .introheading,
-  .introparagraph,
-  .freeguideright,
-  .freeguideleft,
-  .ctaleft,
-  .ctaright {
-    width: 100%;
-  }
-  .herotext h1 {
-    font-size: 28px;
-    line-height: 1.3;
-  }
-  .herotext p {
-    font-size: 16px;
-  }
-
-  .herotext {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .heroimg img {
-    width: 100%;
-    height: auto;
-  }
-
-  .introheading,
-  .introparagraph {
-    font-size: 18px;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .introservices div {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .reviewcard1,
-  .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .freeguide {
-    padding: 20px;
-  }
-
-  .ctaimg {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .subscribebutton {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
-  .subscribebutton input,
-  .subscribebutton button {
-    width: 100%;
-  }
-  .booknow {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 1200px) {
-  .herotext h1 {
-    font-size: 64px;
-  }
-  .ctaimg {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero {
-    padding: 40px 60px;
-  }
-  .herotext h1 {
-    font-size: 52px;
-  }
-  .leftside1,
-  .right {
-    padding: 0 20px;
-  }
-  .introservices div {
-    width: 45%;
-  }
-}
-@media (max-width: 600px) {
-  .herotext h1 {
-    font-size: 36px;
-  }
-
-  .herotext p {
-    font-size: 16px;
-  }
-
-  .success {
-    width: 80px;
-    top: 5px;
-  }
-
-  .introservices div {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .reviewcards,
-  .blogcards {
-    padding: 0;
-  }
-
-  .ctaimg {
-    width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .herotext h1 {
-    font-size: 28px;
-    line-height: 1.3;
+    box-sizing: border-box;
   }
 
   .freeguideframe {
+    margin: 20px auto;
+    align-self: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+  }
+
+  /* ============================== */
+  /* ========== INTRO ============= */
+  /* Layout Reference: .intro */
+  /* ============================== */
+
+  .intro {
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .introtext,
+  .introheading,
+  .introparagraph {
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .introservices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    padding: 0 15px;
   }
 
-  .success {
-    left: 5px;
-    width: 70px;
-  }
-}
+  /* ============================== */
+  /* ========== REVIEWS =========== */
+  /* Layout Reference: .reviews */
+  /* ============================== */
 
-@media (max-width: 320px) {
-  .herotext h1 {
-    font-size: 24px;
-  }
-
-  .herotext p,
-  .freeguidetext p {
-    font-size: 14px;
-  }
-
-  .freeguideframe,
-  .booknow {
-    width: 100%;
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .introheading {
-    font-size: 20px;
+  .reviewcards {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  .reviewcard1text,
+  .reviewcard2text,
+  .reviewcard3text {
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .reviews {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .reviewtext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    padding: 0 10px;
+  }
+
+  .reviewcard1rating {
+    width: 100%;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* ============================== */
+  /* ========== BLOGS ============= */
+  /* Layout Reference: .blogs */
+  /* ============================== */
+
+  .blogcards {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
   }
 
   .blogcard1,
   .blogcard2,
   .blogcard3 {
-    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
+    box-sizing: border-box;
   }
+
+  .blogtext {
+    text-align: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .blogs {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .moreblogframe {
+    cursor: pointer !important;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* ============================== */
+  /* ======= FREE GUIDE =========== */
+  /* Layout Reference: .freeguide */
+  /* ============================== */
+
+  .freeguide {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .freeguideright,
+  .freeguideleft {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .freeguidetext {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    align-items: center;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+
+  .freeguideproduct img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .freeguideicon {
+    max-width: 60px !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin: 10px auto;
+  }
+
+  .freeguideproduct {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  /* ============================== */
+  /* ========== CTA =============== */
+  /* Layout Reference: .cta */
+  /* ============================== */
+
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+  }
+
+  .ctacontainer {
+    width: 90%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .ctaleft,
+  .ctaright {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+
+  .ctaimg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .booknow {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* ========== HERO SECTION ========== */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .herobg {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .leftside1 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .vector {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  .herotext {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .herotext h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .herotext p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .freeguideframe {
+    cursor: pointer !important;
+    box-sizing: border-box;
+  }
+
+  .right {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .heroimg {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .heroimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .success {
+    width: 60px;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+  }
+
+  /* ========== INTRO SECTION ========== */
+  .intro {
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .introtext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    padding: 0 10px !important;
+    box-sizing: border-box;
+  }
+
+  .introheading {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .introparagraph {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .introservices {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .introservices div {
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+
+  /* ========== REVIEWS SECTION ========== */
+  .reviews {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .reviewtext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    padding: 0 10px !important;
+  }
+
+  .reviewcards {
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+
+  .reviewcard1,
+  .reviewcard2,
+  .reviewcard3 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .reviewcard1text,
+  .reviewcard2text,
+  .reviewcard3text {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    padding: 0 10px !important;
+    box-sizing: border-box;
+  }
+
+  .reviewcard1rating {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* ========== BLOG SECTION ========== */
+  .blogs {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .blogtext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    padding: 0 10px !important;
+  }
+
+  .blogcards {
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+
+  .blogcard1,
+  .blogcard2,
+  .blogcard3 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .moreblogframe {
+    cursor: pointer !important;
+    box-sizing: border-box;
+  }
+
+  /* ========== FREE GUIDE SECTION ========== */
+  .freeguide {
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .freeguideright,
+  .freeguideleft {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .freeguideicon {
+    max-width: 60px !important;
+    height: auto !important;
+    display: inline-block !important;
+    margin: 0 auto !important;
+    box-sizing: border-box;
+  }
+
+  .freeguideproduct img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .freeguidetext {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+
+  /* ========== CTA SECTION ========== */
+  .cta {
+    flex-direction: column;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .ctacontainer {
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  .ctaleft,
+  .ctaright {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .ctaimg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .booknow {
+    font-size: 14px;
+    padding: 10px 15px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
 }
