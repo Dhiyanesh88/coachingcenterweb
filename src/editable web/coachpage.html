@@ -19,6 +19,9 @@
         .then(data => {
         document.getElementById("footer-placeholder").innerHTML = data;
         });
+        function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+  }
 </script>
 <body>
     <header id="header-placeholder"></header>
@@ -34,7 +37,7 @@
         <p>
           I help people to discover their true potential and live a fulfilling life...
           Discover the simple 3 steps that I discovered to hack productivity.
-          It just works and it is begin using backed by science.<br>
+          It just works and it is begin using backed by science.
           Wanna transform your life?
         </p>
         <button class="freeguideframe" href = "../editable web/freeguide.html">Get your free guide now</button>
@@ -159,21 +162,21 @@
             <div class="freeguideleft">
             <div class="freeguidetext">
                 <h2><b>Don’t miss out on my ‘Live life at the full potential’ free guide</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</p>
+                <p class="p2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
             </div>
             <div>
                 <button class="freeguideframe" href = "../editable web/freeguide.html">Get your free guide now</button>
             </div>
             </div>
             <div class="freeguideright">
-            <div class="freeguideicon">
-                <!-- <img src="../images/Ellipse.png" alt="Free Guide Icon"> -->
+                <div class="freeguidecontainer">
+                <div class="Ellipse">
+                   <p class="freetext">Free guide</p>
+               </div>
+                <img src="../images/guide.png" class="Product" />
             </div>
-            <div class="freeguideproduct">
-                <img src="../images/guide.png" alt="Free Guide Product">
-            </div>
-            </div>
+  </div>
     </section>
     <section class="cta">
             <div class="ctacontainer">
