@@ -171,9 +171,8 @@ body {
   width: 70%
 }
 .startbutton {
-  flex: 1 1 70%;
+  flex: 1 1 30%;
   width: 30%
-
 }
 /* Review */
 .reviews {
