@@ -160,6 +160,20 @@ body {
   top: 0;
   right: 0;
 }
+/* Testmonials */
+.testmonials {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+.testmonialstext {
+  flex: 1 1 70%;
+  width: 70%
+}
+.startbutton {
+  flex: 1 1 30%;
+  width: 30%
+}
 /* Review */
 .reviews {
   width: 100%;
