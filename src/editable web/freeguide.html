@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="../editable web/freeguide.css">
      <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+<script>
+        fetch("../editable web/header.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        });
+        
+        fetch("../editable web/footer.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        });
+        function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+  }
+</script>
 <body>
     <header id="header-placeholder"></header>
    <section class="freeguide">

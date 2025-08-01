@@ -376,7 +376,7 @@ body {
 }
 
 .faq.active p {
-  display: block;
+  display: flex;
 }
 
 .anyquestions {
@@ -508,7 +508,7 @@ body {
 
 @media (max-width: 768px) {
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .menu {

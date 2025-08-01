@@ -27,6 +27,9 @@
       .then((data) => {
         document.getElementById("footer-placeholder").innerHTML = data;
       });
+      function toggleMenu() {
+       document.getElementById('nav-menu').classList.toggle('open');
+      }
   </script>
   <body>
     <header id="header-placeholder"></header>
