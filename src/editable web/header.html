@@ -101,11 +101,10 @@
 @media (max-width: 768px) {
   .headerbg {
     flex-wrap: wrap;
-    align-items: flex-start;
   }
 
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .menu {
@@ -119,6 +118,7 @@
 
   .menu.open {
     display: flex;
+    justify-self: start;
   }
 
   .menu nav {
@@ -140,7 +140,6 @@
 
   .freeguideframe {
     margin: 10px 0;
-    align-self: flex-start;
   }
 }
 

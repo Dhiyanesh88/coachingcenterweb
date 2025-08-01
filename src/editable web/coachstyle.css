@@ -106,7 +106,7 @@ body {
 .heroimg {
   width: 100%;
   height: auto;
-  display: block;
+  display: flex;
   border-radius: 10px;
 }
 .image-container {
@@ -156,7 +156,6 @@ body {
 .introparagraph {
   display: flex;
   flex: 1 1 50%;
-
   font-size: 16px;
   color: #5a5d77;
   margin-bottom: 20px;
@@ -373,7 +372,7 @@ body {
 .Product {
   width: 100%;
   height: 100%;
-  display: block;
+  display: flex;
   border-radius: 10px;
   padding: 0;
   margin-right: 0;
@@ -530,7 +529,7 @@ body {
   padding: 10px;
 }
 /*responsive design */
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
   /* 🟦 Hero Section  */
   .hero {
@@ -538,37 +537,49 @@ body {
     align-items: center !important;
     padding: 20px 10px !important;
     width: 100% !important;
-    max-width: 100% !important;
     box-sizing: border-box;
   }
 
   .herobg {
-    flex-direction: column !important;
+    flex-direction: row !important;
   }
 
-  .vector {
+  /* .vector {
     height: auto;
-    display: block;
+    display: flex;
     width: 100%;
     max-width: 100%;
-  }
+  } */
 
-  .herotext,
+  .herotext {
+    width: 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
   .leftside1,
-  .right,
-  .image-container,
+  .right {
+    width: 50% !important;
+    max-width: 50% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+  }
   .heroimg {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
-    box-sizing: border-box;
     text-align: center !important;
   }
 
   .heroimg img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    display: flex !important;
     margin: 0 auto !important;
     max-width: 100% !important;
     overflow: hidden;
@@ -587,7 +598,7 @@ body {
   .intro {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 15px !important;
+    padding: 10px 15px !important;
     box-sizing: border-box;
   }
 
@@ -603,22 +614,24 @@ body {
 
   .introservices div {
     margin-bottom: 20px !important;
-    display: block;
+    display: flex;
   }
 
   /* 🟨 Reviews Section – Vertical Cards, Centered */
   .reviews {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 15px !important;
+    padding: 15px 15px !important;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .reviewcards {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    padding: 0 15px !important;
+    /* padding: 0 15px !important; */
     box-sizing: border-box;
   }
 
@@ -639,7 +652,7 @@ body {
 
   .reviewcard1rating {
     height: auto;
-    display: block;
+    display: flex;
     margin: 10px auto;
   }
 
@@ -647,7 +660,7 @@ body {
   .blogs {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 15px !important;
+    padding: 15px 15px !important;
     box-sizing: border-box;
   }
   .blogtext {
@@ -682,7 +695,7 @@ body {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    padding: 0 15px !important;
+    padding: 15px !important;
     box-sizing: border-box;
   }
 
@@ -695,7 +708,7 @@ body {
   }
 
   .freeguideproduct {
-    display: block;
+    display: flex;
     height: auto;
     width: 100%;
   }
@@ -703,19 +716,18 @@ body {
   .freeguideproduct img {
     height: auto !important;
     max-width: 100%;
-    display: block;
+    display: flex;
     margin: 0 auto;
   }
 
   .freeguideicon {
     max-width: 60px;
-    display: block;
+    display: flex;
     margin: 10px auto;
   }
 
   .freeguidetext {
     line-height: 1.6 !important;
-    text-align: center !important;
   }
 
   /* 🟥 CTA Section – Column Layout, Centered */
@@ -724,7 +736,7 @@ body {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    padding: 0 15px !important;
+    padding: 10px 15px !important;
     box-sizing: border-box;
   }
 
@@ -737,7 +749,7 @@ body {
 
   .ctaimg {
     height: auto;
-    display: block;
+    display: flex;
     width: 100%;
     margin: 10px 0;
   }
@@ -751,267 +763,295 @@ body {
 }
 /* Hide menu by default on small screens */
 
-@media (max-width: 768px) {
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* ⏹️ Navigation */
   .hamburger {
-    display: block;
+    display: flex !important;
   }
 
   .menu {
-    display: none;
-    width: 100%;
-    box-sizing: border-box;
+    display: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  /* ============================== */
-  /* ========== HERO ============== */
-  .hero {
-    flex-direction: column;
-    padding: 30px;
-    text-align: center;
+  /* 🟦 Hero Section */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .vector {
+    height: auto;
     display: flex;
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    display: flex !important;
   }
 
   .herobg {
-    width: 100% !important;
-    max-width: 100% !important;
     padding: 20px 15px !important;
     margin: 10px 0 !important;
-    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
     text-align: center !important;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .herotext h1 {
-    font-size: 40px;
-    line-height: 1.2;
-  }
-
-  .herotext p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-  .vector {
-    width: 100% ;
     height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
+    overflow: hidden !important;
   }
 
   .herotext {
     font-size: 1rem !important;
     line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
     text-align: center !important;
-    box-sizing: border-box;
-    padding: 0 15px;
+  }
+
+  .herotext h1 {
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+  }
+
+  .herotext p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
   }
 
   .heroimg {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 20px;
-    box-sizing: border-box;
+    height: 700px !important;
+    margin-top: 20px !important;
+    padding: 0 15px !important;
   }
 
   .image-container {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 30px;
-    padding: 0 10px;
-    box-sizing: border-box;
+    height: 20% !important;
+    margin-top: 30px !important;
+    padding: 0 10px !important;
+  }
+
+  .heroimg img,
+  .vector {
+    display: flex !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
   .leftside1,
   .right {
-    padding: 0;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .success {
-    top: 0px;
-    left: 0px;
-    width: 140px;
-    height: 60px;
-    box-sizing: border-box;
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
   }
 
-  .freeguideframe {
-    margin: 20px auto;
-    align-self: center;
-    align-items: center;
-    box-sizing: border-box;
-    justify-content: center;
-    display: flex;
-  }
-
-  /* ============================== */
-  /* ========== INTRO ============= */
-  /* Layout Reference: .intro */
-  /* ============================== */
-
+  /* 🟩 Intro Section */
   .intro {
-    flex-direction: column;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 15px !important;
     box-sizing: border-box;
   }
-
+  
+  .introservices div {
+    margin-bottom: 20px !important;
+    display: flex;
+    width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
   .introtext,
   .introheading,
   .introparagraph {
-    text-align: center;
-    padding: 0 15px;
-    box-sizing: border-box;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 0 15px !important;
   }
 
   .introservices {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 15px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
   }
 
-  /* ============================== */
-  /* ========== REVIEWS =========== */
-  /* Layout Reference: .reviews */
-  /* ============================== */
+  .introservices div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .introservices div p {
+    width: 80% !important;
+  }
+
+  /* 🟨 Reviews Section */
+  .reviews {
+    padding: 10px 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    padding: 15px 15px !important;
+    display: flex;
+    flex-direction: column;
+  }
 
   .reviewcards {
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-content: center !important;
+    box-sizing: border-box !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    width: 90%;
-    margin: 10px auto;
-    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    box-sizing: border-box !important;
+    width: 90% !important;
+    margin: 10px auto !important;
   }
 
   .reviewcard1text,
   .reviewcard2text,
-  .reviewcard3text {
-    text-align: center;
-    line-height: 1.6;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .reviews {
-    max-width: 100%;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
+  .reviewcard3text,
   .reviewtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
     text-align: center !important;
-    padding: 0 10px;
+    line-height: 1.6 !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
   }
 
   .reviewcard1rating {
-    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px auto !important;
+    width: 100% !important;
     height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
   }
 
-  /* ============================== */
-  /* ========== BLOGS ============= */
-  /* Layout Reference: .blogs */
-  /* ============================== */
+  /* 🟧 Blog Section */
+  .blogs {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    padding: 15px 15px !important;
+  }
+
+  .blogtext {
+    text-align: center !important;
+    padding: 0 15px !important;
+    font-size: 1rem !important;
+    box-sizing: border-box !important;
+    line-height: 1.6 !important;
+  }
 
   .blogcards {
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 15px;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
   }
 
   .blogcard1,
   .blogcard2,
   .blogcard3 {
-    width: 90%;
-    margin: 10px auto;
-    box-sizing: border-box;
-  }
-
-  .blogtext {
-    text-align: center;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
-  .blogs {
-    display: flex !important;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
+    width: 90% !important;
+    margin: 10px auto !important;
+    box-sizing: border-box !important;
   }
 
   .moreblogframe {
     cursor: pointer !important;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
+    text-align: center !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
   }
+ 
 
-  /* ============================== */
-  /* ======= FREE GUIDE =========== */
-  /* Layout Reference: .freeguide */
-  /* ============================== */
-
+  /* 🟪 Free Guide Section */
   .freeguide {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .freeguideright,
   .freeguideleft {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 15px;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+  .freeguideleft,
+  .freeguideright,
+  .freeguideproduct img {
+    width: 100% !important;
+    padding: 0 15px !important;
     box-sizing: border-box;
   }
 
   .freeguidetext {
-    width: 100%;
-    padding: 0 15px;
-    text-align: center;
-    align-items: center;
-    line-height: 1.6;
-    box-sizing: border-box;
-  }
-
-  .freeguideproduct img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .freeguideicon {
-    max-width: 60px !important;
-    height: auto !important;
-    display: inline-block !important;
-    margin: 10px auto;
+    width: 100% !important;
+    padding: 0 15px !important;
+    line-height: 1.6 !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
   }
 
   .freeguideproduct {
@@ -1019,316 +1059,438 @@ body {
     height: auto !important;
     display: block !important;
     margin: 0 auto !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 
-  /* ============================== */
-  /* ========== CTA =============== */
-  /* Layout Reference: .cta */
-  /* ============================== */
-
-  .cta {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-
-  }
-
-  .ctacontainer {
-    width: 90%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
-  .ctaleft,
-  .ctaright {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-
-  }
-
-  .ctaimg {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    display: block;
-  }
-
-  .booknow {
-    margin-top: 20px;
-    display: inline-block;
-    text-align: center;
-    cursor: pointer;
-    padding: 10px 20px;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* ========== HERO SECTION ========== */
-  .hero {
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-
-  .herobg {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  .leftside1 {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .vector {
+  .freeguideproduct img {
     width: 100% !important;
     height: auto !important;
-    display: block !important;
+    display: flex !important;
     margin: 0 auto !important;
-    box-sizing: border-box;
-  }
-
-  .herotext {
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-
-  .herotext h1 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .herotext p {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .freeguideframe {
-    cursor: pointer !important;
-    box-sizing: border-box;
-  }
-
-  .right {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .heroimg {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .heroimg img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .image-container {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .success {
-    width: 60px;
-    top: 5px;
-    left: 5px;
-    position: absolute;
-  }
-
-  /* ========== INTRO SECTION ========== */
-  .intro {
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
-
-  .introtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    text-align: center !important;
-    margin-bottom: 15px !important;
-    padding: 0 10px !important;
-    box-sizing: border-box;
-  }
-
-  .introheading {
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .introparagraph {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .introservices {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  .introservices div {
-    width: 100%;
-    margin: 10px 0;
-    box-sizing: border-box;
-  }
-
-  /* ========== REVIEWS SECTION ========== */
-  .reviews {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  .reviewtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    text-align: center !important;
-    margin-bottom: 15px !important;
-    padding: 0 10px !important;
-  }
-
-  .reviewcards {
-    flex-direction: column;
-    gap: 15px;
-    box-sizing: border-box;
-  }
-
-  .reviewcard1,
-  .reviewcard2,
-  .reviewcard3 {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .reviewcard1text,
-  .reviewcard2text,
-  .reviewcard3text {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    text-align: center !important;
-    margin-bottom: 15px !important;
-    padding: 0 10px !important;
-    box-sizing: border-box;
-  }
-
-  .reviewcard1rating {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
-
-  /* ========== BLOG SECTION ========== */
-  .blogs {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  .blogtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
-    text-align: center !important;
-    margin-bottom: 15px !important;
-    padding: 0 10px !important;
-  }
-
-  .blogcards {
-    flex-direction: column;
-    gap: 15px;
-    box-sizing: border-box;
-  }
-
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .moreblogframe {
-    cursor: pointer !important;
-    box-sizing: border-box;
-  }
-
-  /* ========== FREE GUIDE SECTION ========== */
-  .freeguide {
-    flex-direction: column;
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
-
-  .freeguideright,
-  .freeguideleft {
-    width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
   }
 
   .freeguideicon {
     max-width: 60px !important;
     height: auto !important;
+    margin: 10px auto !important;
     display: inline-block !important;
-    margin: 0 auto !important;
-    box-sizing: border-box;
   }
 
-  .freeguideproduct img {
-    width: 100%;
-    height: auto;
-    display: block;
-    box-sizing: border-box;
+  .freeguideframe {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
-  .freeguidetext {
-    padding: 10px;
-    text-align: center;
-    line-height: 1.6;
-    box-sizing: border-box;
-  }
-
-  /* ========== CTA SECTION ========== */
+  /* 🟥 CTA Section */
   .cta {
-    flex-direction: column;
-    padding: 20px 10px;
-    box-sizing: border-box;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px 15px !important;
   }
 
   .ctacontainer {
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 15px !important;
   }
 
   .ctaleft,
   .ctaright {
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
 
   .ctaimg {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
   }
 
   .booknow {
-    font-size: 14px;
-    padding: 10px 15px;
-    display: inline-block;
+    margin-top: 20px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 480px) {
+
+   /* ⏹️ Navigation */
+  .hamburger {
+    display: flex !important;
+  }
+
+  .menu {
+    display: none !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 🟦 Hero Section */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .vector {
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    display: flex !important;
+  }
+
+  .herobg {
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .herotext {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .herotext h1 {
+    font-size: 40px !important;
+    line-height: 1.2 !important;
+  }
+
+  .herotext p {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  .heroimg {
+    height: 700px !important;
+    margin-top: 20px !important;
+    padding: 0 15px !important;
+  }
+
+  .image-container {
+    height: 20% !important;
+    margin-top: 30px !important;
+    padding: 0 10px !important;
+  }
+
+  .heroimg img,
+  .vector {
+    display: flex !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .leftside1,
+  .right {
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .success {
+    position: absolute !important;
+    top: 10px !important;
+    left: 10px !important;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 🟩 Intro Section */
+  .intro {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
+  }
+  
+  .introservices div {
+    margin-bottom: 20px !important;
+    display: flex;
+    width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+    box-sizing: border-box;
+  }
+  .introtext,
+  .introheading,
+  .introparagraph {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+
+  .introservices {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+  }
+
+  .introservices div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .introservices div p {
+    width: 80% !important;
+  }
+
+  /* 🟨 Reviews Section */
+  .reviews {
+    padding: 10px 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    padding: 15px 15px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviewcards {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-content: center !important;
+    box-sizing: border-box !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+
+  .reviewcard1,
+  .reviewcard2,
+  .reviewcard3 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    box-sizing: border-box !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+  }
+
+  .reviewcard1text,
+  .reviewcard2text,
+  .reviewcard3text,
+  .reviewtext {
+    text-align: center !important;
+    line-height: 1.6 !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  .reviewcard1rating {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 🟧 Blog Section */
+  .blogs {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    padding: 15px 15px !important;
+  }
+
+  .blogtext {
+    text-align: center !important;
+    padding: 0 15px !important;
+    font-size: 1rem !important;
+    box-sizing: border-box !important;
+    line-height: 1.6 !important;
+  }
+
+  .blogcards {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .blogcard1,
+  .blogcard2,
+  .blogcard3 {
+    width: 90% !important;
+    margin: 10px auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .moreblogframe {
+    cursor: pointer !important;
+    text-align: center !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+ 
+
+  /* 🟪 Free Guide Section */
+  .freeguide {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .freeguideright,
+  .freeguideleft {
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+  .freeguideleft,
+  .freeguideright,
+  .freeguideproduct img {
+    width: 100% !important;
+    padding: 0 15px !important;
     box-sizing: border-box;
   }
 
+  .freeguidetext {
+    width: 100% !important;
+    padding: 0 15px !important;
+    line-height: 1.6 !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+  }
+
+  .freeguideproduct {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .freeguideproduct img {
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .freeguideicon {
+    max-width: 60px !important;
+    height: auto !important;
+    margin: 10px auto !important;
+    display: inline-block !important;
+  }
+
+  .freeguideframe {
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 🟥 CTA Section */
+  .cta {
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px 15px !important;
+  }
+
+  .ctacontainer {
+    box-sizing: border-box !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 15px !important;
+  }
+
+  .ctaleft,
+  .ctaright {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .ctaimg {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+  }
+
+  .booknow {
+    margin-top: 20px !important;
+    padding: 10px 20px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    box-sizing: border-box !important;
+  }
 }
+
+
