@@ -1152,17 +1152,45 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-
-   /* ⏹️ Navigation */
+@media (max-width: 480px)  {
+  /* ⏹️ Navigation */
   .hamburger {
-    display: flex !important;
+    display: flex;
   }
 
   .menu {
-    display: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
   }
 
   /* 🟦 Hero Section */
