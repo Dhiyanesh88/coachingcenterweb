@@ -77,7 +77,7 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0%;
+ 
   width: 85%;
   margin-bottom: 20px;
 }
@@ -118,7 +118,7 @@ body {
   width: 100%;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0%;
+ 
 }
 .Product {
   width: 100%;
@@ -300,7 +300,7 @@ font-weight: 600;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   width: 50%
 }
 .workheading h2{
@@ -316,7 +316,7 @@ font-weight: 600;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0%;
+ 
   width: 75%
 }
 .workcontainer h3{
@@ -324,14 +324,14 @@ font-weight: 600;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
 }
 .workcontainer p{
   color: rgba(74, 85, 108, 0.7);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   width: 70%;
 }
 .workbelow {
@@ -445,7 +445,7 @@ font-weight: 600;
     font-weight: 400;
     font-size: 17px;
     line-height: 25px;
-    letter-spacing: 0%;
+   
     padding-bottom: 50px;
 }
 .downloadtext button {
@@ -455,7 +455,7 @@ font-weight: 600;
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;
-  letter-spacing: 0%;
+ 
   width: 250;
   opacity: 1;
   gap: 8px;
@@ -491,7 +491,7 @@ font-weight: 600;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  letter-spacing: 0%;
+ 
   margin-top: 60px;
 }
 .reviewcredits img {

@@ -194,7 +194,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   color: #333461;
 
 }
@@ -202,7 +202,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   color: #667085;
 }
 /* Work */
@@ -257,7 +257,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   width: 50%
 }
 .workheading2 h2{
@@ -273,7 +273,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 0%;
+ 
   width: 75%
 }
 .workcontainer2 h3{
@@ -281,14 +281,14 @@ body {
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
 }
 .workcontainer2 p{
   color: rgba(74, 85, 108, 0.7);
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: 0%;
+ 
   width: 70%;
 }
 .workbelow2 {
