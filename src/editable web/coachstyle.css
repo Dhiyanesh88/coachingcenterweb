@@ -535,68 +535,131 @@ body {
   * {
     box-sizing: border-box;
   }
-
-  /* 🟦 Hero Section  */
-  .hero {
-    flex-direction: column !important;
+  /* Hero Section */
+.hero {
+  flex-direction: column !important;
     align-items: center !important;
     padding: 20px 10px !important;
     width: 100% !important;
     box-sizing: border-box;
-  }
+}
 
-  .herobg {
-    flex-direction: row !important;
-  }
+.herobg {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row !important;
+}
 
-
-  .herotext {
-    width: 100% !important;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .leftside1,
-  .right {
-    width: 50% !important;
+/* Left Side */
+.leftside1 {
+  flex: 1 1 40%;
+  min-width: 300px;
+  padding: 15px 0 0 10px;
+  width: 50% !important;
     max-width: 50% !important;
     justify-content: center;
     display: flex;
     flex-direction: column;
-  }
-  .image-container {
-    width: 100% !important;
+}
+
+.vector img {
+  width: 110px;
+  height: 18px;
+  margin-bottom: 3px;
+}
+.herotext {
+  padding: 50px 0 0 50px;
+  width: 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.herotext h6 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 1px;
+}
+
+.herotext h1 {
+  font-size: 76px;
+  font-weight: 2000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext p {
+  font-size: 20px;
+  color: #5a5d77;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.freeguideframe {
+ width: 190px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Right Side */
+.right {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+  width: 50% !important;
+  max-width: 50% !important;
+  flex-direction: column;
+}
+.heroimg {
+  height: auto;
+  display: flex;
+  border-radius: 10px;
+  width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
-  }
-  .heroimg {
-    width: 100% !important;
+}
+.image-container {
+  position: relative;
+  margin-top: 30px;
+  margin-right: 1em;
+  width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
-  }
+    display: flex;
+}
 
-  .heroimg img {
-    display: flex !important;
-    margin: 0 auto !important;
-    max-width: 100% !important;
-    overflow: hidden;
-  }
-
-  .success {
-    position: absolute !important;
+/* Success badge */
+.success {
+  position: absolute;
+  top: -20px;
+  transform: translateX(-50%);
+  z-index: 2;
+  position: absolute !important;
     top: 10px !important;
     left: 10px !important;
     width: auto !important;
     height: auto !important;
     transform: none !important;
-  }
+}
 
 
   /* 🟩 Intro Section */
   .intro {
     padding: 30px 30px !important;
+    display: flex;
+    flex-direction: column;
   }
 
   .introtext,
@@ -604,6 +667,8 @@ body {
   .introparagraph {
     text-align: center;
     padding: 0 20px !important;
+    display: flex;
+    flex-direction: row;
   }
 
   .introheading {
@@ -618,12 +683,16 @@ body {
     flex-wrap: wrap !important;
     justify-content: center;
     gap: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .introservices div {
     width: 45% !important;
     margin-bottom: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   /* 🟨 Reviews Section */
@@ -633,13 +702,16 @@ body {
 
   .reviewtext {
     font-size: 24px !important;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .reviewcards {
     flex-wrap: wrap !important;
     justify-content: center;
     gap: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .reviewcard1,
@@ -648,6 +720,10 @@ body {
     width: 45% !important;
     height: auto !important;
     margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .reviewcard1text {
@@ -657,17 +733,24 @@ body {
   /* 🟧 Blogs Section */
   .blogs {
     padding: 30px 30px !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .blogtext {
     font-size: 22px !important;
     text-align: center;
+    display: flex;
+    flex-direction: row;
   }
 
   .blogcards {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .blogcard1,
@@ -684,9 +767,9 @@ body {
 
   /* 🟪 Free Guide Section */
   .freeguide {
-    flex-direction: column !important;
-    align-items: center !important;
     padding: 30px 20px !important;
+    display: flex;
+    flex-direction: row;
   }
 
   .freeguideleft,
@@ -696,13 +779,11 @@ body {
   }
 
   .freeguidetext {
-    text-align: center;
-    margin-top: 0;
+    margin-top: 30px;
   }
 
   .freeguidetext h2 {
     font-size: 40px !important;
-    line-height: 1.4;
   }
 
   .freeguidetext p {
@@ -722,17 +803,15 @@ body {
   /* 🟥 CTA Section */
   .cta,
   .ctacontainer {
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
-    padding: 30px 20px !important;
   }
 
   .ctaleft,
   .ctaright {
     width: 100% !important;
     max-width: 100% !important;
-    text-align: center;
-    padding: 20px 15px;
+    padding: 0px 0px;
   }
 
   .ctaleft h2 {
@@ -747,7 +826,6 @@ body {
   .ctaimg {
     width: 100% !important;
     height: auto !important;
-    margin: 20px 0;
   }
 
   .booknow {
