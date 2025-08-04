@@ -353,6 +353,59 @@ font-weight: 600;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+/* Testimonials */
+.testimonials {
+   background-color: #ffffff;
+   padding: 60px 80px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin-bottom: 50px;
+}
+.testimonials-container {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        align-content: space-between;
+      }
+
+.testimonialstext {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 70%;
+  flex-direction: column;
+}
+.testimonialstext h1 {
+  margin-bottom: 15px;
+font-weight: 800;
+font-size: 48px;
+line-height: 58px;
+letter-spacing: -2%;
+color: #333461;
+ }
+.testimonialstext p {
+  font-size: 20px;
+  color: #c7c7c7;
+  font-weight: 400;
+  }
+.startbutton {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.startbutton button{
+  padding: 16px 52px;
+background-color: rgba(32, 173, 150, 1);
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+ cursor: pointer;
+  white-space: nowrap;
+}
 
 /*download*/
 .download {
