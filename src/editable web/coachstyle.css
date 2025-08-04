@@ -529,7 +529,12 @@ body {
   padding: 10px;
 }
 /*responsive design */
+
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* General */
+  * {
+    box-sizing: border-box;
+  }
 
   /* 🟦 Hero Section  */
   .hero {
@@ -588,173 +593,170 @@ body {
     transform: none !important;
   }
 
-  /* 🟩 Intro Section – Stacked Content, Full Width */
+
+  /* 🟩 Intro Section */
   .intro {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 10px 15px !important;
-    box-sizing: border-box;
+    padding: 30px 30px !important;
   }
 
   .introtext,
   .introheading,
-  .introparagraph,
-  .introservices div {
-    width: 100% !important;
-    padding: 0 15px !important;
-    text-align: center !important;
-    box-sizing: border-box;
+  .introparagraph {
+    text-align: center;
+    padding: 0 20px !important;
+  }
+
+  .introheading {
+    font-size: 30px !important;
+  }
+
+  .introparagraph {
+    font-size: 17px !important;
+  }
+
+  .introservices {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 20px;
   }
 
   .introservices div {
-    margin-bottom: 20px !important;
-    display: flex;
+    width: 45% !important;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  /* 🟨 Reviews Section – Vertical Cards, Centered */
+  /* 🟨 Reviews Section */
   .reviews {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 15px 15px !important;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    padding: 50px 30px !important;
+  }
+
+  .reviewtext {
+    font-size: 24px !important;
+    text-align: center;
   }
 
   .reviewcards {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    /* padding: 0 15px !important; */
-    box-sizing: border-box;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 20px;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    width: 90% !important;
-    margin: 10px auto !important;
-    box-sizing: border-box;
+    width: 45% !important;
+    height: auto !important;
+    margin: 15px auto;
   }
 
-  .reviewtext,
   .reviewcard1text {
-    font-size: medium !important;
-    line-height: 1.5 !important;
-    text-align: center;
-  }
-
-  .reviewcard1rating {
-    height: auto;
-    display: flex;
-    margin: 10px auto;
-  }
-
-  /* 🟧 Blog Section – Vertical Cards, Centered */
-  .blogs {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 15px 15px !important;
-    box-sizing: border-box;
-  }
-  .blogtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
     text-align: center !important;
   }
 
+  /* 🟧 Blogs Section */
+  .blogs {
+    padding: 30px 30px !important;
+  }
+
+  .blogtext {
+    font-size: 22px !important;
+    text-align: center;
+  }
 
   .blogcards {
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 0 15px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
   .blogcard1,
   .blogcard2,
   .blogcard3 {
-    width: 90% !important;
-    margin: 10px auto !important;
-    box-sizing: border-box;
+    width: 45% !important;
+    margin: 15px auto;
   }
 
   .moreblogframe {
     text-align: center !important;
-    width: auto !important;
-    cursor: pointer !important;
+    margin-top: 20px;
   }
 
-  /* 🟪 Free Guide Section – Column Layout, Full Width */
+  /* 🟪 Free Guide Section */
   .freeguide {
     flex-direction: column !important;
     align-items: center !important;
-    width: 100% !important;
-    padding: 15px !important;
-    box-sizing: border-box;
+    padding: 30px 20px !important;
   }
 
   .freeguideleft,
-  .freeguideright,
+  .freeguideright {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .freeguidetext {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .freeguidetext h2 {
+    font-size: 40px !important;
+    line-height: 1.4;
+  }
+
+  .freeguidetext p {
+    font-size: 16px !important;
+  }
+
   .freeguideproduct img {
     width: 100% !important;
-    padding: 0 15px !important;
-    box-sizing: border-box;
-  }
-
-  .freeguideproduct {
-    display: flex;
-    height: auto;
-    width: 100%;
-  }
-
-  .freeguideproduct img {
     height: auto !important;
-    max-width: 100%;
-    display: flex;
     margin: 0 auto;
   }
 
   .freeguideicon {
-    max-width: 60px;
-    display: flex;
     margin: 10px auto;
   }
 
-  .freeguidetext {
-    line-height: 1.6 !important;
-  }
-
-  /* 🟥 CTA Section – Column Layout, Centered */
+  /* 🟥 CTA Section */
   .cta,
   .ctacontainer {
     flex-direction: column !important;
     align-items: center !important;
-    width: 100% !important;
-    padding: 10px 15px !important;
-    box-sizing: border-box;
+    padding: 30px 20px !important;
   }
 
   .ctaleft,
   .ctaright {
-    max-width: 90% !important;
     width: 100% !important;
+    max-width: 100% !important;
     text-align: center;
+    padding: 20px 15px;
+  }
+
+  .ctaleft h2 {
+    font-size: 30px !important;
+  }
+
+  .ctaleft p {
+    font-size: 18px !important;
+    line-height: 1.5;
   }
 
   .ctaimg {
-    height: auto;
-    display: flex;
-    width: 100%;
-    margin: 10px 0;
+    width: 100% !important;
+    height: auto !important;
+    margin: 20px 0;
   }
 
   .booknow {
-    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
     margin-top: 15px;
-    padding: 10px 20px;
-    display: inline-block;
   }
 }
+
 /* Hide menu by default on small screens */
 
 
@@ -1545,5 +1547,7 @@ body {
     box-sizing: border-box !important;
   }
 }
+
+
 
 
