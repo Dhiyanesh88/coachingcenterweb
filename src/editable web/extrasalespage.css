@@ -336,10 +336,11 @@ font-weight: 800;
 font-size: 48px;
 line-height: 58px;
 letter-spacing: -2%;
+color: #333461;
  }
 .testimonialstext p {
   font-size: 20px;
-  color: #3947c6;
+  color: #c7c7c7;
   font-weight: 400;
   }
 .startbutton {
@@ -348,8 +349,8 @@ letter-spacing: -2%;
   justify-content: flex-end;
 }
 .startbutton button{
-  padding: 16px 32px;
-background-color: #20ad96;
+  padding: 16px 52px;
+background-color: rgba(32, 173, 150, 1);
 color: white;
 border: none;
 border-radius: 8px;

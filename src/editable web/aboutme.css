@@ -225,6 +225,13 @@ body {
   width: 120px;
   height: 20px;
 }
+.reviewcard1text {
+  color: #d8d8d8;
+  font-size: 20px;
+}
+.reviewcard1text h1:hover{
+  color: #1cc237;
+}
 /* Work Section */
 .work {
   width: 100%;
