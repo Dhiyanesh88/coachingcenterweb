@@ -1,3 +1,6 @@
+/* ================================== */
+/* ========== GLOBAL RESET ========== */
+/* ================================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +10,11 @@ html {
   scroll-behavior: smooth;
   width: 100%;
   height: 100%;
-  padding: sticky;
   overflow-x: hidden;
 }
 body {
   font-family: "Kumbh Sans", sans-serif;
   line-height: 1.6;
-  height: auto;
   max-width: 100%;
   margin: auto;
 }
@@ -21,37 +22,36 @@ body {
   color: #18692e;
 }
 
-/* Hero Section */
+/* ================================== */
+/* ========== HERO SECTION ========== */
+/* ================================== */
 .hero {
   width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .herobg {
   width: 100%;
   height: 677px;
+  background-color: #fdf8f3;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fdf8f3;
 }
 .herotext {
+  flex: 1 1 50%;
   width: 43%;
   height: 65%;
   margin: 20px 0;
+  padding: 0 0 0 50px;
   display: flex;
-  padding: 0px 0 0px 50px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  flex: 1 1 50%;
-  border: 20px;
 }
 .herotext h6 {
   font-size: 17px;
@@ -62,9 +62,8 @@ body {
 .herotext h1 {
   font-size: 65px !important;
   color: #333461;
-  margin-bottom: 20px;
   line-height: 1.2;
-  font-style: bold;
+  margin-bottom: 20px;
 }
 .herotext p {
   font-size: 16px;
@@ -72,21 +71,21 @@ body {
   margin-bottom: 20px;
 }
 .heroimg {
-  width: 100%;
-  height: 100%;
   flex: 1 1 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .heroimg img {
-  width: 60%;
-  height: 80%;
+  width: 480px;
+  height: 620px;
   object-fit: cover;
   position: relative;
 }
 .freeguideframe {
- width: 190px;
+  width: 190px;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -98,24 +97,9 @@ body {
   padding: 10px;
 }
 
-/* Right Side */
-.right {
-  flex: 1 1 50%;
-  display: flex;
-  padding-left: 120px;
-}
-.heroimg {
-  width: 80%;
-  height: 100%;
-  margin-top: 50px;
-}
-
-.heroimg img {
-  width: 480px;
-  height: 620px;
-}
-
-/* startup section */
+/* ============================================= */
+/* ========== STARTUP COMPANIES SECTION ========= */
+/* ============================================= */
 .startupcompanies {
   width: 100%;
   display: flex;
@@ -124,7 +108,6 @@ body {
   padding: 70px;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
 }
 .startupcompaniestext h2 {
   font-size: 16px;
@@ -134,10 +117,9 @@ body {
   margin-bottom: 22px;
 }
 .startupcompanieslogos {
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  align-items: center;
-  flex-direction: row;
   gap: 20px;
 }
 .startupcompanieslogos img {
@@ -145,31 +127,28 @@ body {
   height: 45px;
 }
 
-/* Reviews Section */
+/* ================================= */
+/* ========== REVIEWS SECTION ====== */
+/* ================================= */
 .reviews {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #faf8f6;
   padding: 90px;
+  display: flex;
+  flex-direction: column;
 }
 .reviewtext {
-  display: flex;
   width: 100%;
-
+  padding: 40px 0 0 30px;
   font-size: 24px;
   color: #333461;
   margin-bottom: 20px;
-  padding: 40px 0 0 30px;
-  line-height: normal;
 }
 .reviewcards {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  height: 50%;
   justify-content: space-around;
+  width: 100%;
   padding: 20px;
 }
 .reviewcard1,
@@ -182,19 +161,12 @@ body {
   margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-.reviewcard1text,
-.reviewcard2text,
-.reviewcard3text {
-  font-size: 16px;
-  color: #5a5d77;
+.reviewcard1text {
+  font-size: 20px;
+  color: #d8d8d8;
 }
-.reviewcard1 img,
-.reviewcard2 img,
-.reviewcard3 img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+.reviewcard1text h1:hover {
+  color: #1cc237;
 }
 .reviewcard1 h3,
 .reviewcard2 h3,
@@ -213,53 +185,35 @@ body {
 .reviewcard1 img,
 .reviewcard2 img,
 .reviewcard3 img {
-  width: 50px;
+  width: 55px;
   height: 50px;
   margin-right: 10px;
+  border-radius: 50%;
 }
-.reviewcard1rating {
-  width: 120px;
-  height: 20px;
-}
-.reviewcard1rating img {
-  width: 120px;
-  height: 20px;
-}
-.reviewcard1text {
-  color: #d8d8d8;
-  font-size: 20px;
-}
-.reviewcard1text h1:hover{
-  color: #1cc237;
-}
-/* Work Section */
+
+/* ================================= */
+/* ========== WORK SECTION ========= */
+/* ================================= */
 .work {
   width: 100%;
-  height: 100%;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 .worktext {
   margin-top: 30px;
   width: 100%;
-  height: 20%;
-  flex: 1 1 35%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center; 
-  
+  text-align: center;
 }
 .workheading {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   width: 55%;
+  text-align: center;
 }
 .worktext h5 {
   font-size: 16px;
@@ -270,56 +224,44 @@ body {
 .worktext h2 {
   font-size: 36px;
   font-weight: 800;
-  line-height: 100%;
   color: #333461;
 }
 .worktext p {
   font-size: 20px;
   color: #5a5d77;
-  font-weight: 400;
   line-height: 30px;
-}
-.workbox {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 70%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin: 1px;
 }
 .workcontainer {
   margin-bottom: 50px;
 }
+.workbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1px;
+}
 .workbox div {
-  padding: 0;
   width: 27%;
   padding: 10px;
-  justify-content: center;
   text-align: center;
 }
 .workbox div img {
   width: 50px;
   height: 50px;
 }
-.workbox div h3 { 
+.workbox div h3 {
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
   color: #333461;
-
 }
-.workbox div p { 
+.workbox div p {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
   color: #667085;
 }
-/*knowmore */
+
+/* ================================= */
+/* ========== FAQ SECTION ========== */
+/* ================================= */
 .knowmore {
   display: flex;
   flex-direction: column;
@@ -327,72 +269,60 @@ body {
   padding: 50px;
   background-color: #fff;
 }
-
 .knowmoretext {
   text-align: center;
   width: 50%;
 }
-
 .knowmoretext h2 {
   font-size: 48px;
   color: #333461;
   font-weight: 800;
 }
-
 .knowmoretext p {
   font-size: 20px;
   color: #5a5d77;
   line-height: 1.6;
 }
-
 .knowmorefaqs {
   width: 55%;
   margin-top: 30px;
 }
-
 .faq {
   border-bottom: 1px solid #ccc;
   padding: 15px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .faq:hover {
   background-color: #fafafa;
 }
-
 .faq h3 {
   font-size: 18px;
   font-weight: 600;
   position: relative;
 }
-
 .faq h3::after {
   content: '⊕';
   position: absolute;
   right: 0;
-  font-weight: bold;
   color: #18692e;
+  font-weight: bold;
   transition: transform 0.3s ease;
 }
-
 .faq.active h3::after {
   content: 'Θ';
   transform: rotate(180deg);
 }
-
 .faq p {
-  margin-top: 10px;
   display: none;
   font-size: 16px;
   color: #4a556c;
   line-height: 1.5;
+  margin-top: 10px;
 }
-
 .faq.active p {
   display: flex;
 }
-
 .anyquestions {
   width: 90%;
   text-align: center;
@@ -401,160 +331,84 @@ body {
   padding: 30px 20px;
   margin-top: 50px;
 }
-
 .anyquestions h2 {
   font-size: 24px;
   color: #333461;
   margin-bottom: 10px;
 }
-
 .anyquestions p {
-  color: #5a5d77;
   font-size: 17px;
+  color: #5a5d77;
   margin-bottom: 20px;
 }
-
 .anyquestions button {
   background-color: #20ad96;
   border: none;
   padding: 10px 30px;
-  color: #fff;
   font-size: 16px;
+  color: #fff;
   border-radius: 8px;
   cursor: pointer;
 }
-
 .anyquestions button:hover {
   background-color: #1b9c87;
 }
 
-/*responsive design */
+/* ================================= */
+/* ========== MEDIA QUERIES ======== */
+/* ================================= */
 @media (max-width: 992px) {
-  .herotext{
-    width: 100%;
-    max-width: 100%;
-  }
   .hero {
     flex-direction: column;
-    align-items: center;
     padding: 20px 10px;
   }
-
+  .herotext,
   .leftside1,
   .right {
-    flex: 1 1 100%;
-    min-width: unset;
+    width: 100%;
+    padding: 20px;
     text-align: center;
   }
-
-  .heroimg img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .success {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .herotext {
-    padding: 20px;
-  }
-
   .heroimg img {
     width: 100%;
     height: auto;
   }
-
-  .introtext,
-  .introheading,
-  .introparagraph {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .introservices div {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
   .reviewcards,
   .blogcards {
     flex-direction: column;
     align-items: center;
   }
-
   .reviewcard1,
   .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
-    width: 90%;
-  }
-
-  .freeguide {
-    flex-direction: column;
-  }
-
-  .freeguideright,
-  .freeguideleft {
-    width: 100%;
-    height: auto;
-  }
-
-  .freeguideproduct img {
-    width: 100%;
-    height: auto;
-  }
-
-  .cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ctacontainer {
+  .reviewcard3 {
     width: 90%;
   }
 }
-/* Hide menu by default on small screens */
-
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
-
   .menu {
     display: none;
     width: 100%;
   }
-
   .menu.open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
   }
-
-  .menu nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
+  .menu nav,
   .menu ul {
     flex-direction: column;
-    gap: 10px;
     width: 100%;
     padding-left: 0;
+    gap: 10px;
   }
-
   .menu li {
     padding: 10px 20px;
     width: 100%;
   }
-
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
@@ -568,68 +422,28 @@ body {
   .ctacontainer {
     flex-direction: column;
   }
-
   .herotext,
-  .heroimg,
-  .introheading,
-  .introparagraph,
-  .freeguideright,
-  .freeguideleft,
-  .ctaleft,
-  .ctaright {
+  .heroimg {
     width: 100%;
+    padding: 20px;
   }
   .herotext h1 {
     font-size: 32px;
   }
-
-  .herotext {
-    width: 100%;
-    padding: 20px;
-  }
-
   .heroimg img {
     width: 90%;
   }
-
-  .introheading,
-  .introparagraph {
-    font-size: 18px;
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .introservices div {
-    width: 100%;
-    padding: 10px;
-  }
-
   .reviewcard1,
   .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
+  .reviewcard3 {
     width: 100%;
     padding: 10px;
   }
-
-  .freeguide {
-    padding: 20px;
-  }
-
-  .ctaimg {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
   .subscribebutton {
     flex-direction: column;
     width: 100%;
     gap: 10px;
   }
-
   .subscribebutton input,
   .subscribebutton button {
     width: 100%;
