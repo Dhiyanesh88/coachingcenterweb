@@ -18,6 +18,7 @@ body {
   height: auto;
   max-width: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Kumbh Sans";
@@ -160,35 +161,58 @@ body {
   top: 0;
   right: 0;
 }
-/* Testmonials */
-.testmonials {
-  width: 100%;
-  flex-direction: row;
-  display: flex;
+/* Testimonials */
+.testimonials {
+   background-color: #ffffff;
+   padding: 60px 80px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   margin-bottom: 50px;
 }
-.testmonialstext {
-  flex: 1 1 70%;
-    width: 70%;
+.testimonials-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        align-content: space-between;
+      }
+
+.testimonialstext {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 70%;
+  flex-direction: column;
+
 }
+.testimonialstext h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+ }
+.testimonialstext p {
+  font-size: 20px;
+  color: #5a5d77;
+  font-weight: 400;
+  }
 .startbutton {
   flex: 1 1 30%;
-  width: 30%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 .startbutton button{
-  width: 50%;
-  background-color: #20AD96;
-  border: none;
-  color: #ffffff;
-  font-size: 20px;
+  padding: 16px 32px;
+background-color: #20ad96;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 600;
+ cursor: pointer;
+  white-space: nowrap;
 }
+
 /* Review */
 .reviews {
   width: 100%;
@@ -224,7 +248,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-end;
@@ -239,6 +263,7 @@ body {
   width: 100%; 
   padding: 30px 0 70px 0;
   height: 50%;
+  position: relative;
 }
 .workheading {
   width: 50%;
@@ -311,22 +336,17 @@ body {
   padding: 50px;
   background-color: rgb(255, 255, 255);
   justify-content: center;
+  margin-top: -60px;
 }
 .workbelowcontainer {
-  position: relative;
-  width: 100%;
-  max-width: 480px;
+  width: 90%;
+  max-width: 768px;
 }
 .video{
-  width: 200px;
-  height: 200px;
-  z-index: 4;
-  top: 0;
-  position: relative;
+  width: 100%;
   height: auto;
-  display: flex;
   border-radius: 10px;
-  top: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /*download*/
@@ -342,7 +362,7 @@ body {
     margin: 45px;
 }
 .downloadtext {
-  display: flex;
+    display: flex;
     flex-direction: column;
     width: 90%;
     height: 50%;
@@ -385,21 +405,38 @@ body {
   border-width: 1px;
   border: none;
 }
-.downloadtext h6 {
-    width: 70%;
-    height: 50%;
-    color: rgba(51, 52, 97, 1);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 25px;
-  letter-spacing: 0%;
-}
 .downloadtext span {
-    width: 70%;
-    height: 50%;
-    color: rgb(12, 104, 44);
+  width: 70%;
+  height: 50%;
+  color: rgb(12, 104, 44);
   font-weight: 800;
   font-size: 48px;
   line-height: 56px;
   letter-spacing: -1%;
+}
+.reviewcredits {
+  display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 50%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reviewcredits h6 {
+  width: 70%;
+    height: 50%;
+    color: rgba(74, 85, 108, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-top: 60px;
+}
+.reviewcredits img {
+  width: 9%;
+    height: 15%;
+    padding: 10px;
 }
