@@ -428,7 +428,8 @@ body {
   color: #333461;
   text-decoration: none;
   margin: 0 10px;
-}
+} 
+
 /* web credits */
 .webcredits #company {
   display: flex;
