@@ -722,3 +722,83 @@ width: 80%;
   background-color: #1b9c87;
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 480px) {
+   .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
+  }
+}

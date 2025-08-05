@@ -516,7 +516,7 @@ body {
   text-decoration: none;
 }
 /*responsive design */
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .headerbg,
   .herotext,
   .footer {
@@ -609,7 +609,7 @@ body {
 }
 /* Hide menu by default on small screens */
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .hamburger {
     display: flex;
   }
@@ -650,77 +650,42 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .hero,
-  .intro,
-  .freeguide,
-  .cta,
-  .ctacontainer {
+   .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
   }
 
-  .herotext,
-  .heroimg,
-  .introheading,
-  .introparagraph,
-  .freeguideright,
-  .freeguideleft,
-  .ctaleft,
-  .ctaright {
-    width: 100%;
-  }
-  .herotext h1 {
-    font-size: 32px;
-  }
-
-  .herotext {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .heroimg img {
-    width: 90%;
-  }
-
-  .introheading,
-  .introparagraph {
-    font-size: 18px;
+  .menu nav {
     flex-direction: column;
-    padding: 10px;
-  }
-
-  .introservices div {
+    align-items: flex-start;
     width: 100%;
-    padding: 10px;
   }
 
-  .reviewcard1,
-  .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .freeguide {
-    padding: 20px;
-  }
-
-  .ctaimg {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-
-  .subscribebutton {
+  .menu ul {
     flex-direction: column;
-    width: 100%;
     gap: 10px;
+    width: 100%;
+    padding-left: 0;
   }
 
-  .subscribebutton input,
-  .subscribebutton button {
+  .menu li {
+    padding: 10px 20px;
     width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
   }
 }

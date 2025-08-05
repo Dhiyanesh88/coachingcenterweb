@@ -375,95 +375,596 @@ body {
 /* ================================= */
 /* ========== MEDIA QUERIES ======== */
 /* ================================= */
-@media (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* ========== HERO SECTION ========== */
   .hero {
     flex-direction: column;
-    padding: 20px 10px;
-  }
-  .herotext,
-  .leftside1,
-  .right {
-    width: 100%;
     padding: 20px;
+  }
+
+  .herobg {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .herotext {
+    width: 90%;
+    padding: 0 20px;
+    align-items: center;
     text-align: center;
   }
-  .heroimg img {
+
+  .herotext h6 {
+    font-size: 15px;
+  }
+
+  .herotext h1 {
+    font-size: 50px;
+  }
+
+  .herotext p {
+    font-size: 18px;
+  }
+
+  .freeguideframe {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .heroimg {
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .heroimg img {
+    width: 360px;
     height: auto;
   }
-  .reviewcards,
-  .blogcards {
+
+  /* ========== STARTUP COMPANIES SECTION ========== */
+  .startupcompanies {
+    padding: 50px 20px;
+  }
+
+  .startupcompaniestext h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .startupcompanieslogos img {
+    width: 120px;
+    height: 35px;
+  }
+
+  /* ========== REVIEWS SECTION ========== */
+  .reviews {
+    padding: 60px 20px;
+  }
+
+  .reviewtext {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .reviewcards {
     flex-direction: column;
     align-items: center;
   }
+
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
     width: 90%;
   }
+
+  .reviewcard1text {
+    font-size: 18px;
+  }
+
+  .reviewcard1text h1:hover {
+    color: #1cc237;
+  }
+
+  .reviewcard1 h3,
+  .reviewcard2 h3,
+  .reviewcard3 h3 {
+    font-size: 18px;
+  }
+
+  .reviewcard1 p,
+  .reviewcard2 p,
+  .reviewcard3 p {
+    font-size: 14px;
+  }
+
+  .reviewcard1 img,
+  .reviewcard2 img,
+  .reviewcard3 img {
+    width: 50px;
+    height: 45px;
+  }
+
+  /* ========== WORK SECTION ========== */
+  .worktext {
+    padding: 20px 10px;
+  }
+
+  .workheading {
+    width: 90%;
+  }
+
+  .worktext h5 {
+    font-size: 14px;
+  }
+
+  .worktext h2 {
+    font-size: 28px;
+  }
+
+  .worktext p {
+    font-size: 18px;
+  }
+
+  .workbox div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .workbox div img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .workbox div h3 {
+    font-size: 18px;
+  }
+
+  .workbox div p {
+    font-size: 14px;
+  }
+
+  /* ========== FAQ SECTION ========== */
+  .knowmore {
+    padding: 40px 20px;
+  }
+
+  .knowmoretext {
+    width: 90%;
+  }
+
+  .knowmoretext h2 {
+    font-size: 36px;
+  }
+
+  .knowmoretext p {
+    font-size: 18px;
+  }
+
+  .knowmorefaqs {
+    width: 90%;
+  }
+
+  .faq h3 {
+    font-size: 16px;
+  }
+
+  .faq p {
+    font-size: 14px;
+  }
+
+  .anyquestions {
+    padding: 20px;
+  }
+
+  .anyquestions h2 {
+    font-size: 20px;
+  }
+
+  .anyquestions p {
+    font-size: 16px;
+  }
+
+  .anyquestions button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
 }
-@media (max-width: 768px) {
-  .hamburger {
+@media (min-width: 481px) and (max-width: 768px) {
+   .hamburger {
     display: flex;
   }
+
   .menu {
     display: none;
     width: 100%;
   }
+
   .menu.open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
   }
-  .menu nav,
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
   .menu ul {
     flex-direction: column;
+    gap: 10px;
     width: 100%;
     padding-left: 0;
-    gap: 10px;
   }
+
   .menu li {
     padding: 10px 20px;
     width: 100%;
   }
+
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
   }
-}
-@media (max-width: 480px) {
-  .hero,
-  .intro,
-  .freeguide,
-  .cta,
-  .ctacontainer {
+
+  /* ========== HERO SECTION ========== */
+  .hero {
     flex-direction: column;
-  }
-  .herotext,
-  .heroimg {
-    width: 100%;
     padding: 20px;
   }
-  .herotext h1 {
-    font-size: 32px;
+
+  .herobg {
+    height: auto;
+    padding: 30px 15px;
   }
+
+  .herotext {
+    width: 100%;
+    padding: 0 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .herotext h6 {
+    font-size: 14px;
+  }
+
+  .herotext h1 {
+    font-size: 40px;
+  }
+
+  .herotext p {
+    font-size: 16px;
+  }
+
+  .freeguideframe {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+
+  .heroimg {
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .heroimg img {
+    width: 300px;
+    height: auto;
+  }
+
+  /* ========== STARTUP COMPANIES SECTION ========== */
+  .startupcompanies {
+    padding: 40px 15px;
+  }
+
+  .startupcompaniestext h2 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .startupcompanieslogos img {
+    width: 110px;
+    height: 30px;
+  }
+
+  /* ========== REVIEWS SECTION ========== */
+  .reviews {
+    padding: 50px 15px;
+  }
+
+  .reviewtext {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .reviewcards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviewcard1,
+  .reviewcard2,
+  .reviewcard3 {
     width: 90%;
   }
+
+  .reviewcard1text {
+    font-size: 16px;
+  }
+
+  .reviewcard1 h3,
+  .reviewcard2 h3,
+  .reviewcard3 h3 {
+    font-size: 16px;
+  }
+
+  .reviewcard1 p,
+  .reviewcard2 p,
+  .reviewcard3 p {
+    font-size: 14px;
+  }
+
+  .reviewcard1 img,
+  .reviewcard2 img,
+  .reviewcard3 img {
+    width: 45px;
+    height: 40px;
+  }
+
+  /* ========== WORK SECTION ========== */
+  .worktext {
+    padding: 20px 10px;
+  }
+
+  .workheading {
+    width: 100%;
+  }
+
+  .worktext h5 {
+    font-size: 13px;
+  }
+
+  .worktext h2 {
+    font-size: 24px;
+  }
+
+  .worktext p {
+    font-size: 16px;
+  }
+
+  .workbox div {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .workbox div img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .workbox div h3 {
+    font-size: 16px;
+  }
+
+  .workbox div p {
+    font-size: 14px;
+  }
+
+  /* ========== FAQ SECTION ========== */
+  .knowmore {
+    padding: 30px 15px;
+  }
+
+  .knowmoretext {
+    width: 100%;
+  }
+
+  .knowmoretext h2 {
+    font-size: 30px;
+  }
+
+  .knowmoretext p {
+    font-size: 16px;
+  }
+
+  .knowmorefaqs {
+    width: 100%;
+  }
+
+  .faq h3 {
+    font-size: 16px;
+  }
+
+  .faq p {
+    font-size: 14px;
+  }
+
+  .anyquestions {
+    padding: 20px;
+  }
+
+  .anyquestions h2 {
+    font-size: 18px;
+  }
+
+  .anyquestions p {
+    font-size: 14px;
+  }
+
+  .anyquestions button {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+   .hamburger {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
+  }
+
+   /* ========== GLOBAL TEXT STYLES ========== */
+  h1, h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+
+  p, h5, h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+
+  img {
+    display: flex !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
+  }
+
+  /* ========== HERO SECTION ========== */
+  .hero {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .herobg {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .herotext {
+    width: 100%;
+    padding: 0 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .freeguideframe {
+    width: 140px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .heroimg {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  /* ========== STARTUP COMPANIES SECTION ========== */
+  .startupcompanies {
+    padding: 30px 10px;
+  }
+
+  .startupcompaniestext h2 {
+    text-align: center;
+  }
+
+  .startupcompanieslogos img {
+    width: 90px !important;
+    height: 25px !important;
+  }
+
+  /* ========== REVIEWS SECTION ========== */
+  .reviews {
+    padding: 40px 10px;
+  }
+
+  .reviewcards {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
     width: 100%;
-    padding: 10px;
   }
-  .subscribebutton {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
+
+  .reviewcard1 img,
+  .reviewcard2 img,
+  .reviewcard3 img {
+    width: 40px !important;
+    height: 35px !important;
   }
-  .subscribebutton input,
-  .subscribebutton button {
+
+  /* ========== WORK SECTION ========== */
+  .worktext {
+    padding: 15px 5px;
+  }
+
+  .workheading {
     width: 100%;
+  }
+
+  .workbox div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .workbox div img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  /* ========== FAQ SECTION ========== */
+  .knowmore {
+    padding: 25px 10px;
+  }
+
+  .knowmoretext {
+    width: 100%;
+  }
+
+  .knowmorefaqs {
+    width: 100%;
+  }
+
+  .anyquestions {
+    padding: 15px;
+  }
+
+  .anyquestions button {
+    font-size: 12px;
+    padding: 6px 15px;
   }
 }
