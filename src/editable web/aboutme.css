@@ -69,6 +69,7 @@ body {
   font-size: 16px;
   color: #5a5d77;
   margin-bottom: 20px;
+  width: 70%;
 }
 .heroimg {
   flex: 1 1 50%;
