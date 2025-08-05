@@ -53,24 +53,6 @@ body {
   align-items: flex-start;
   text-align: left;
 }
-.herotext h6 {
-  font-size: 17px;
-  font-weight: 200;
-  color: #afafb0;
-  margin-bottom: 1px;
-}
-.herotext h1 {
-  font-size: 65px !important;
-  color: #333461;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-.herotext p {
-  font-size: 16px;
-  color: #5a5d77;
-  margin-bottom: 20px;
-  width: 70%;
-}
 .heroimg {
   flex: 1 1 50%;
   width: 80%;
@@ -79,6 +61,41 @@ body {
   align-items: center;
   margin-top: 50px;
 }
+.herotext h6 {
+  font-size: 17px;
+  font-weight: 200;
+  color: #afafb0;
+  margin-bottom: 1px;
+}
+
+.herotext h1 {
+  font-size: 76px;
+  color: #333461;
+  font-weight: 2000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext p {
+  font-size: 20px;
+  color: #5a5d77;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.freeguideframe {
+ width: 190px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #20ad96;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
 .heroimg img {
   width: 480px;
   height: 620px;
