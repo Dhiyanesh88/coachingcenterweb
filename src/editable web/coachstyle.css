@@ -889,6 +889,7 @@ body {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
+  
   .vector {
     height: auto;
     display: flex;
@@ -936,7 +937,7 @@ body {
   .heroimg {
     height: 700px !important;
     margin-top: 20px !important;
-    padding: 0 15px !important;
+    padding: 10px 45px !important;
   }
 
   .image-container {

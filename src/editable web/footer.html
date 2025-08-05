@@ -9,6 +9,12 @@
       rel="stylesheet"
     />
     <style>
+      .body {
+        padding: sticky;
+        margin: 0;
+        overflow-x: hidden;
+        width: 100%;
+      }
       /* Full-width footer container */
       .footer-container {
         width: 100%;
@@ -24,7 +30,7 @@
       /* Subscribe Section */
       .subscribe-section {
         background-color: #FAF8F6;
-        padding: 60px 160px;
+        padding: 60px 0px 60px 160px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -91,22 +97,17 @@
       /* Main Footer Content */
       .footer-content {
         display: flex;
-        justify-content: space-between;
-        margin: 60px 100px;
         width: 100%;
+        justify-content: flex-end;
       }
 
       .brand-info {
         width: 30%;
-        min-width: 250px;
       }
 
-      .logo {
+      .logoend {
         width: 50px;
         height: 50px;
-        margin-bottom: 10px;
-        background-color: #ddd;
-        border-radius: 8px;
       }
 
       .brand-info p {
@@ -119,17 +120,20 @@
       .footer-links {
         display: flex;
         width: 60%;
-        justify-content: space-between;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 170px;
       }
 
       .links-column {
-        width: 45%;
+        display: flex;
+        flex-direction: column;
       }
 
       .links-column h3 {
         font-size: 16px;
         font-weight: 700;
-        margin-bottom: 20px;
+        padding-bottom: 10px;
       }
 
       .links-column ul {
@@ -137,19 +141,22 @@
       }
 
       .links-column li {
-        margin-bottom: 12px;
+        padding-bottom: 2px;
       }
       
 
       .links-column a,
       .contact-info p {
-        font-size: 14px;
-        color: #5a5d77;
+        color: rgba(74, 85, 108, 0.5);
         text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
       }
 
       .contact-info p {
-        margin-bottom: 12px;
+        padding-bottom: 14px;
       }
 
       /* Footer Bottom */
@@ -177,7 +184,6 @@
       .social-icon {
         width: 24px;
         height: 24px;
-        background-color: #ddd;
         border-radius: 50%;
       }
 
@@ -315,7 +321,7 @@
         <!-- Main Footer Content -->
         <div class="footer-content">
           <div class="brand-info">
-            <div class="logo"></div>
+            <img src="../images/happy.jpg" alt="happy" class="logoend">
             <p>
               Design amazing digital experiences that create more happy in the
               world.
@@ -326,11 +332,11 @@
             <div class="links-column">
               <h3>Pages</h3>
               <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Extra Sales/Landingpage</a></li>
-                <li><a href="#">Free guide</a></li>
+                <li><a href="../editable web/coachpage.html">Home</a></li>
+                <li><a href="../editable web/service.html">Services</a></li>
+                <li><a href="../editable web/aboutme.html">About us</a></li>
+                <li><a href="../editable web/extrasalespage.html">Extra Sales/Landingpage</a></li>
+                <li><a href="../editable web/freeguide.html">Free guide</a></li>
               </ul>
             </div>
 
@@ -348,9 +354,9 @@
         <div class="footer-bottom">
           <p class="copyright">Made with a © by HappyDigital</p>
           <div class="social-links">
-            <div class="social-icon"></div>
-            <div class="social-icon"></div>
-            <div class="social-icon"></div>
+            <img src="../images/Social icon.png" alt="f" class="social-icon">
+            <img src="../images/Social icon (1).png" alt="f" class="social-icon">
+            <img src="../images/Social icon (2).png" alt="f" class="social-icon">
           </div>
         </div>
       </div>
