@@ -143,7 +143,6 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  /* padding: 0 0 0 20px; */
 }
 .introheading {
   display: flex;
@@ -159,7 +158,6 @@ body {
   font-size: 16px;
   color: #5a5d77;
   margin-bottom: 20px;
-  padding: 70px 0px 0 30px;
 }
 .introservices {
   display: flex;
@@ -167,7 +165,7 @@ body {
   width: 100%;
 
   justify-content: space-around;
-  padding: 30px 50px 60px 0;
+  padding: 30px 0px 60px 0;
 }
 .introservices div {
   width: 30%;
@@ -218,7 +216,6 @@ body {
   width: 100%;
   height: 50%;
   justify-content: space-evenly;
-  padding: 30px;
 }
 .reviewcard1,
 .reviewcard2,
@@ -280,7 +277,6 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   padding-left: 80px;
-  padding-right: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -299,8 +295,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 50%;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-evenly;
 }
 .blogcard1,
 .blogcard2,
@@ -436,7 +431,7 @@ body {
   color: #5a5d77;
   margin-bottom: 20px;
   font-weight: 400;
-  letter-spacing: 0%;
+ 
   width: 85%;
 }
 .p1{
@@ -529,251 +524,356 @@ body {
   padding: 10px;
 }
 /*responsive design */
-@media (min-width: 769px) and (max-width: 1024px) {
 
-  /* 🟦 Hero Section  */
-  .hero {
-    flex-direction: column !important;
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* General */
+  * {
+    box-sizing: border-box;
+  }
+  /* Hero Section */
+.hero {
+  flex-direction: column !important;
     align-items: center !important;
     padding: 20px 10px !important;
     width: 100% !important;
     box-sizing: border-box;
-  }
+}
 
-  .herobg {
-    flex-direction: row !important;
-  }
+.herobg {
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  flex-direction: row !important;
+}
 
-  /* .vector {
-    height: auto;
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-  } */
-
-  .herotext {
-    width: 100% !important;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .leftside1,
-  .right {
-    width: 50% !important;
+/* Left Side */
+.leftside1 {
+  flex: 1 1 40%;
+  min-width: 300px;
+  padding: 15px 0 0 10px;
+  width: 50% !important;
     max-width: 50% !important;
     justify-content: center;
     display: flex;
     flex-direction: column;
-  }
-  .image-container {
-    width: 100% !important;
+}
+
+.vector img {
+  width: 110px;
+  height: 18px;
+  margin-bottom: 3px;
+}
+.herotext {
+  padding: 50px 0 0 50px;
+  width: 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.herotext h6 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 1px;
+}
+
+.herotext h1 {
+  font-size: 76px;
+  font-weight: 2000;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.herotext p {
+  font-size: 20px;
+  color: #5a5d77;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.freeguideframe {
+ width: 190px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Right Side */
+.right {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+  width: 50% !important;
+  max-width: 50% !important;
+  flex-direction: column;
+}
+.heroimg {
+  height: auto;
+  display: flex;
+  border-radius: 10px;
+  width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
-  }
-  .heroimg {
-    width: 100% !important;
+}
+.image-container {
+  position: relative;
+  margin-top: 30px;
+  margin-right: 1em;
+  width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
-  }
+    display: flex;
+}
 
-  .heroimg img {
-    display: flex !important;
-    margin: 0 auto !important;
-    max-width: 100% !important;
-    overflow: hidden;
-  }
-
-  .success {
-    position: absolute !important;
+/* Success badge */
+.success {
+  position: absolute;
+  top: -20px;
+  transform: translateX(-50%);
+  z-index: 2;
+  position: absolute !important;
     top: 10px !important;
     left: 10px !important;
     width: auto !important;
     height: auto !important;
     transform: none !important;
-  }
+}
 
-  /* 🟩 Intro Section – Stacked Content, Full Width */
+
+  /* 🟩 Intro Section */
   .intro {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 10px 15px !important;
-    box-sizing: border-box;
+    padding: 30px 30px !important;
+    display: flex;
+    flex-direction: column;
   }
 
   .introtext,
   .introheading,
-  .introparagraph,
-  .introservices div {
-    width: 100% !important;
-    padding: 0 15px !important;
-    text-align: center !important;
-    box-sizing: border-box;
-  }
-
-  .introservices div {
-    margin-bottom: 20px !important;
+  .introparagraph {
+    text-align: center;
+    padding: 0 20px !important;
     display: flex;
+    flex-direction: row;
   }
 
-  /* 🟨 Reviews Section – Vertical Cards, Centered */
+  .introheading {
+    font-size: 20px !important;
+    text-align: start;
+    width: 50px;
+  }
+
+  .introparagraph {
+    font-size: 16px !important;
+  }
+
+  .introservices {
+    flex-wrap: wrap !important;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .introservices div {
+    width: 30% !important;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  /* 🟨 Reviews Section */
   .reviews {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 15px 15px !important;
-    box-sizing: border-box;
+    padding: 50px 30px !important;
+  }
+
+  .reviewtext {
+    font-size: 24px !important;
     display: flex;
     flex-direction: column;
   }
 
   .reviewcards {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    /* padding: 0 15px !important; */
-    box-sizing: border-box;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    width: 90% !important;
-    margin: 10px auto !important;
-    box-sizing: border-box;
-  }
-
-  .reviewtext,
-  .reviewcard1text {
-    font-size: medium !important;
-    line-height: 1.5 !important;
-    text-align: center;
-  }
-
-  .reviewcard1rating {
-    height: auto;
+    width: 30% !important;
+    height: auto !important;
+    margin: 15px auto;
     display: flex;
-    margin: 10px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* 🟧 Blog Section – Vertical Cards, Centered */
-  .blogs {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 15px 15px !important;
-    box-sizing: border-box;
-  }
-  .blogtext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
+  .reviewcard1text {
     text-align: center !important;
   }
 
+  /* 🟧 Blogs Section */
+  .blogs {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blogtext {
+    font-size: 22px !important;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
 
   .blogcards {
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 0 15px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
   .blogcard1,
   .blogcard2,
   .blogcard3 {
-    width: 90% !important;
-    margin: 10px auto !important;
-    box-sizing: border-box;
+    width: 30% !important;
+    margin: 15px auto;
   }
 
   .moreblogframe {
     text-align: center !important;
-    width: auto !important;
-    cursor: pointer !important;
+    margin-top: 20px;
   }
 
-  /* 🟪 Free Guide Section – Column Layout, Full Width */
+  /* 🟪 Free Guide Section */
   .freeguide {
-    flex-direction: column !important;
-    align-items: center !important;
-    width: 100% !important;
-    padding: 15px !important;
-    box-sizing: border-box;
+    padding: 30px 20px !important;
+    display: flex;
+    flex-direction: row;
   }
 
   .freeguideleft,
-  .freeguideright,
+  .freeguideright {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .freeguidetext {
+    margin-top: 30px;
+  }
+
+  .freeguidetext h2 {
+    font-size: 40px !important;
+  }
+
+  .freeguidetext p {
+    font-size: 16px !important;
+  }
+
   .freeguideproduct img {
     width: 100% !important;
-    padding: 0 15px !important;
-    box-sizing: border-box;
-  }
-
-  .freeguideproduct {
-    display: flex;
-    height: auto;
-    width: 100%;
-  }
-
-  .freeguideproduct img {
     height: auto !important;
-    max-width: 100%;
-    display: flex;
     margin: 0 auto;
   }
 
   .freeguideicon {
-    max-width: 60px;
-    display: flex;
     margin: 10px auto;
   }
 
-  .freeguidetext {
-    line-height: 1.6 !important;
-  }
-
-  /* 🟥 CTA Section – Column Layout, Centered */
+  /* 🟥 CTA Section */
   .cta,
   .ctacontainer {
-    flex-direction: column !important;
+    flex-direction: row !important;
     align-items: center !important;
-    width: 100% !important;
-    padding: 10px 15px !important;
-    box-sizing: border-box;
   }
 
   .ctaleft,
   .ctaright {
-    max-width: 90% !important;
     width: 100% !important;
-    text-align: center;
+    max-width: 100% !important;
+    padding: 0px 0px;
+  }
+
+  .ctaleft h2 {
+    font-size: 30px !important;
+  }
+
+  .ctaleft p {
+    font-size: 18px !important;
+    line-height: 1.5;
   }
 
   .ctaimg {
-    height: auto;
-    display: flex;
-    width: 100%;
-    margin: 10px 0;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .booknow {
-    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 16px;
     margin-top: 15px;
-    padding: 10px 20px;
-    display: inline-block;
   }
 }
+
 /* Hide menu by default on small screens */
 
 
 @media (min-width: 481px) and (max-width: 768px) {
   /* ⏹️ Navigation */
   .hamburger {
-    display: flex !important;
+    display: flex;
   }
 
   .menu {
-    display: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
   }
 
   /* 🟦 Hero Section */
@@ -789,6 +889,7 @@ body {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
+  
   .vector {
     height: auto;
     display: flex;
@@ -836,7 +937,7 @@ body {
   .heroimg {
     height: 700px !important;
     margin-top: 20px !important;
-    padding: 0 15px !important;
+    padding: 10px 45px !important;
   }
 
   .image-container {
@@ -1057,7 +1158,8 @@ body {
   .freeguideproduct {
     width: 100% !important;
     height: auto !important;
-    display: block !important;
+    display: flex !important;
+
     margin: 0 auto !important;
     box-sizing: border-box !important;
   }
@@ -1128,17 +1230,45 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-
-   /* ⏹️ Navigation */
+@media (max-width: 480px)  {
+  /* ⏹️ Navigation */
   .hamburger {
-    display: flex !important;
+    display: flex;
   }
 
   .menu {
-    display: none !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    display: none;
+    width: 100%;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .menu nav {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .menu li {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .freeguideframe {
+    margin: 10px 20px;
+    align-self: flex-start;
   }
 
   /* 🟦 Hero Section */
@@ -1258,13 +1388,15 @@ body {
   .introtext,
   .introheading,
   .introparagraph {
-    text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    box-sizing: border-box !important;
-    width: 100% !important;
-    padding: 0 15px !important;
-  }
+        text-align: center;
+        padding: 0 10px !important;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
   .introservices {
     display: flex !important;
@@ -1422,7 +1554,8 @@ body {
   .freeguideproduct {
     width: 100% !important;
     height: auto !important;
-    display: block !important;
+    display: flex !important;
+
     margin: 0 auto !important;
     box-sizing: border-box !important;
   }
@@ -1492,5 +1625,7 @@ body {
     box-sizing: border-box !important;
   }
 }
+
+
 
 

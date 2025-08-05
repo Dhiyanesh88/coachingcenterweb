@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>extra sales page</title>
+    <link rel="stylesheet" href="extrasalespage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+        fetch("../editable web/header.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("header-placeholder").innerHTML = data;
+        });
+        
+        fetch("../editable web/footer.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+        });
+        function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('open');
+  }
+  document.querySelectorAll(".faq").forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+      });
+    });
+</script>
+<body>
+    <header id="header-placeholder"></header>
+    <section class="hero">
+  <div class="herobg">
+    <div class="leftside1">
+      <div class="vector">
+        <img src="../images/Vector (2).png" alt="Decoration" />
+      </div>
+      <div class="herotext">
+        <h6>Proven strategies backed by science for success.</h6>
+        <h1>Self esteem therapy</h1>
+        <p>
+          I help people to discover their true potential and live a fulfilling life...
+          Discover the simple 3 steps that I discovered to hack productivity.
+          It just works and it is begin using backed by science.
+          Wanna transform your life?
+        </p>
+        <button class="freeguideframe" href = "../editable web/freeguide.html">Get your free guide now</button>
+      </div>
+    </div>
+    <div class="right">
+        <div class="image-container">
+            <img src="../images/exrasales.jpg" class="heroimg" />
+        </div>
+    </div>
+  </div>
+    </section>
+    <section class="Work1">
+      <div class="worktext1">
+        <div class="workheading1">
+          <h5>How does it work?</h5>
+          <h2>Are you ready to transform your life?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua minim
+            veniam.
+          </p>
+        </div>
+      </div>
+      <div class="workcontainer1">
+        <div class="workbox1">
+          <div>
+            <img src="../images/Featured icon (3).png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <img src="../images/Featured icon (1).png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <img src="../images/Featured icon.png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <img src="../images/Featured icon (5).png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <img src="../images/Featured icon (6).png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <img src="../images/Featured icon.png" alt="Featured icon" />
+            <h3>Ready to start? Let’s talk!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Work2">
+            <div class="worktext2">
+                <div class="workheading2">
+                    <h5>How does it work</h5>
+                    <h2>Are you ready to transform your life?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
+                    </p>
+                </div>
+                <div class="workcontainer2">
+                    <div>
+                        <a></a>
+                        <h3>Online consultation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                    <div>
+                        <a></a>
+                        <h3>Ready to start? Let’s talk!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="workbelow2">
+                <div class="workbelowcontainer2">
+                    <img src="../images/blog1.png" class="video">
+                </div>
+            </div> 
+    </section>
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonialstext">
+                <p>Testimonials</p>
+                <h1>Results that speak for themselves</h1>
+            </div>
+            <div class="startbutton">
+                <button>Get Started</button>
+            </div> 
+        </div>
+    </section>
+     <section class="reviews">
+            <div class="reviewcards">
+                <div class="block">
+                    <div class="reviewcard">
+                        <div class="reviewcard1text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="../images/review1.png" class="reviewcard1img"><br>
+                        <strong>Naam</strong>
+                        <h5>Bedrijf</h5>
+                        <img src="../images/Stars.png" class="reviewcard1rating">
+                        </div>
+                    </div>
+                    <div class="reviewcard">
+                        <div class="reviewcard1text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="../images/review1.png" class="reviewcard1img"><br>
+                        <strong>Naam</strong>
+                        <h5>Bedrijf</h5>
+                        <img src="../images/Stars.png" class="reviewcard1rating">
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="reviewcard">
+                        <div class="reviewcard1text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="../images/review1.png" class="reviewcard1img"><br>
+                        <strong>Naam</strong>
+                        <h5>Bedrijf</h5>
+                        <img src="../images/Stars.png" class="reviewcard1rating">
+                        </div>
+                    </div>
+                    <div class="reviewcard">
+                        <div class="reviewcard1text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="../images/review1.png" class="reviewcard1img"><br>
+                        <strong>Naam</strong>
+                        <h5>Bedrijf</h5>
+                        <img src="../images/Stars.png" class="reviewcard1rating">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="programfor">
+        <div class="programforcontainer">
+            <div class="programfortext">
+                <h5>This is not for everyone!</h5>
+                <h1>This program is perfect for you if...</h1>
+            </div>
+            <div class="programforcompare">
+                <div class="notforyou">
+                    <h3>This is <u>NOT</u> for you if...</h3>
+                    <container>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </container>
+                </div>
+                <div class="foryou">
+                    <h3>This is for you if...</h3>
+                    <container>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div>
+                            <i></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </container>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+            <div class="ctacontainer">
+            <div class="ctaleft">
+                <div class="ctatext">
+                    <h2>Get 15-Minutes Complimentary online session.</h2>
+                    <p>Limited Period Offer. Claim Now.</p>
+                </div>
+                <div class="ctaform">
+                    <button class="booknow">book now</button>
+                </div>
+            </div>
+            <div class="ctaright">
+                <div class="ctaimg">
+                    <img src="../images/cta.png" alt="CTA Image">
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="guarantee">
+        <div class="guarenteecontainer">
+            <img src="../images/guarentee.png" class="guarentee">
+            <h2>Guarantee</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.</p>
+        </div>
+    </section>
+    <section class="knowmore">
+      <div class="knowmoretext">
+        <h2>Good to know.</h2>
+        <p>Everything you need to know about the my services.</p>
+      </div>
+
+      <div class="knowmorefaqs">
+        <div class="faq">
+          <i class="fas fa-minus-circle"></i>
+          <h3>How long does the coaching process take?</h3>
+          <p>
+            Yes, you can try us for free for 30 days. If you want, we’ll provide
+            you with a free, personalized 30-minute onboarding call to get you
+            up and running as soon as possible.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>What if I wanted to end my coaching engagement?</h3>
+          <p>
+            You can end your coaching engagement at any time. We recommend
+            discussing your decision with your coach to ensure a smooth
+            transition.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>Can I change through coaching?</h3>
+          <p>
+            Coaching can help you gain clarity, improve your skills, and achieve
+            your goals more effectively.
+          </p>
+        </div>
+        <div class="faq">
+          <h3>How often do we meet?</h3>
+          <p>
+            Meeting frequency can vary based on your needs and goals. Typically,
+            sessions are scheduled weekly or bi-weekly.
+          </p>
+        </div>
+      </div>
+
+      <div class="anyquestions">
+        <h2>Still have questions?</h2>
+        <p>
+          Can’t find the answer you’re looking for? Please chat to our friendly
+          team.
+        </p>
+        <button>Get in touch</button>
+      </div>
+    </section>
+    <script> 
+      document.querySelectorAll(".faq").forEach((faq) => {
+      faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+      });
+    });
+</script>
+    <footer id="footer-placeholder"></footer>
+</body>
+</html>

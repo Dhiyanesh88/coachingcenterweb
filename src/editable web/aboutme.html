@@ -5,46 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="aboutme.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <script>
-    document.querySelectorAll(".faq").forEach((faq) => {
-      faq.addEventListener("click", () => {
-        faq.classList.toggle("active");
-      });
-    });
-    fetch("../editable web/header.html")
-      .then((res) => res.text())
-      .then((data) => {
-        document.getElementById("header-placeholder").innerHTML = data;
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <script>
+      // FAQ toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".faq").forEach((faq) => {
+          faq.addEventListener("click", () => {
+            faq.classList.toggle("active");
+          });
+        });
+
+        // Load header and footer
+        fetch("../editable web/header.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("header-placeholder").innerHTML = data;
+          });
+
+        fetch("../editable web/footer.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+          });
       });
 
-    fetch("../editable web/footer.html")
-      .then((res) => res.text())
-      .then((data) => {
-        document.getElementById("footer-placeholder").innerHTML = data;
-      });
       function toggleMenu() {
-       document.getElementById('nav-menu').classList.toggle('open');
+        document.getElementById("nav-menu").classList.toggle("open");
       }
-  </script>
+    </script>
+  </head>
   <body>
     <header id="header-placeholder"></header>
+
+    <!-- Hero Section -->
     <section class="hero">
       <div class="herobg">
         <div class="herotext">
           <h6>Proven strategies backed by science for success.</h6>
-          <h1>
-            <b>Live life at the <br />full potential</b>
-          </h1>
+          <h1><b>About me</b></h1>
           <p>
             I help people to discover their true potential and live a fulfilling
-            <br />life... Discover the simple 3 steps that I discovered to hack
-            <br />productivity. It just works and it is begin using backed by
-            science.<br />
+            life... Discover the simple 3 steps that I discovered to hack
+            productivity. It just works and it is begin using backed by science.
             Wanna transform your life?
           </p>
           <button class="freeguideframe">Get your free guide now</button>
@@ -54,6 +56,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Startup Companies Section -->
     <section class="startupcompanies">
       <div class="startupcompaniestext">
         <h2>From startups to the world’s largest companies</h2>
@@ -66,19 +70,17 @@
         <img src="../images/Company logo (4).png" alt="Company Logo" />
       </div>
     </section>
+
+    <!-- Client Reviews Section -->
     <section class="reviews">
       <div class="reviewtext">
-        <h2>
-          <b>Hear out what my <br />clients say about me.</b>
-        </h2>
+        <h2><b>Hear out what my <br />clients say about me.</b></h2>
       </div>
       <div class="reviewcards">
         <div class="reviewcard1">
           <div class="reviewcard1text">
-            <p>
-              "I gained so much confidence in my ability to connect and deepen
-              my relationships with people. "
-            </p>
+            <h1>5/5</h1>
+            <p>"I gained so much confidence in my ability to connect and deepen my relationships with people."</p>
             <h3>Jane</h3>
           </div>
           <div class="reviewcard1img">
@@ -87,39 +89,35 @@
         </div>
         <div class="reviewcard2">
           <div class="reviewcard1text">
-            <p>
-              "I gained so much confidence in my ability to connect and deepen
-              my relationships with people. "
-            </p>
+            <h1>5/5</h1>
+            <p>"I gained so much confidence in my ability to connect and deepen my relationships with people."</p>
             <h3>Catherine</h3>
           </div>
           <div class="reviewcard1img">
-            <img src="../images/review2.png" alt="Client 1" />
+            <img src="../images/review2.png" alt="Client 2" />
           </div>
         </div>
         <div class="reviewcard3">
           <div class="reviewcard1text">
-            <p>
-              "I gained so much confidence in my ability to connect and deepen
-              my relationships with people. "
-            </p>
+            <h1>5/5</h1>
+            <p>"I gained so much confidence in my ability to connect and deepen my relationships with people."</p>
             <h3>Jane</h3>
           </div>
           <div class="reviewcard1img">
-            <img src="../images/review3.png" alt="Client 1" />
+            <img src="../images/review3.png" alt="Client 3" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Work Process Section -->
     <section class="Work">
       <div class="worktext">
         <div class="workheading">
           <h5>How does it work?</h5>
           <h2>Are you ready to transform your life?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-            veniam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
           </p>
         </div>
       </div>
@@ -128,109 +126,71 @@
           <div>
             <img src="../images/Featured icon (3).png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div>
             <img src="../images/Featured icon (1).png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div>
             <img src="../images/Featured icon.png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div>
             <img src="../images/Featured icon (5).png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div>
             <img src="../images/Featured icon (6).png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
           <div>
             <img src="../images/Featured icon.png" alt="Featured icon" />
             <h3>Ready to start? Let’s talk!</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- FAQ Section -->
     <section class="knowmore">
       <div class="knowmoretext">
         <h2>Good to know.</h2>
-        <p>Everything you need to know about the my services.</p>
+        <p>Everything you need to know about my services.</p>
       </div>
 
       <div class="knowmorefaqs">
         <div class="faq">
           <i class="fas fa-minus-circle"></i>
           <h3>How long does the coaching process take?</h3>
-          <p>
-            Yes, you can try us for free for 30 days. If you want, we’ll provide
-            you with a free, personalized 30-minute onboarding call to get you
-            up and running as soon as possible.
-          </p>
+          <p>Yes, you can try us for free for 30 days. We offer a free, personalized 30-minute onboarding call to get you up and running as soon as possible.</p>
         </div>
         <div class="faq">
           <h3>What if I wanted to end my coaching engagement?</h3>
-          <p>
-            You can end your coaching engagement at any time. We recommend
-            discussing your decision with your coach to ensure a smooth
-            transition.
-          </p>
+          <p>You can end your coaching engagement at any time. We recommend discussing your decision with your coach to ensure a smooth transition.</p>
         </div>
         <div class="faq">
           <h3>Can I change through coaching?</h3>
-          <p>
-            Coaching can help you gain clarity, improve your skills, and achieve
-            your goals more effectively.
-          </p>
+          <p>Coaching can help you gain clarity, improve your skills, and achieve your goals more effectively.</p>
         </div>
         <div class="faq">
           <h3>How often do we meet?</h3>
-          <p>
-            Meeting frequency can vary based on your needs and goals. Typically,
-            sessions are scheduled weekly or bi-weekly.
-          </p>
+          <p>Meeting frequency can vary based on your needs and goals. Typically, sessions are scheduled weekly or bi-weekly.</p>
         </div>
       </div>
 
       <div class="anyquestions">
         <h2>Still have questions?</h2>
-        <p>
-          Can’t find the answer you’re looking for? Please chat to our friendly
-          team.
-        </p>
+        <p>Can’t find the answer you’re looking for? Please chat with our friendly team.</p>
         <button>Get in touch</button>
       </div>
     </section>
+
     <footer id="footer-placeholder"></footer>
   </body>
 </html>
