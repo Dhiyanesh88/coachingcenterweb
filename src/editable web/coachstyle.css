@@ -354,7 +354,7 @@ body {
   background-color: #ffffff;
   justify-content: center;
   padding: 70px;
-  margin: 39px;
+  margin: 10px;
 }
 .freeguideright {
   display: flex;
@@ -1285,10 +1285,19 @@ body {
     box-sizing: border-box !important;
   }
   .vector {
-    height: auto;
     display: flex;
     width: 100%;
-    max-width: 100%;
+    margin: 0 auto !important;
+    height: auto !important;
+    overflow: hidden !important;
+    justify-content: center;
+  }
+  .vector img{
+    display: flex;
+    height: auto !important;
+    overflow: hidden !important;
+    width: clamp(50px, 25vw, 100px) !important;
+    object-fit: contain !important;
   }
   .hero {
     flex-direction: column !important;
@@ -1300,7 +1309,6 @@ body {
   }
 
   .herobg {
-    padding: 20px 15px !important;
     margin: 10px 0 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -1310,8 +1318,6 @@ body {
   }
 
   .herotext {
-    font-size: 1rem !important;
-    line-height: 1.6 !important;
     padding: 0 15px !important;
     display: flex !important;
     flex-direction: column !important;
@@ -1319,19 +1325,23 @@ body {
   }
 
   .herotext h1 {
-    font-size: 40px !important;
+    font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
 
   .herotext p {
-    font-size: 18px !important;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .herotext h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
 
   .heroimg {
-    height: 700px !important;
     margin-top: 20px !important;
     padding: 0 15px !important;
+    height: auto !important;
   }
 
   .image-container {
@@ -1340,13 +1350,13 @@ body {
     padding: 0 10px !important;
   }
 
-  .heroimg img,
-  .vector {
+  .heroimg img {
     display: flex !important;
     margin: 0 auto !important;
-    max-width: 100% !important;
+    width: 100% !important;
     height: auto !important;
-    overflow: hidden !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
   }
 
   .leftside1,
@@ -1363,10 +1373,11 @@ body {
     position: absolute !important;
     top: 10px !important;
     left: 10px !important;
-    width: auto !important;
     height: auto !important;
     transform: none !important;
     box-sizing: border-box !important;
+    width: clamp(50px, 25vw, 100px) !important;
+    object-fit: contain !important;
   }
 
   /* 🟩 Intro Section */
@@ -1376,28 +1387,44 @@ body {
     padding: 10px 15px !important;
     box-sizing: border-box;
   }
+  .introheading h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .introheading {
+    text-align: center;
+        padding: 0 10px !important;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
   
   .introservices div {
     margin-bottom: 20px !important;
-    display: flex;
-    width: 100% !important;
-    padding: 0 15px !important;
     text-align: center !important;
-    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   .introtext,
-  .introheading,
   .introparagraph {
         text-align: center;
         padding: 0 10px !important;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
-
+  
   .introservices {
     display: flex !important;
     flex-direction: column !important;
@@ -1407,17 +1434,11 @@ body {
     width: 100% !important;
   }
 
-  .introservices div {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    padding: 0 15px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-  }
 
   .introservices div p {
     width: 80% !important;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   /* 🟨 Reviews Section */
@@ -1429,6 +1450,10 @@ body {
     padding: 15px 15px !important;
     display: flex;
     flex-direction: column;
+  }
+  .reviewtext h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
   }
 
   .reviewcards {
@@ -1449,7 +1474,6 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    flex-wrap: wrap !important;
     box-sizing: border-box !important;
     width: 90% !important;
     margin: 10px auto !important;
@@ -1461,9 +1485,15 @@ body {
   .reviewtext {
     text-align: center !important;
     line-height: 1.6 !important;
-    padding: 0 10px !important;
     box-sizing: border-box !important;
   }
+   .reviewcard1text p,
+  .reviewcard2text p,
+  .reviewcard3text p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+
 
   .reviewcard1rating {
     display: flex !important;
@@ -1491,12 +1521,15 @@ body {
     box-sizing: border-box !important;
     line-height: 1.6 !important;
   }
+  .blogtext h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
 
   .blogcards {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    padding: 0 15px !important;
     box-sizing: border-box !important;
   }
 
@@ -1506,6 +1539,28 @@ body {
     width: 90% !important;
     margin: 10px auto !important;
     box-sizing: border-box !important;
+  }
+  .blogcard1 h3,
+  .blogcard2 h3,
+  .blogcard3 h3 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .blogcard1 p,
+  .blogcard2 p,
+  .blogcard3 p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .blogcard1 img,
+  .blogcard2 img,
+  .blogcard3 img {
+    display: flex !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
   }
 
   .moreblogframe {
@@ -1534,28 +1589,49 @@ body {
     justify-content: flex-start !important;
     align-items: center !important;
     box-sizing: border-box !important;
+    margin-top: 0px;
   }
   .freeguideleft,
-  .freeguideright,
+  .freeguideright {
+    width: 100% !important;
+    padding: 0 35px 0 0 !important;
+    box-sizing: border-box;
+  }
   .freeguideproduct img {
     width: 100% !important;
     padding: 0 15px !important;
     box-sizing: border-box;
+    display: flex !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 
   .freeguidetext {
     width: 100% !important;
-    padding: 0 15px !important;
     line-height: 1.6 !important;
     box-sizing: border-box !important;
     align-items: center !important;
+  }
+  .freeguidetext h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .freeguidetext .p1{
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  
+  }
+  .freeguidetext .p2{
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  
   }
 
   .freeguideproduct {
     width: 100% !important;
     height: auto !important;
     display: flex !important;
-
     margin: 0 auto !important;
     box-sizing: border-box !important;
   }
@@ -1563,16 +1639,27 @@ body {
   .freeguideproduct img {
     width: 100% !important;
     height: auto !important;
-    display: flex !important;
-    margin: 0 auto !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    margin: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
   }
 
   .freeguideicon {
-    max-width: 60px !important;
+    max-width: 0px !important;
     height: auto !important;
     margin: 10px auto !important;
     display: inline-block !important;
+  }
+  .freeguidecontainer {
+    display: flex !important;
+    margin: 16px auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
+    padding: 0px auto;
   }
 
   .freeguideframe {
@@ -1600,6 +1687,14 @@ body {
     width: 100% !important;
     padding: 10px 15px !important;
   }
+  .ctatext h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .ctatext p{
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
 
   .ctaleft,
   .ctaright {
@@ -1609,11 +1704,12 @@ body {
   }
 
   .ctaimg {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin-bottom: 20px !important;
     display: flex !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
   }
 
   .booknow {
@@ -1624,7 +1720,36 @@ body {
     cursor: pointer !important;
     box-sizing: border-box !important;
   }
+   /* 📌 General Button Styling */
+  button,
+  .booknow,
+  .moreblogframe,
+  .freeguideframe button {
+    font-size: clamp(14px, 4vw, 16px) !important;
+    padding: 10px 15px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 4px !important; /* for touch-friendliness */
+  }
+
+  /* 📌 Full-width Buttons if Needed */
+  .booknow,
+  .freeguideframe button {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  /* 📌 Hamburger Button */
+  .hamburger {
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+  }
 }
+
 
 
 
