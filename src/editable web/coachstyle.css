@@ -1,3 +1,6 @@
+/* ================================== */
+/* ========= GLOBAL RESET ========== */
+/* ================================== */
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +29,10 @@ body {
 .vector p {
   color: #18692e;
 }
+/* ================================== */
+/* ========= GLOBAL CONFIG ========== */
+/* ================================== */
+
 
 /* Hero Section */
 .hero {
@@ -161,7 +168,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
   justify-content: space-around;
   padding: 30px 0px 60px 0;
 }
@@ -201,7 +207,6 @@ body {
 .reviewtext {
   display: flex;
   width: 100%;
-
   font-size: 24px;
   color: #333461;
   margin-bottom: 20px;
