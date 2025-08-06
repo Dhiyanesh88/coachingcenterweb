@@ -376,34 +376,32 @@ body {
 /* ========== MEDIA QUERIES ======== */
 /* ================================= */
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* ================================== */
   /* ========== HERO SECTION ========== */
+  /* ================================== */
   .hero {
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
-
   .herobg {
-    height: auto;
-    padding: 40px 20px;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row !important;
   }
 
   .herotext {
-    width: 90%;
-    padding: 0 20px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .herotext h6 {
-    font-size: 15px;
-  }
-
-  .herotext h1 {
-    font-size: 50px;
-  }
-
-  .herotext p {
-    font-size: 18px;
+    padding: 50px 0 0 50px;
+    width: 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .freeguideframe {
@@ -513,27 +511,33 @@ body {
     border-radius: 50%;
   }
 
+  /* ================================== */
   /* ========== WORK SECTION ========== */
-  .Work {
-    padding: 40px 20px;
+  /* ================================== */
+  .work {
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .worktext {
-    padding: 20px 10px;
-    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .workheading {
+   .workheading {
     width: 90%;
     margin: 0 auto;
   }
 
   .worktext h5 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .worktext h2 {
-    font-size: 28px;
+    font-size: 36px;
   }
 
   .worktext p {
@@ -691,44 +695,93 @@ body {
     box-sizing: border-box !important;
   }
 
+  /* ================================== */
   /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% ;
+    box-sizing: border-box !important;
+  }
+
+  .vector {
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
   .hero {
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
   }
 
   .herobg {
-    height: auto;
-    padding: 30px 15px;
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
   .herotext {
-    width: 100%;
-    padding: 0 15px;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
     align-items: center;
-    text-align: center;
-  }
-
-  .herotext h6 {
-    font-size: 14px;
   }
 
   .herotext h1 {
-    font-size: 40px;
+    font-size: 40px !important;
+    line-height: 1.2 !important;
   }
 
   .herotext p {
-    font-size: 16px;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+  .herotext h6 {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
   }
 
   .heroimg {
-    width: 100%;
-    margin-top: 20px;
+    height: 650px !important;
+    margin-top: 20px !important;
+    padding: 0px 105px !important;
   }
 
   .heroimg img {
-    width: 300px;
-    height: auto;
+    display: flex !important;
+    margin: 0 auto !important;
+    max-width: 50% !important;
+    height: auto !important;
+    overflow: hidden !important;
+
+  }
+
+  .leftside1,
+  .right {
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   /* ========== STARTUP COMPANIES SECTION ========== */
@@ -781,12 +834,15 @@ body {
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    width: 90%;
+    width: 65%;
     display: flex;
-    justify-content: space-between;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .reviewcard1text {
@@ -817,28 +873,33 @@ body {
     height: 40px;
     border-radius: 50%;
   }
-
+ /* ================================== */
   /* ========== WORK SECTION ========== */
+  /* ================================== */
   .Work {
-    padding: 40px 15px;
-  }
-
-  .worktext {
-    padding: 20px 10px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     text-align: center;
   }
 
-  .workheading {
-    width: 100%;
-    margin: 0 auto;
+  .worktext {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .worktext h5 {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .worktext h2 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .worktext p {
@@ -846,6 +907,9 @@ body {
   }
 
   .workcontainer {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -853,23 +917,21 @@ body {
     gap: 20px;
   }
 
+  .workheading {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .workbox {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-direction: row;
   }
 
   .workbox div {
-    width: 80%;
+    width: 40%;
     text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .workbox div img {
-    width: 35px;
-    height: 35px;
-    margin-bottom: 10px;
   }
 
   .workbox div h3 {
@@ -881,67 +943,77 @@ body {
     font-size: 14px;
   }
 
-  /* ========== FAQ SECTION ========== */
+  /* ================================== */
+  /* ===== KNOW MORE / FAQ SECTION ==== */
+  /* ================================== */
   .knowmore {
-    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .knowmoretext {
-    width: 100%;
-    text-align: center;
+    width: 90%;
   }
 
   .knowmoretext h2 {
-    font-size: 30px;
+    font-size: 36px;
   }
 
   .knowmoretext p {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .knowmorefaqs {
-    width: 100%;
-    margin: 20px auto;
+    width: 70% !important;
   }
 
   .faq {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+  }
+
+  .faq:hover {
+    background-color: #f0f0f0;
   }
 
   .faq h3 {
     font-size: 16px;
   }
 
-  .faq p {
-    font-size: 14px;
-    margin-top: 5px;
+  .faq h3::after {
+    right: 10px;
   }
 
-  .faq i {
-    margin-right: 10px;
+  .faq.active h3::after {
+    transform: rotate(45deg);
+  }
+
+  .faq p {
+    font-size: 14px;
+  }
+
+  .faq.active p {
+    display: block;
   }
 
   .anyquestions {
     padding: 20px;
-    text-align: center;
   }
 
   .anyquestions h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .anyquestions p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 15px;
   }
 
   .anyquestions button {
-    font-size: 13px;
     padding: 8px 20px;
-    cursor: pointer;
+    font-size: 14px;
   }
+
 }
 @media (max-width: 480px) {
    /* ⏹️ Navigation */
@@ -978,10 +1050,7 @@ body {
     padding: 10px 20px;
     width: 100%;
   }
-
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
     margin: 0 !important;
     display: flex !important;
     justify-content: center !important;
@@ -989,6 +1058,7 @@ body {
     align-self: center !important;
     box-sizing: border-box !important;
   }
+
   /* 📌 Hamburger Button */
   .hamburger {
     font-size: 24px !important;
@@ -996,218 +1066,275 @@ body {
     width: auto !important;
   }
 
-  /* ========== GLOBAL TEXT STYLES ========== */
-  h1,
-  h2 {
-    font-size: clamp(24px, 6vw, 30px) !important;
-    line-height: 1.2 !important;
-  }
-
-  p,
-  h5,
-  h6 {
-    font-size: clamp(14px, 4vw, 18px) !important;
-    line-height: 1.5 !important;
-  }
-
-
+  /* ================================== */
   /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% ;
+    box-sizing: border-box !important;
+  }
+
+  .vector {
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
   .hero {
-    flex-direction: column;
-    padding: 15px;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
   }
 
   .herobg {
-    height: auto;
-    padding: 20px 10px;
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
   .herotext {
-    width: 100%;
-    padding: 0 10px;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
     align-items: center;
-    text-align: center;
   }
 
-  .herotext h6 {
-    font-size: clamp(14px, 4vw, 18px) !important;
-    line-height: 1.5 !important;
-  }
   .herotext h1 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
+
   .herotext p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
-  .herotext button {
-    font-size: clamp(14px, 4vw, 16px) !important;
-    padding: 10px 15px !important;
-    width: auto !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    text-align: center !important;
-    cursor: pointer !important;
-    border-radius: 4px !important;
+  .herotext h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
-
-  .freeguideframe {
-    width: 140px;
-    height: 35px;
-    font-size: 12px;
-  }
+ 
 
   .heroimg {
-    width: 100%;
-    margin-top: 15px;
+    height: 650px !important;
+    margin-top: 20px !important;
   }
 
   .heroimg img {
     display: flex !important;
     margin: 0 auto !important;
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
     max-width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+  }
+
+  .leftside1,
+  .right {
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   /* ========== STARTUP COMPANIES SECTION ========== */
   .startupcompanies {
-    padding: 30px 10px;
+    padding: 40px 15px;
   }
 
   .startupcompaniestext {
-    width: 100%;
+    text-align: center;
   }
 
   .startupcompaniestext h2 {
-    text-align: center;
-    font-size: clamp(24px, 6vw, 30px) !important;
+    font-size: clamp(16px, 4vw, 24px) !important;
     line-height: 1.2 !important;
   }
 
   .startupcompanieslogos {
-    width: auto;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: flex;
+    width: 100%;
   }
 
   .startupcompanieslogos img {
-    width: 90px !important;
-    height: 25px !important;
+    width: 50%;
+    height: 20%;
   }
 
   /* ========== REVIEWS SECTION ========== */
   .reviews {
-    padding: 40px 10px;
+    padding: 50px 15px;
   }
 
   .reviewtext {
-     width: auto;
-    height: auto;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
   }
 
   .reviewtext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
+ 
 
   .reviewcards {
     flex-direction: column;
     align-items: center;
+    display: flex;
+    gap: 20px;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
-    width: 100%;
+    width: 95%;
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .reviewcard1text {
-     width: auto;
-    height: auto;
+    font-size: 16px;
+    flex: 1;
   }
 
   .reviewcard1text h1 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
+
   .reviewcard1text p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
+
   .reviewcard1text h3 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
-
-  .reviewcard1 img,
-  .reviewcard2 img,
-  .reviewcard3 img {
-    width: 40px !important;
-    height: 35px !important;
+ 
+  .reviewcard1img {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
   }
 
+  .reviewcard1img img {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+  }
+ /* ================================== */
   /* ========== WORK SECTION ========== */
+  /* ================================== */
+  .Work {
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
   .worktext {
-    padding: 15px 5px;
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
-  .workheading {
-     width: auto;
-    height: auto;
-  }
-
-  .workheading h5 {
+  .worktext h5 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
-  .workheading h2 {
+
+  .worktext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
-  .workheading p {
+
+  .worktext p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
 
   .workcontainer {
-     width: auto;
-    height: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .workheading {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .workbox {
-     width: auto;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
   }
 
   .workbox div {
     width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .workbox img {
-     width: auto;
-    height: auto;
-  }
-
-  .workbox div img {
-    width: 30px !important;
-    height: 30px !important;
+    text-align: center;
   }
 
   .workbox div h3 {
-    font-size: clamp(14px, 4vw, 18px) !important;
-    line-height: 1.5 !important;
-  }
-  .workbox div p {
-    font-size: clamp(14px, 4vw, 18px) !important;
-    line-height: 1.5 !important;
+     font-size: clamp(18px, 6vw, 20px) !important;
+    line-height: 1.2 !important;
   }
 
-  /* ========== FAQ SECTION ========== */
+  .workbox div p {
+   font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+ 
+
+  /* ================================== */
+  /* ===== KNOW MORE / FAQ SECTION ==== */
+  /* ================================== */
   .knowmore {
-    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
   }
 
   .knowmoretext {
@@ -1215,43 +1342,68 @@ body {
   }
 
   .knowmoretext h2 {
-    font-size: clamp(24px, 6vw, 30px) !important;
+     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
+
   .knowmoretext p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
-
+ 
   .knowmorefaqs {
-    width: 100%;
+    width: 100% !important;
   }
 
+  .faq {
+    padding: 10px 0;
+  }
+
+  .faq:hover {
+    background-color: #f0f0f0;
+  }
 
   .faq h3 {
-    font-size: clamp(24px, 6vw, 30px) !important;
+    font-size: clamp(12px, 5vw, 18px) !important;
     line-height: 1.2 !important;
   }
+
+  .faq h3::after {
+    right: 0px;
+    gap: 10px;
+  }
+
+  .faq.active h3::after {
+    transform: rotate(45deg);
+  }
+
   .faq p {
-    font-size: clamp(14px, 4vw, 18px) !important;
+   font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
 
+  .faq.active p {
+    display: block;
+  }
+
   .anyquestions {
-    padding: 15px;
+    padding: 10px;
+    width: 100%;
   }
 
   .anyquestions h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
+
   .anyquestions p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
 
   .anyquestions button {
-    font-size: 12px;
-    padding: 6px 15px;
+    padding: 8px 20px;
+    font-size: 14px;
   }
+
 }
