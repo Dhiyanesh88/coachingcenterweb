@@ -20,9 +20,8 @@ body {
   margin: auto;
   overflow-x: hidden;
   width: 100%;
-   margin: 0;
+  margin: 0;
   padding: 0;
-
 }
 .vector p {
   color: #18692e;
@@ -84,7 +83,7 @@ body {
 }
 
 .freeguideframe {
- width: 190px;
+  width: 190px;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -126,7 +125,6 @@ body {
   height: auto;
   z-index: 2;
 }
-
 
 /* Intro Section */
 .intro {
@@ -388,8 +386,8 @@ body {
   width: 70px;
   height: 70px;
   z-index: 2;
-  background-color: #20AD96; 
-  border-radius: 50%; 
+  background-color: #20ad96;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -431,10 +429,10 @@ body {
   color: #5a5d77;
   margin-bottom: 20px;
   font-weight: 400;
- 
+
   width: 85%;
 }
-.p1{
+.p1 {
   font-size: 22px;
   line-height: 33px;
 }
@@ -462,7 +460,7 @@ body {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #FAF8F6;
+  background-color: #faf8f6;
   padding: 20px 0px 0px 60px;
   border-radius: 15px;
 }
@@ -531,124 +529,123 @@ body {
     box-sizing: border-box;
   }
   /* Hero Section */
-.hero {
-  flex-direction: column !important;
+  .hero {
+    flex-direction: column !important;
     align-items: center !important;
     padding: 20px 10px !important;
     width: 100% !important;
     box-sizing: border-box;
-}
+  }
 
-.herobg {
-  width: 100%;
-  padding-left: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-  flex-direction: row !important;
-}
+  .herobg {
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row !important;
+  }
 
-/* Left Side */
-.leftside1 {
-  flex: 1 1 40%;
-  min-width: 300px;
-  padding: 15px 0 0 10px;
-  width: 50% !important;
+  /* Left Side */
+  .leftside1 {
+    flex: 1 1 40%;
+    min-width: 300px;
+    padding: 15px 0 0 10px;
+    width: 50% !important;
     max-width: 50% !important;
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.vector img {
-  width: 110px;
-  height: 18px;
-  margin-bottom: 3px;
-}
-.herotext {
-  padding: 50px 0 0 50px;
-  width: 100% !important;
+  .vector img {
+    width: 110px;
+    height: 18px;
+    margin-bottom: 3px;
+  }
+  .herotext {
+    padding: 50px 0 0 50px;
+    width: 100% !important;
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
+  }
 
-.herotext h6 {
-  font-size: 17px;
-  font-weight: 200;
-  margin-bottom: 1px;
-}
+  .herotext h6 {
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 1px;
+  }
 
-.herotext h1 {
-  font-size: 76px;
-  font-weight: 2000;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
+  .herotext h1 {
+    font-size: 76px;
+    font-weight: 2000;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 
-.herotext p {
-  font-size: 20px;
-  color: #5a5d77;
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
+  .herotext p {
+    font-size: 20px;
+    color: #5a5d77;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
 
-.freeguideframe {
- width: 190px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 8px;
-  padding: 10px;
-}
+  .freeguideframe {
+    width: 190px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+  }
 
-/* Right Side */
-.right {
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: center;
-  padding-left: 120px;
-  width: 50% !important;
-  max-width: 50% !important;
-  flex-direction: column;
-}
-.heroimg {
-  height: auto;
-  display: flex;
-  border-radius: 10px;
-  width: 100% !important;
+  /* Right Side */
+  .right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    padding-left: 120px;
+    width: 50% !important;
+    max-width: 50% !important;
+    flex-direction: column;
+  }
+  .heroimg {
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
-}
-.image-container {
-  position: relative;
-  margin-top: 30px;
-  margin-right: 1em;
-  width: 100% !important;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 30px;
+    margin-right: 1em;
+    width: 100% !important;
     max-width: 100% !important;
     padding: 0 15px !important;
     text-align: center !important;
     display: flex;
-}
+  }
 
-/* Success badge */
-.success {
-  position: absolute;
-  top: -20px;
-  transform: translateX(-50%);
-  z-index: 2;
-  position: absolute !important;
+  /* Success badge */
+  .success {
+    position: absolute;
+    top: -20px;
+    transform: translateX(-50%);
+    z-index: 2;
+    position: absolute !important;
     top: 10px !important;
     left: 10px !important;
     width: auto !important;
     height: auto !important;
     transform: none !important;
-}
-
+  }
 
   /* 🟩 Intro Section */
   .intro {
@@ -678,7 +675,7 @@ body {
 
   .introservices {
     flex-wrap: wrap !important;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -834,7 +831,6 @@ body {
 
 /* Hide menu by default on small screens */
 
-
 @media (min-width: 481px) and (max-width: 768px) {
   /* ⏹️ Navigation */
   .hamburger {
@@ -889,7 +885,7 @@ body {
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
-  
+
   .vector {
     height: auto;
     display: flex;
@@ -982,7 +978,7 @@ body {
     padding: 10px 15px !important;
     box-sizing: border-box;
   }
-  
+
   .introservices div {
     margin-bottom: 20px !important;
     display: flex;
@@ -1118,7 +1114,6 @@ body {
     padding: 10px !important;
     box-sizing: border-box !important;
   }
- 
 
   /* 🟪 Free Guide Section */
   .freeguide {
@@ -1230,7 +1225,7 @@ body {
   }
 }
 
-@media (max-width: 480px)  {
+@media (max-width: 480px) {
   /* ⏹️ Navigation */
   .hamburger {
     display: flex;
@@ -1292,7 +1287,7 @@ body {
     overflow: hidden !important;
     justify-content: center;
   }
-  .vector img{
+  .vector img {
     display: flex;
     height: auto !important;
     overflow: hidden !important;
@@ -1387,22 +1382,22 @@ body {
     padding: 10px 15px !important;
     box-sizing: border-box;
   }
-  .introheading h2{
+  .introheading h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
   .introheading {
     text-align: center;
-        padding: 0 10px !important;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 10px;
-      }
-  
+    padding: 0 10px !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
   .introservices div {
     margin-bottom: 20px !important;
     text-align: center !important;
@@ -1415,16 +1410,16 @@ body {
   }
   .introtext,
   .introparagraph {
-        text-align: center;
-        padding: 0 10px !important;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-  
+    text-align: center;
+    padding: 0 10px !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .introservices {
     display: flex !important;
     flex-direction: column !important;
@@ -1433,7 +1428,6 @@ body {
     padding: 0 15px !important;
     width: 100% !important;
   }
-
 
   .introservices div p {
     width: 80% !important;
@@ -1451,7 +1445,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .reviewtext h2{
+  .reviewtext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
@@ -1487,13 +1481,12 @@ body {
     line-height: 1.6 !important;
     box-sizing: border-box !important;
   }
-   .reviewcard1text p,
+  .reviewcard1text p,
   .reviewcard2text p,
   .reviewcard3text p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
-
 
   .reviewcard1rating {
     display: flex !important;
@@ -1521,7 +1514,7 @@ body {
     box-sizing: border-box !important;
     line-height: 1.6 !important;
   }
-  .blogtext h2{
+  .blogtext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
@@ -1569,7 +1562,6 @@ body {
     padding: 10px !important;
     box-sizing: border-box !important;
   }
- 
 
   /* 🟪 Free Guide Section */
   .freeguide {
@@ -1613,19 +1605,17 @@ body {
     box-sizing: border-box !important;
     align-items: center !important;
   }
-  .freeguidetext h2{
+  .freeguidetext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
-  .freeguidetext .p1{
+  .freeguidetext .p1 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
-  
   }
-  .freeguidetext .p2{
+  .freeguidetext .p2 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
-  
   }
 
   .freeguideproduct {
@@ -1687,11 +1677,11 @@ body {
     width: 100% !important;
     padding: 10px 15px !important;
   }
-  .ctatext h2{
+  .ctatext h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
-  .ctatext p{
+  .ctatext p {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
@@ -1720,7 +1710,7 @@ body {
     cursor: pointer !important;
     box-sizing: border-box !important;
   }
-   /* 📌 General Button Styling */
+  /* 📌 General Button Styling */
   button,
   .booknow,
   .moreblogframe,
@@ -1749,8 +1739,3 @@ body {
     width: auto !important;
   }
 }
-
-
-
-
-
