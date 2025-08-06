@@ -1,3 +1,6 @@
+/* ================================== */
+/* ========== GLOBAL RESET ========== */
+/* ================================== */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +30,10 @@ body {
   color: #18692e;
 }
 
-/* Hero Section */
+
+/* ================================== */
+/* ========== HERO SECTION ========== */
+/* ================================== */
 .hero {
   width: 100%;
   display: flex;
@@ -35,7 +41,6 @@ body {
   padding: 40px 0px 0 0;
   border: 20px;
 }
-
 .herobg {
   width: 100%;
   padding-left: 10px;
@@ -51,7 +56,6 @@ body {
   min-width: 300px;
   padding: 15px 0 0 10px;
 }
-
 .vector img {
   width: 110px;
   height: 18px;
@@ -60,14 +64,12 @@ body {
 .herotext {
   padding: 50px 0 0 50px;
 }
-
 .herotext h6 {
   font-size: 17px;
   font-weight: 200;
   color: #afafb0;
   margin-bottom: 1px;
 }
-
 .herotext h1 {
   font-size: 76px;
   color: #333461;
@@ -75,14 +77,12 @@ body {
   line-height: 1.2;
   margin-bottom: 20px;
 }
-
 .herotext p {
   font-size: 20px;
   color: #5a5d77;
   line-height: 1.6;
   margin-bottom: 24px;
 }
-
 .freeguideframe {
   width: 190px;
   height: 45px;
@@ -116,7 +116,11 @@ body {
   margin-top: 30px;
   margin-right: 1em;
 }
-/* Work Section */
+
+
+/* ================================== */
+/* ========== WORK SECTION 1 ========= */
+/* ================================== */
 .work1 {
   width: 100%;
   height: 100%;
@@ -192,17 +196,19 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-
   color: #333461;
 }
 .workbox1 div p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-
   color: #667085;
 }
-/* Work */
+
+
+/* ================================== */
+/* ========== WORK SECTION 2 ========= */
+/* ================================== */
 .Work2 {
   display: flex;
   width: 100%;
@@ -254,7 +260,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   width: 50%;
 }
 .workheading2 h2 {
@@ -270,7 +275,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-
   width: 75%;
 }
 .workcontainer2 h3 {
@@ -284,7 +288,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   width: 70%;
 }
 .workbelow2 {
@@ -306,7 +309,11 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-/* Testimonials */
+
+
+/* ================================== */
+/* ========== TESTIMONIALS ========== */
+/* ================================== */
 .testimonials {
   background-color: #ffffff;
   padding: 60px 80px;
@@ -323,7 +330,6 @@ body {
   width: 100%;
   align-content: space-between;
 }
-
 .testimonialstext {
   display: flex;
   justify-content: flex-start;
@@ -360,7 +366,10 @@ body {
   white-space: nowrap;
 }
 
-/* Review */
+
+/* ================================== */
+/* ========== REVIEWS ========== */
+/* ================================== */
 .reviews {
   width: 100%;
   height: 100%;
@@ -394,7 +403,10 @@ body {
   object-fit: cover;
   width: 15%;
 }
-/* FOR you or not */
+
+/* ================================== */
+/* ========== FOR YOU OR NOT ========== */
+/* ================================== */
 .programfor {
   display: flex;
   width: 100%;
@@ -483,12 +495,17 @@ body {
   background-color: white;
   padding: 20px;
 }
+
 .foryou div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* CTA Section */
+
+
+/* ================================== */
+/* ========== CALL TO ACTION ========== */
+/* ================================== */
 .cta {
   width: 100%;
   height: 100%;
@@ -507,7 +524,6 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #faf8f6;
   padding: 20px 0px 0px 60px;
   border-radius: 15px;
@@ -515,7 +531,6 @@ body {
 .ctaleft {
   display: flex;
   width: 50%;
-  height: 100%;
   flex: 1 1 50%;
   flex-direction: column;
 }
@@ -535,11 +550,9 @@ body {
 }
 .ctaimg {
   width: 550px;
-  height: 500px;
   display: flex;
   flex: 1 1 50%;
   flex-direction: column;
-  height: 100%;
   padding: 20px 0 0 0;
 }
 .ctaimg img {
@@ -552,11 +565,9 @@ body {
   flex: 1 1 50%;
   flex-direction: column;
   width: 50%;
-  height: 100%;
   justify-content: center;
   align-items: end;
 }
-
 .booknow {
   width: 170px;
   height: 40px;
@@ -569,7 +580,11 @@ body {
   border-radius: 8px;
   padding: 10px;
 }
-/* Guarantee */
+
+
+/* ================================== */
+/* ========== GUARANTEE ========== */
+/* ================================== */
 .guarantee {
   display: flex;
   width: 100%;
@@ -609,7 +624,11 @@ body {
   text-align: center;
   color: rgba(74, 85, 108, 0.7);
 }
-/*knowmore */
+
+
+/* ================================== */
+/* ========== KNOW MORE / FAQ ========== */
+/* ================================== */
 .knowmore {
   display: flex;
   flex-direction: column;
@@ -617,46 +636,38 @@ body {
   padding: 50px;
   background-color: #fff;
 }
-
 .knowmoretext {
   text-align: center;
   width: 50%;
 }
-
 .knowmoretext h2 {
   font-size: 48px;
   color: #333461;
   font-weight: 800;
 }
-
 .knowmoretext p {
   font-size: 20px;
   color: #5a5d77;
   line-height: 1.6;
 }
-
 .knowmorefaqs {
   width: 55%;
   margin-top: 30px;
 }
-
 .faq {
   border-bottom: 1px solid #ccc;
   padding: 15px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .faq:hover {
   background-color: #fafafa;
 }
-
 .faq h3 {
   font-size: 18px;
   font-weight: 600;
   position: relative;
 }
-
 .faq h3::after {
   content: "⊕";
   position: absolute;
@@ -665,12 +676,10 @@ body {
   color: #18692e;
   transition: transform 0.3s ease;
 }
-
 .faq.active h3::after {
   content: "Θ";
   transform: rotate(180deg);
 }
-
 .faq p {
   margin-top: 10px;
   display: none;
@@ -678,11 +687,9 @@ body {
   color: #4a556c;
   line-height: 1.5;
 }
-
 .faq.active p {
   display: flex;
 }
-
 .anyquestions {
   width: 90%;
   text-align: center;
@@ -691,19 +698,16 @@ body {
   padding: 30px 20px;
   margin-top: 50px;
 }
-
 .anyquestions h2 {
   font-size: 24px;
   color: #333461;
   margin-bottom: 10px;
 }
-
 .anyquestions p {
   color: #5a5d77;
   font-size: 17px;
   margin-bottom: 20px;
 }
-
 .anyquestions button {
   background-color: #20ad96;
   border: none;
@@ -713,10 +717,12 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
-
 .anyquestions button:hover {
   background-color: #1b9c87;
 }
+/* ================================= */
+/* ========== MEDIA QUERIES ======== */
+/* ================================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 }
