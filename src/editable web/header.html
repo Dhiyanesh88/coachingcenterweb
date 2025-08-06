@@ -1,7 +1,6 @@
-
 <header class="headerbg">
   <div class="logo">
-    <img src="../images/happy.jpg" alt="Logo">
+    <img src="../images/happy.jpg" alt="Logo" />
     <span class="brand-name">Happy Coaching</span>
   </div>
 
@@ -13,161 +12,165 @@
         <li><a href="../editable web/coachpage.html">Home</a></li>
         <li><a href="../editable web/service.html">Services</a></li>
         <li><a href="../editable web/aboutme.html">About us</a></li>
-        <li><a href="../editable web/extrasalespage.html">Extra Salespage</a></li>
+        <li>
+          <a href="../editable web/extrasalespage.html">Extra Salespage</a>
+        </li>
       </ul>
-      <a href="../editable web/freeguide.html" class="freeguideframe">Get your free guide now</a>
+      <a href="../editable web/freeguide.html" class="freeguideframe"
+        >Get your free guide now</a
+      >
     </nav>
   </div>
 </header>
 
 <style>
-/* ========== Desktop Style ========== */
-.headerbg {
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 30px;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: 'Kumbh Sans', sans-serif;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  height: 30px;
-  width: auto;
-  object-fit: contain;
-}
-
-.brand-name {
-  font-weight: 600;
-  font-size: 14px;
-  color: #1d1e2c;
-}
-
-.hamburger {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  margin-left: auto;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-grow: 1;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 25px;
-}
-
-.nav-links li {
-  font-size: 14px;
-  white-space: nowrap;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #5a5d77;
-}
-
-.nav-links li a:hover {
-  color: #20ad96;
-}
-
-.freeguideframe {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #20ad96;
-  border: none;
-  color: white;
-  border-radius: 6px;
-  padding: 0 15px;
-  font-size: 13px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  white-space: nowrap;
-}
-
-.freeguideframe:hover {
-  background-color: #1b9984;
-}
-
-/* ========== Responsive – Tablet & Mobile ========== */
-/* ========== Responsive – Tablet & Mobile ========== */
-@media (max-width: 768px) {
+  /* ========== Desktop Style ========== */
   .headerbg {
-    flex-wrap: wrap;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .logo img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .brand-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1d1e2c;
   }
 
   .hamburger {
-    display: flex;
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto;
   }
 
   .menu {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: white;
-    padding: 10px 20px;
-  }
-
-  .menu.open {
     display: flex;
-    justify-self: start;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 
-  .menu nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
   }
 
-  .menu ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
   }
 
-  .menu li {
-    padding: 10px 0;
-    width: 100%;
+  .nav-links li {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #5a5d77;
+  }
+
+  .nav-links li a:hover {
+    color: #20ad96;
   }
 
   .freeguideframe {
-    margin: 10px 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #20ad96;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
   }
-}
+
+  .freeguideframe:hover {
+    background-color: #1b9984;
+  }
+
+  /* ========== Responsive – Tablet & Mobile ========== */
+  /* ========== Responsive – Tablet & Mobile ========== */
+  @media (max-width: 768px) {
+    .headerbg {
+      flex-wrap: wrap;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .menu {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      padding: 10px 20px;
+    }
+
+    .menu.open {
+      display: flex;
+      justify-self: start;
+    }
+
+    .menu nav {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    .menu ul {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .menu li {
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    .freeguideframe {
+      margin: 10px 0;
+    }
+  }
 </style>
 
 <script>
-function toggleMenu() {
-  document.getElementById('nav-menu').classList.toggle('open');
-}
+  function toggleMenu() {
+    document.getElementById("nav-menu").classList.toggle("open");
+  }
 </script>
