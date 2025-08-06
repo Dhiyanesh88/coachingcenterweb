@@ -73,7 +73,7 @@ body {
 .herotext h1 {
   font-size: 76px;
   color: #333461;
-  font-weight: 2000;
+  font-weight: 200;
   line-height: 1.2;
   margin-bottom: 20px;
 }
@@ -380,73 +380,111 @@ body {
 
 /*responsive design */
 @media (min-width: 769px) and (max-width: 1024px) {
-  /* Typography & Utility */
-  .vector p {
-    font-size: 16px;
-    text-align: center;
-  }
-
   /* ================================== */
   /* ========== HERO SECTION ========== */
   /* ================================== */
   .hero {
-    flex-direction: column;
-    padding: 30px 0;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box;
   }
 
   .herobg {
-    flex-direction: column;
-    padding-left: 0;
-    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row !important;
   }
 
+  /* Left Side */
   .leftside1 {
-    width: 100%;
-    padding: 10px 20px;
-    text-align: center;
+    flex: 1 1 40%;
+    min-width: 300px;
+    padding: 15px 0 0 10px;
+    width: 50% !important;
+    max-width: 50% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .vector img {
-    margin: 0 auto 5px auto;
+    width: 110px;
+    height: 18px;
+    margin-bottom: 3px;
   }
-
   .herotext {
-    padding: 30px 20px;
+    padding: 50px 0 0 50px;
+    width: 100% !important;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .herotext h6 {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 200;
+    margin-bottom: 1px;
   }
 
   .herotext h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
 
   .herotext p {
-    font-size: 18px;
+    font-size: 16px;
+    color: #5a5d77;
+    line-height: 1.6;
+    margin-bottom: 24px;
   }
 
   .freeguideframe {
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .right {
-    justify-content: center;
-    padding-left: 0;
-    margin-top: 20px;
-  }
-
-  .heroimg {
+    width: 190px;
+    height: 45px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
   }
 
-  .image-container {
-    max-width: 350px;
-    margin: 0 auto;
+  /* Right Side */
+  .right {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    width: 50% !important;
+    flex-direction: column;
   }
+  .heroimg {
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+  }
+  .image-container {
+    position: relative;
+    margin-top: 30px;
+    margin-right: 1em;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 15px !important;
+    text-align: center !important;
+    display: flex;
+  }
+
 
   /* ================================== */
   /* ========== INTRO SECTION ========= */
@@ -490,10 +528,13 @@ body {
   .work {
     padding: 30px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .worktext {
-    width: 100%;
+    width: 50%;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -511,7 +552,7 @@ body {
   }
 
   .workcontainer {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
   }
 
@@ -531,10 +572,13 @@ body {
   }
 
   /* ================================== */
-  /* ====== KNOW MORE / FAQ SECTION ==== */
+  /* ===== KNOW MORE / FAQ SECTION ==== */
   /* ================================== */
   .knowmore {
-    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .knowmoretext {
@@ -550,7 +594,7 @@ body {
   }
 
   .knowmorefaqs {
-    width: 90%;
+    width: 70% !important;
   }
 
   .faq {
@@ -653,11 +697,12 @@ body {
   }
 
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
-    width: 150px;
-    height: 40px;
-    font-size: 13px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
   /* Typography & Utility */
@@ -670,62 +715,95 @@ body {
   /* ================================== */
   /* ========== HERO SECTION ========== */
   /* ================================== */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% ;
+    box-sizing: border-box !important;
+  }
+
+  .vector {
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
   .hero {
-    flex-direction: column;
-    padding: 30px 10px;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    display: flex !important;
   }
 
   .herobg {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .leftside1 {
-    width: 100%;
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  .vector img {
-    width: 90px;
-    height: auto;
-    margin-bottom: 5px;
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
   .herotext {
-    padding: 20px;
-  }
-
-  .herotext h6 {
-    font-size: 15px;
-    color: #888;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
   }
 
   .herotext h1 {
-    font-size: 42px;
-    line-height: 1.2;
+    font-size: 40px !important;
+    line-height: 1.2 !important;
   }
 
   .herotext p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .right {
-    justify-content: center;
-    margin-top: 20px;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
   }
 
   .heroimg {
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
+    height: 650px !important;
+    margin-top: 20px !important;
+    padding: 0px 105px !important;
   }
 
   .image-container {
-    max-width: 300px;
-    margin: 0 auto;
+    height: 20% !important;
+    margin-top: 30px !important;
+    padding: 0 10px !important;
   }
+
+  .heroimg img,
+  .vector {
+    display: flex !important;
+    margin: 0 auto !important;
+    max-width: 50% !important;
+    height: auto !important;
+    overflow: hidden !important;
+
+  }
+
+  .leftside1,
+  .right {
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
 
 
   /* ================================== */
@@ -733,6 +811,10 @@ body {
   /* ================================== */
   .intro {
     padding: 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
   }
 
   .introtext {
@@ -741,14 +823,30 @@ body {
   }
 
   .introservices {
-    width: 100%;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
   }
 
   .introservices div {
-    width: 90%;
-    margin: 10px 0;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 65% !important;
+    box-sizing: border-box !important;
+  }
+  .introtext,
+  .introheading,
+  .introparagraph {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 0 15px !important;
   }
 
   .introservices div img {
@@ -772,6 +870,10 @@ body {
   .work {
     padding: 20px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .worktext {
@@ -802,12 +904,16 @@ body {
   .workleft,
   .workright {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   .workright img {
-    width: 100%;
-    height: auto;
-    max-height: 350px;
+    padding: 10px;
   }
 
   .workleft div {
@@ -837,7 +943,7 @@ body {
   }
 
   .knowmorefaqs {
-    width: 100%;
+    width: 80%;
     padding: 0 10px;
   }
 
@@ -884,11 +990,7 @@ body {
 
   .anyquestions button {
     padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .anyquestions button:hover {
-    background-color: #1b9c87;
+    font-size: 13px;
   }
 }
 
@@ -929,11 +1031,12 @@ body {
   }
 
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
-    width: 150px;
-    height: 40px;
-    font-size: 13px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
   /* ========== GLOBAL TEXT STYLES ========== */
@@ -953,178 +1056,282 @@ body {
     font-size: 14px;
   }
 
+    /* ================================== */
   /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero,
+  .herobg,
+  .herotext,
+  .heroimg,
+  .vector,
+  .image-container,
+  .leftside1,
+  .right {
+    width: 100% !important;
+    max-width: 100% ;
+    box-sizing: border-box !important;
+  }
+
+  .vector {
+    height: auto;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
   .hero {
-    padding: 20px;
+    flex-direction: column !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
   }
 
   .herobg {
-    background-size: cover;
-    background-position: center;
-  }
-
-  .leftside1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .vector img {
-    width: 100%;
-    height: auto;
+    padding: 20px 15px !important;
+    margin: 10px 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
+    height: auto !important;
+    overflow: hidden !important;
   }
 
   .herotext {
-    padding: 10px;
-  }
-
-  .herotext h6 {
-    font-weight: 600;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center !important;
   }
 
   .herotext h1 {
-    font-size: 24px;
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
   }
 
   .herotext p {
-    font-size: 14px;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
-
-  .right {
-    width: 100%;
+  .herotext h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .heroimg {
-    width: 100%;
-    height: auto;
+    height: auto !important;
+    margin-top: 20px !important;
   }
 
   .image-container {
+    height: 20% !important;
+    margin-top: 30px !important;
+    padding: 0 10px !important;
+  }
+
+  .heroimg img,
+  .vector {
+    display: flex !important;
+    margin: 0 auto !important;
+    max-width: 50% !important;
+    height: auto !important;
+    overflow: hidden !important;
+
+  }
+
+  .leftside1,
+  .right {
+    padding: 0 !important;
+    justify-content: center !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+
+
+  /* ================================== */
+  /* ========== INTRO SECTION ========= */
+  /* ================================== */
+  .intro {
+    padding: 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+
+  .introtext {
+    font-size: 20px;
+    padding: 40px 10px 0;
+  }
+  .introtext h2{
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+
+
+  .introservices {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  .introservices div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 80% !important;
+    box-sizing: border-box !important;
+  }
+  .introtext,
+  .introheading,
+  .introparagraph {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+  }
+
+  .introservices div img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .introservices div h3 {
+    font-size: clamp(20px, 6vw, 25px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .introservices div p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  
+
+
+  /* ================================== */
+  /* ========== WORK SECTION ========== */
+  /* ================================== */
+  .work {
+    padding: 20px;
+    margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  /* ========== INTRO SECTION ========= */
-  .intro {
-    padding: 15px;
-  }
-
-  .introtext {
-    margin-bottom: 10px;
-  }
-
-  .introservices {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .introservices div {
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-
-  .introservices div img {
-    width: 100%;
-    height: auto;
-  }
-
-  .introservices div h3 {
-    font-size: 18px;
-  }
-
-  .introservices div p {
-    font-size: 14px;
-  }
-
-  /* ========== WORK SECTION ========== */
-  .work {
-    padding: 15px;
-  }
-
   .worktext {
-    margin-bottom: 10px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
 
   .worktext h5 {
-    font-size: 16px;
-    color: #555;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .worktext h2 {
-    font-size: 22px;
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
   }
 
   .worktext p {
-    font-size: 14px;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .workcontainer {
-    display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-
-  .workleft {
+    align-items: center;
     width: 100%;
   }
 
+  .workleft,
   .workright {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   .workright img {
-    width: 100%;
-    height: auto;
+    display: flex !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
   }
 
   .workleft div {
-    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
   }
 
+  /* ================================== */
   /* ====== KNOW MORE / FAQ SECTION ==== */
+  /* ================================== */
   .knowmore {
-    padding: 15px;
+    padding: 30px 15px;
   }
 
   .knowmoretext {
-    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
   }
 
   .knowmoretext h2 {
-    font-size: 20px;
+     font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
   }
 
   .knowmoretext p {
-    font-size: 14px;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
+ 
 
   .knowmorefaqs {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 80%;
+    padding: 0 10px;
   }
 
   .faq {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
   }
 
   .faq:hover {
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
   }
 
   .faq h3 {
-    font-size: 16px;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+    padding-right: 20px;
   }
 
-  .faq h3::after {
-    content: "+";
-    float: right;
+
+  .faq.active h3::after {
+    transform: rotate(45deg);
   }
+
   .faq p {
-    display: none;
+    font-size: clamp(12px, 4vw, 17px) !important;
+    line-height: 1.5 !important;
   }
 
   .faq.active p {
@@ -1133,24 +1340,22 @@ body {
 
   .anyquestions {
     padding: 20px;
-    background-color: #f5f5f5;
+    border-radius: 10px;
   }
 
   .anyquestions h2 {
-    font-size: 20px;
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
   }
 
   .anyquestions p {
-    font-size: 14px;
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .anyquestions button {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  .anyquestions button:hover {
-    background-color: #ddd;
+    padding: 8px 16px;
+    font-size: 13px;
   }
 
 }

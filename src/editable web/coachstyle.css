@@ -889,6 +889,7 @@ body {
     margin: 10px 20px;
     align-self: flex-start;
   }
+  
 
   /* 🟦 Hero Section */
   .hero,
@@ -949,9 +950,9 @@ body {
   }
 
   .heroimg {
-    height: 700px !important;
+    height: 650px !important;
     margin-top: 20px !important;
-    padding: 10px 45px !important;
+    padding: 10px 65px !important;
   }
 
   .image-container {

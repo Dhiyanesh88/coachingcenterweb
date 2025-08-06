@@ -683,11 +683,12 @@ body {
   }
 
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
-    width: 150px;
-    height: 40px;
-    font-size: 13px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
   /* ========== HERO SECTION ========== */
@@ -981,6 +982,12 @@ body {
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
   /* 📌 Hamburger Button */
   .hamburger {

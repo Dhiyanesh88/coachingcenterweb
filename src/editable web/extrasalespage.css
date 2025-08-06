@@ -1157,12 +1157,12 @@ body {
   }
 
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
-    width: 150px;
-    height: 40px;
-    font-size: 13px;
-    border-radius: 5px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
   /* ================================== */
@@ -1582,12 +1582,12 @@ body {
   }
 
   .freeguideframe {
-    margin: 10px 20px;
-    align-self: flex-start;
-    font-size: 12px;
-    padding: 8px 16px;
-    width: 140px;
-    height: 38px;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    box-sizing: border-box !important;
   }
 
   /* ========== GLOBAL TEXT STYLES ========== */
