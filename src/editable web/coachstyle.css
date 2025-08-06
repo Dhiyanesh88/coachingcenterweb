@@ -1680,10 +1680,11 @@ body {
   .freeguideframe {
     margin: 0 !important;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     align-items: center !important;
     align-self: center !important;
     box-sizing: border-box !important;
+    font-size: clamp(14px, 4vw, 16px) !important;
   }
 
   /* 🟥 CTA Section */
@@ -1741,7 +1742,7 @@ body {
   .moreblogframe,
   .freeguideframe button {
     font-size: clamp(14px, 4vw, 16px) !important;
-    padding: 10px 15px !important;
+    padding: 10px 14px !important;
     width: auto !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
