@@ -1,3 +1,6 @@
+/* ================================== */
+/* ========== GLOBAL RESET ========== */
+/* ================================== */
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +27,10 @@ body {
   font-family: "Kumbh Sans";
   src: url("./fonts/Kumbh_Sans/KumbhSans-Regular.ttf") format("truetype");
 }
-/* freeguide */
+
+/* ================================== */
+/* ========== FREE GUIDE ============ */
+/* ================================== */
 .freeguide {
   display: flex;
   flex-direction: row;
@@ -58,7 +64,6 @@ body {
   text-align: left;
   padding: 40px 90px;
 }
-
 .freeguidecontainer {
   flex-direction: column;
   width: 50%;
@@ -77,7 +82,6 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-
   width: 85%;
   margin-bottom: 20px;
 }
@@ -94,7 +98,6 @@ body {
   font-size: 16px;
   box-sizing: border-box;
 }
-
 .boxcontainer button {
   margin-top: 16px;
   padding: 12px;
@@ -106,11 +109,9 @@ body {
   cursor: pointer;
   width: 100%;
 }
-
 .boxcontainer button:hover {
   background-color: #1aaa89;
 }
-
 .boxcontainer p {
   font-size: 14px;
   color: rgba(74, 85, 108, 0.7);
@@ -155,12 +156,15 @@ body {
   color: rgb(255, 255, 255);
   text-align: center;
   z-index: 3;
-  position: relative; /* now inside the circle */
+  position: relative;
   transform: none;
   top: 0;
   right: 0;
 }
-/* Testimonials */
+
+/* ================================== */
+/* ========= TESTIMONIALS ========== */
+/* ================================== */
 .testimonials {
   background-color: #ffffff;
   padding: 60px 80px;
@@ -177,21 +181,20 @@ body {
   width: 100%;
   align-content: space-between;
 }
-
 .testimonialstext {
   display: flex;
   justify-content: flex-start;
   flex: 1 1 70%;
   flex-direction: column;
 }
-.testimonialstext h2 {
+.testimonialstext h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 .testimonialstext p {
   font-size: 20px;
-  color: #5a5d77;
+  color: #c7c7c7;
   font-weight: 400;
 }
 .startbutton {
@@ -200,8 +203,8 @@ body {
   justify-content: flex-end;
 }
 .startbutton button {
-  padding: 16px 32px;
-  background-color: #20ad96;
+  padding: 16px 52px;
+  background-color: rgba(32, 173, 150, 1);
   color: white;
   border: none;
   border-radius: 8px;
@@ -211,7 +214,9 @@ body {
   white-space: nowrap;
 }
 
-/* Review */
+/* ================================== */
+/* ============ REVIEWS ============ */
+/* ================================== */
 .reviews {
   width: 100%;
   height: 100%;
@@ -246,7 +251,10 @@ body {
   width: 50px;
   height: 40px;
 }
-/* Work */
+
+/* ================================== */
+/* ============== WORK ============= */
+/* ================================== */
 .Work {
   display: flex;
   width: 100%;
@@ -298,7 +306,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   width: 50%;
 }
 .workheading h2 {
@@ -314,7 +321,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-
   width: 75%;
 }
 .workcontainer h3 {
@@ -328,7 +334,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   width: 70%;
 }
 .workbelow {
@@ -350,61 +355,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
-/* Testimonials */
-.testimonials {
-  background-color: #ffffff;
-  padding: 60px 80px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 50px;
-}
-.testimonials-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  align-content: space-between;
-}
 
-.testimonialstext {
-  display: flex;
-  justify-content: flex-start;
-  flex: 1 1 70%;
-  flex-direction: column;
-}
-.testimonialstext h1 {
-  margin-bottom: 15px;
-  font-weight: 800;
-  font-size: 48px;
-  line-height: 58px;
-  letter-spacing: -2%;
-  color: #333461;
-}
-.testimonialstext p {
-  font-size: 20px;
-  color: #c7c7c7;
-  font-weight: 400;
-}
-.startbutton {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: flex-end;
-}
-.startbutton button {
-  padding: 16px 52px;
-  background-color: rgba(32, 173, 150, 1);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-/*download*/
+/* ================================== */
+/* ============ DOWNLOAD =========== */
+/* ================================== */
 .download {
   display: flex;
   width: 100%;
@@ -442,7 +396,6 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;
-
   padding-bottom: 50px;
 }
 .downloadtext button {
@@ -452,8 +405,6 @@ body {
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;
-
-  width: 250;
   opacity: 1;
   gap: 8px;
   padding: 10px 18px;
@@ -488,7 +439,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-
   margin-top: 60px;
 }
 .reviewcredits img {
@@ -496,13 +446,17 @@ body {
   height: 15%;
   padding: 10px;
 }
+
+/* ================================== */
+/* ======== FLOATING IMAGES ======== */
+/* ================================== */
 .floatingimages {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Allows clicking through images */
+  pointer-events: none;
 }
 .circle-img {
   position: absolute;
@@ -522,9 +476,9 @@ body {
   width: 90px;
   height: 90px;
 }
-.img5 {
-  bottom: 25%;
-  left: 10%;
+.img3 {
+  top: 20%;
+  right: 20%;
   width: 50px;
   height: 50px;
 }
@@ -534,9 +488,9 @@ body {
   width: 80px;
   height: 80px;
 }
-.img3 {
-  top: 20%;
-  right: 20%;
+.img5 {
+  bottom: 25%;
+  left: 10%;
   width: 50px;
   height: 50px;
 }
@@ -546,9 +500,259 @@ body {
   width: 60px;
   height: 60px;
 }
-
+/* ================================= */
+/* ========== MEDIA QUERIES ======== */
+/* ================================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* ================================== */
+  /* ========== FREE GUIDE ============ */
+  /* ================================== */
+  .freeguide {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  .freeguideleft,
+  .freeguideright {
+    width: 100%;
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+  .freeguidetext {
+    padding: 30px 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .freeguidecontainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .freeguidetext h2 {
+    font-size: 36px;
+    line-height: 46px;
+    width: 100%;
+  }
+  .freeguidetext p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 90%;
+  }
+
+  .boxcontainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .boxcontainer input {
+    font-size: 15px;
+  }
+  .boxcontainer button {
+    font-size: 15px;
+  }
+  .boxcontainer button:hover {
+    background-color: #1ac089;
+  }
+  .boxcontainer p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .Product {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .freeguidecontainer {
+    margin-right: 0;
+  }
+  .Ellipse {
+    right: -20px;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+  }
+  .freetext {
+    font-size: 11px;
+  }
+
+  /* ================================== */
+  /* ========= TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonialstext {
+    align-items: center;
+    text-align: center;
+  }
+  .testimonialstext p {
+    font-size: 18px;
+    width: 90%;
+  }
+  .testimonialstext h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .startbutton {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .startbutton button {
+    padding: 14px 36px;
+    font-size: 15px;
+  }
+
+  /* ================================== */
+  /* ============ REVIEWS ============ */
+  /* ================================== */
+  .reviews {
+    padding: 20px 10px;
+  }
+  .reviewcards {
+    flex-direction: column;
+    width: 90%;
+  }
+  .block {
+    width: 100%;
+  }
+  .reviewcard {
+    padding: 15px;
+    margin: 10px auto;
+  }
+  .reviewcard1img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ================================== */
+  /* ============== WORK ============= */
+  /* ================================== */
+  .Work {
+    padding: 20px;
+  }
+  .worktext {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+  .workheading {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .workcontainer {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .workcontainer div {
+    width: 90%;
+  }
+  .workheading h5 {
+    font-size: 14px;
+  }
+  .workheading h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .workheading p {
+    font-size: 18px;
+    width: 90%;
+  }
+  .workcontainer h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .workcontainer p {
+    font-size: 15px;
+    width: 85%;
+    text-align: center;
+  }
+
+  .workbelow {
+    padding: 30px 10px;
+    margin-top: -40px;
+  }
+  .workbelowcontainer {
+    width: 95%;
+  }
+  .video {
+    border-radius: 8px;
+  }
+
+  /* ================================== */
+  /* ============ DOWNLOAD =========== */
+  /* ================================== */
+  .download {
+    margin: 30px 10px;
+    padding: 20px;
+  }
+  .downloadtext {
+    width: 100%;
+  }
+  .downloadtext h1 {
+    font-size: 36px;
+    width: 90%;
+    line-height: 44px;
+  }
+  .downloadtext p {
+    font-size: 16px;
+    width: 80%;
+  }
+  .downloadtext button {
+    width: 60%;
+    font-size: 16px;
+  }
+  .downloadtext span {
+    font-size: 40px;
+  }
+
+  .reviewcredits {
+    width: 100%;
+  }
+  .reviewcredits h6 {
+    font-size: 14px;
+    width: 90%;
+  }
+  .reviewcredits img {
+    width: 12%;
+  }
+
+  /* ================================== */
+  /* ======== FLOATING IMAGES ======== */
+  /* ================================== */
+  .floatingimages {
+    display: block;
+  }
+  .circle-img {
+    width: 40px;
+    height: 40px;
+  }
+  .img1 {
+    top: 15%;
+    left: 15%;
+  }
+  .img2 {
+    top: 45%;
+    right: 20%;
+  }
+  .img3 {
+    top: 10%;
+    right: 15%;
+  }
+  .img4 {
+    bottom: 20%;
+    right: 10%;
+  }
+  .img5 {
+    bottom: 20%;
+    left: 5%;
+  }
+  .img6 {
+    bottom: 25%;
+    left: 15%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -589,7 +793,6 @@ body {
 
   .menu li a {
     text-decoration: none;
-    color: inherit;
     display: block;
     width: 100%;
   }
@@ -602,9 +805,305 @@ body {
     font-size: 13px;
   }
 
+  /* ================================== */
+  /* ========== FREE GUIDE ============ */
+  /* ================================== */
+  .freeguide {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .freeguideleft {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .freeguideright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .freeguidetext {
+    padding: 10px;
+  }
+
+  .freeguidecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .freeguidetext h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .freeguidetext p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .boxcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .boxcontainer input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .boxcontainer button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .boxcontainer button:hover {
+    background-color: #2563eb;
+  }
+
+  .boxcontainer p {
+    font-size: 12px;
+    color: #555;
+  }
+
+  .Product {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .Ellipse {
+    width: 80px;
+    height: 80px;
+  }
+
+  .freetext {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ========= TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    padding: 30px 15px;
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonialstext {
+    text-align: center;
+  }
+
+  .testimonialstext p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .testimonialstext h1 {
+    font-size: 24px;
+  }
+
+  .startbutton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .startbutton button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  /* ================================== */
+  /* ============ REVIEWS ============ */
+  /* ================================== */
+  .reviews {
+    padding: 30px 20px;
+  }
+
+  .reviewcards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .block {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .reviewcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviewcard1img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  /* ================================== */
+  /* ============== WORK ============= */
+  /* ================================== */
+  .Work {
+    padding: 30px 15px;
+  }
+
+  .worktext {
+    text-align: center;
+  }
+
+  .workheading {
+    margin-bottom: 20px;
+  }
+
+  .workheading h5 {
+    font-size: 14px;
+    color: #999;
+  }
+
+  .workheading h2 {
+    font-size: 22px;
+  }
+
+  .workheading p {
+    font-size: 14px;
+    color: #666;
+  }
+
+  .workcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .workcontainer div {
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 8px;
+  }
+
+  .workcontainer h3 {
+    font-size: 18px;
+  }
+
+  .workcontainer p {
+    font-size: 14px;
+    color: #444;
+  }
+
+  .workbelow {
+    padding-top: 20px;
+  }
+
+  .workbelowcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ============ DOWNLOAD =========== */
+  /* ================================== */
+  .download {
+    padding: 30px 15px;
+    background-color: #f0fdfa;
+  }
+
+  .downloadtext {
+    text-align: center;
+  }
+
+  .downloadtext h1 {
+    font-size: 22px;
+    color: #111827;
+  }
+
+  .downloadtext p {
+    font-size: 14px;
+    color: #4b5563;
+  }
+
+  .downloadtext button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .downloadtext span {
+    font-size: 12px;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .reviewcredits {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .reviewcredits h6 {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .reviewcredits img {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  /* ================================== */
+  /* ======== FLOATING IMAGES ======== */
+  /* ================================== */
+  .floatingimages {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .circle-img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
+
+  .img1 { top: 10px; left: 10px; }
+  .img2 { top: 20px; right: 10px; }
+  .img3 { bottom: 10px; left: 30px; }
+  .img4 { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .img5 { top: 0; right: 30px; }
+  .img6 { bottom: 0; right: 10px; }
 }
+
 @media (max-width: 480px) {
-   /* ⏹️ Navigation */
+  /* ⏹️ Navigation */
   .hamburger {
     display: flex;
   }
@@ -642,25 +1141,270 @@ body {
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
-  }
-  /* 📌 Hamburger Button */
-  .hamburger {
-    font-size: 24px !important;
-    padding: 8px 12px !important;
-    width: auto !important;
+    width: 140px;
+    height: 38px;
+    font-size: 12px;
   }
 
   /* ========== GLOBAL TEXT STYLES ========== */
-  h1,
-  h2 {
+  h1, h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
 
-  p,
-  h5,
-  h6 {
+  p, h5, h6 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
+  }
+
+  /* ================================== */
+  /* ========== FREE GUIDE ============ */
+  /* ================================== */
+  .freeguide {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .freeguideleft {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .freeguideright {
+    width: 100%;
+  }
+
+  .freeguidetext {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .freeguidecontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .freeguidetext h2 {
+    font-size: 22px;
+  }
+
+  .freeguidetext p {
+    font-size: 16px;
+  }
+
+  .boxcontainer {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .boxcontainer input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .boxcontainer button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .boxcontainer button:hover {
+    background-color: #444;
+  }
+
+  .boxcontainer p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .Product {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Ellipse {
+    width: 60px;
+    height: 60px;
+  }
+
+  .freetext {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  /* ================================== */
+  /* ========= TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    padding: 20px 10px;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .testimonialstext {
+    text-align: center;
+  }
+
+  .testimonialstext p {
+    font-size: 15px;
+  }
+
+  .testimonialstext h1 {
+    font-size: 24px;
+  }
+
+  .startbutton {
+    display: flex;
+    justify-content: center;
+  }
+
+  .startbutton button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ============ REVIEWS ============ */
+  /* ================================== */
+  .reviews {
+    padding: 20px 10px;
+  }
+
+  .reviewcards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .reviewcard {
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .reviewcard1img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ============== WORK ============= */
+  /* ================================== */
+  .Work {
+    padding: 20px 10px;
+  }
+
+  .worktext {
+    text-align: center;
+  }
+
+  .workheading {
+    margin-bottom: 20px;
+  }
+
+  .workcontainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .workcontainer div {
+    width: 100%;
+  }
+
+  .workheading h5 {
+    font-size: 14px;
+  }
+
+  .workheading h2 {
+    font-size: 24px;
+  }
+
+  .workheading p {
+    font-size: 15px;
+  }
+
+  .workcontainer h3 {
+    font-size: 18px;
+  }
+
+  .workcontainer p {
+    font-size: 14px;
+  }
+
+  .workbelow {
+    padding-top: 20px;
+  }
+
+  .workbelowcontainer {
+    flex-direction: column;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ============ DOWNLOAD =========== */
+  /* ================================== */
+  .download {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .downloadtext h1 {
+    font-size: 24px;
+  }
+
+  .downloadtext p {
+    font-size: 16px;
+  }
+
+  .downloadtext button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .downloadtext span {
+    display: block;
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .reviewcredits {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .reviewcredits h6 {
+    font-size: 14px;
+  }
+
+  .reviewcredits img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ======== FLOATING IMAGES ======== */
+  /* ================================== */
+  .floatingimages {
+    display: none; /* Hide for small screens */
+  }
+
+  .circle-img,
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    display: none;
   }
 }

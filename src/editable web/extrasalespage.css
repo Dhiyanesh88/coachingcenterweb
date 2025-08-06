@@ -725,17 +725,400 @@ body {
 /* ================================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* ================================== */
+  /* ========== GLOBAL RESET ========== */
+  /* ================================== */
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    padding: 0 20px;
+    overflow-x: hidden;
+  }
+
+  /* Typography */
+  .vector p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* ================================== */
+  /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .herobg {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Left Side */
+  .leftside1 {
+    width: 100%;
+    text-align: center;
+  }
+  .vector img {
+    width: 80%;
+    max-width: 250px;
+  }
+  .herotext {
+    padding: 10px;
+  }
+  .herotext h6 {
+    font-size: 14px;
+  }
+  .herotext h1 {
+    font-size: 28px;
+  }
+  .herotext p {
+    font-size: 16px;
+  }
+  .freeguideframe {
+    margin-top: 15px;
+  }
+
+  /* Right Side */
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .heroimg {
+    width: 90%;
+    max-width: 300px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 1 ========= */
+  /* ================================== */
+  .work1 {
+    padding: 30px 0;
+  }
+  .worktext1 {
+    text-align: center;
+  }
+  .workheading1 {
+    margin-bottom: 10px;
+  }
+  .worktext1 h5 {
+    font-size: 14px;
+  }
+  .worktext1 h2 {
+    font-size: 26px;
+  }
+  .worktext1 p {
+    font-size: 16px;
+  }
+  .workcontainer1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .workbox1 {
+    padding: 10px;
+  }
+  .workbox1 div {
+    text-align: center;
+  }
+  .workbox1 div img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  .workbox1 div h3 {
+    font-size: 18px;
+  }
+  .workbox1 div p {
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 2 ========= */
+  /* ================================== */
+  .Work2 {
+    padding: 30px 0;
+  }
+  .worktext2 {
+    text-align: center;
+  }
+  .workheading2 {
+    margin-bottom: 15px;
+  }
+  .workheading2 h5 {
+    font-size: 14px;
+  }
+  .workheading2 h2 {
+    font-size: 26px;
+  }
+  .workheading2 p {
+    font-size: 15px;
+  }
+  .workcontainer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .workcontaine2r div {
+    padding: 10px;
+  }
+  .workcontainer2 h3 {
+    font-size: 18px;
+  }
+  .workcontainer2 p {
+    font-size: 14px;
+  }
+  .workbelow2 {
+    margin-top: 30px;
+  }
+  .workbelowcontainer2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ========== TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    padding: 30px 10px;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonialstext {
+    text-align: center;
+  }
+  .testimonialstext h1 {
+    font-size: 26px;
+  }
+  .testimonialstext p {
+    font-size: 15px;
+  }
+  .startbutton {
+    display: flex;
+    justify-content: center;
+  }
+  .startbutton button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ========== REVIEWS ========== */
+  /* ================================== */
+  .reviews {
+    padding: 40px 0;
+  }
+  .reviewcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .block {
+    padding: 10px;
+  }
+  .reviewcard {
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  .reviewcard1img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ================================== */
+  /* ========== FOR YOU OR NOT ========== */
+  /* ================================== */
+  .programfor {
+    padding: 20px 0;
+  }
+  .programforcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .programfortext {
+    text-align: center;
+  }
+  .programfortext h5 {
+    font-size: 14px;
+  }
+  .programfortext h1 {
+    font-size: 26px;
+  }
+  .programforcompare {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .programforcompare div {
+    text-align: center;
+  }
+  .programforcompare h3 {
+    font-size: 18px;
+  }
+  .programforcompare p {
+    font-size: 14px;
+  }
+
+  .notforyou {
+    padding: 10px;
+  }
+  .notforyou div {
+    padding: 10px;
+  }
+  .foryou {
+    padding: 10px;
+  }
+  .foryou div {
+    padding: 10px;
+  }
+
+  /* ================================== */
+  /* ========== CALL TO ACTION (CTA) ========== */
+  /* ================================== */
+  .cta {
+    padding: 40px 0;
+  }
+  .ctacontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ctaleft {
+    text-align: center;
+  }
+  .ctaleft h2 {
+    font-size: 24px;
+  }
+  .ctaleft p {
+    font-size: 16px;
+  }
+  .ctaimg {
+    display: flex;
+    justify-content: center;
+  }
+  .ctaimg img {
+    width: 80%;
+    max-width: 300px;
+  }
+  .ctaright {
+    margin-top: 20px;
+  }
+  .booknow {
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== GUARANTEE ========== */
+  /* ================================== */
+  .guarantee {
+    padding: 30px 0;
+  }
+  .guarenteecontainer {
+    text-align: center;
+  }
+  .guarenteecontainer img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .guarenteecontainer h2 {
+    font-size: 22px;
+  }
+  .guarenteecontainer p {
+    font-size: 15px;
+  }
+
+  /* ================================== */
+  /* ========== KNOW MORE / FAQ ========== */
+  /* ================================== */
+  .knowmore {
+    padding: 30px 0;
+  }
+  .knowmoretext {
+    text-align: center;
+  }
+  .knowmoretext h2 {
+    font-size: 24px;
+  }
+  .knowmoretext p {
+    font-size: 14px;
+  }
+  .knowmorefaqs {
+    margin-top: 20px;
+  }
+
+  .faq {
+    cursor: pointer;
+    padding: 10px;
+  }
+  .faq:hover {
+    background-color: #f0f0f0;
+  }
+  .faq h3 {
+    font-size: 18px;
+    position: relative;
+  }
+  .faq h3::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+  }
+  .faq.active h3::after {
+    content: '-';
+  }
+  .faq p {
+    font-size: 14px;
+    display: none;
+  }
+  .faq.active p {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .anyquestions {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .anyquestions h2 {
+    font-size: 24px;
+  }
+  .anyquestions p {
+    font-size: 14px;
+  }
+  .anyquestions button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .anyquestions button:hover {
+    background-color: #222;
+    color: #fff;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   /* ========== NAVIGATION MENU ========== */
   .hamburger {
     display: flex;
+    justify-content: flex-end;
+    padding: 10px;
   }
 
   .menu {
     display: none;
     width: 100%;
+    background-color: #fff;
   }
 
   .menu.open {
@@ -743,6 +1126,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
+    gap: 10px;
   }
 
   .menu nav {
@@ -761,6 +1145,7 @@ body {
   .menu li {
     padding: 10px 20px;
     width: 100%;
+    border-bottom: 1px solid #ccc;
   }
 
   .menu li a {
@@ -768,6 +1153,7 @@ body {
     color: inherit;
     display: block;
     width: 100%;
+    font-size: 16px;
   }
 
   .freeguideframe {
@@ -776,18 +1162,396 @@ body {
     width: 150px;
     height: 40px;
     font-size: 13px;
+    border-radius: 5px;
   }
 
+  /* ================================== */
+  /* ========== GLOBAL RESET ========== */
+  /* ================================== */
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 15px;
+  }
+  body {
+    padding: 0 15px;
+    font-family: "Kumbh Sans", sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Typography */
+  .vector p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* ================================== */
+  /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .herobg {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Left Side */
+  .leftside1 {
+    text-align: center;
+    width: 100%;
+  }
+  .vector img {
+    width: 80%;
+    max-width: 250px;
+  }
+  .herotext {
+    padding: 10px;
+  }
+  .herotext h6 {
+    font-size: 14px;
+  }
+  .herotext h1 {
+    font-size: 26px;
+  }
+  .herotext p {
+    font-size: 15px;
+  }
+  .freeguideframe {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  /* Right Side */
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+  .heroimg {
+    width: 90%;
+  }
+  .image-container {
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 1 ========= */
+  /* ================================== */
+  .work1 {
+    padding: 30px 0;
+  }
+  .worktext1 {
+    text-align: center;
+  }
+  .workheading1 {
+    margin-bottom: 10px;
+  }
+  .worktext1 h5 {
+    font-size: 13px;
+  }
+  .worktext1 h2 {
+    font-size: 22px;
+  }
+  .worktext1 p {
+    font-size: 14px;
+  }
+  .workcontainer1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .workbox1 {
+    padding: 10px;
+  }
+  .workbox1 div {
+    text-align: center;
+  }
+  .workbox1 div img {
+    width: 50px;
+  }
+  .workbox1 div h3 {
+    font-size: 17px;
+  }
+  .workbox1 div p {
+    font-size: 13px;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 2 ========= */
+  /* ================================== */
+  .Work2 {
+    padding: 30px 0;
+  }
+  .worktext2 {
+    text-align: center;
+  }
+  .workheading2 {
+    margin-bottom: 10px;
+  }
+  .workheading2 h5 {
+    font-size: 13px;
+  }
+  .workheading2 h2 {
+    font-size: 22px;
+  }
+  .workheading2 p {
+    font-size: 14px;
+  }
+  .workcontainer2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .workcontaine2r div {
+    padding: 10px;
+  }
+  .workcontainer2 h3 {
+    font-size: 17px;
+  }
+  .workcontainer2 p {
+    font-size: 13px;
+  }
+  .workbelow2 {
+    margin-top: 20px;
+  }
+  .workbelowcontainer2 {
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ========== TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    padding: 30px 0;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonialstext {
+    text-align: center;
+  }
+  .testimonialstext h1 {
+    font-size: 24px;
+  }
+  .testimonialstext p {
+    font-size: 14px;
+  }
+  .startbutton {
+    display: flex;
+    justify-content: center;
+  }
+  .startbutton button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ========== REVIEWS ========== */
+  /* ================================== */
+  .reviews {
+    padding: 40px 0;
+  }
+  .reviewcards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .block {
+    padding: 10px;
+  }
+  .reviewcard {
+    padding: 15px;
+    background: #f9f9f9;
+  }
+  .reviewcard1img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* ================================== */
+  /* ========== FOR YOU OR NOT ========== */
+  /* ================================== */
+  .programfor {
+    padding: 20px 0;
+  }
+  .programforcontainer {
+    flex-direction: column;
+  }
+  .programfortext {
+    text-align: center;
+  }
+  .programfortext h5 {
+    font-size: 13px;
+  }
+  .programfortext h1 {
+    font-size: 22px;
+  }
+  .programforcompare {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .programforcompare div {
+    text-align: center;
+  }
+  .programforcompare h3 {
+    font-size: 17px;
+  }
+  .programforcompare p {
+    font-size: 13px;
+  }
+
+  .notforyou {
+    padding: 10px;
+  }
+  .notforyou div {
+    padding: 10px;
+  }
+  .foryou {
+    padding: 10px;
+  }
+  .foryou div {
+    padding: 10px;
+  }
+
+  /* ================================== */
+  /* ========== CALL TO ACTION (CTA) ========== */
+  /* ================================== */
+  .cta {
+    padding: 30px 0;
+  }
+  .ctacontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ctaleft {
+    text-align: center;
+  }
+  .ctaleft h2 {
+    font-size: 22px;
+  }
+  .ctaleft p {
+    font-size: 14px;
+  }
+  .ctaimg {
+    display: flex;
+    justify-content: center;
+  }
+  .ctaimg img {
+    width: 80%;
+  }
+  .ctaright {
+    margin-top: 20px;
+  }
+  .booknow {
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== GUARANTEE ========== */
+  /* ================================== */
+  .guarantee {
+    padding: 30px 0;
+  }
+  .guarenteecontainer {
+    text-align: center;
+  }
+  .guarenteecontainer img {
+    width: 90px;
+  }
+  .guarenteecontainer h2 {
+    font-size: 20px;
+  }
+  .guarenteecontainer p {
+    font-size: 13px;
+  }
+
+  /* ================================== */
+  /* ========== KNOW MORE / FAQ ========== */
+  /* ================================== */
+  .knowmore {
+    padding: 30px 0;
+  }
+  .knowmoretext {
+    text-align: center;
+  }
+  .knowmoretext h2 {
+    font-size: 22px;
+  }
+  .knowmoretext p {
+    font-size: 13px;
+  }
+  .knowmorefaqs {
+    margin-top: 20px;
+  }
+
+  .faq {
+    cursor: pointer;
+    padding: 10px;
+  }
+  .faq:hover {
+    background-color: #f0f0f0;
+  }
+  .faq h3 {
+    font-size: 16px;
+    position: relative;
+  }
+  .faq h3::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+  }
+  .faq.active h3::after {
+    content: '-';
+  }
+  .faq p {
+    font-size: 13px;
+    display: none;
+  }
+  .faq.active p {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .anyquestions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .anyquestions h2 {
+    font-size: 22px;
+  }
+  .anyquestions p {
+    font-size: 13px;
+  }
+  .anyquestions button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .anyquestions button:hover {
+    background-color: #222;
+    color: #fff;
+  }
 }
+
 @media (max-width: 480px) {
-   /* ⏹️ Navigation */
+  /* ⏹️ Navigation */
   .hamburger {
     display: flex;
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+    justify-content: flex-end;
   }
 
   .menu {
     display: none;
     width: 100%;
+    background-color: #fff;
   }
 
   .menu.open {
@@ -795,6 +1559,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 10px;
+    gap: 10px;
   }
 
   .menu nav {
@@ -808,6 +1573,7 @@ body {
     gap: 10px;
     width: 100%;
     padding-left: 0;
+    list-style: none;
   }
 
   .menu li {
@@ -818,25 +1584,396 @@ body {
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
-  }
-  /* 📌 Hamburger Button */
-  .hamburger {
-    font-size: 24px !important;
-    padding: 8px 12px !important;
-    width: auto !important;
+    font-size: 12px;
+    padding: 8px 16px;
+    width: 140px;
+    height: 38px;
   }
 
   /* ========== GLOBAL TEXT STYLES ========== */
-  h1,
-  h2 {
+  h1, h2 {
     font-size: clamp(24px, 6vw, 30px) !important;
     line-height: 1.2 !important;
   }
 
-  p,
-  h5,
-  h6 {
+  p, h5, h6 {
     font-size: clamp(14px, 4vw, 18px) !important;
     line-height: 1.5 !important;
   }
+
+  /* ================================== */
+  /* ========== GLOBAL RESET ========== */
+  /* ================================== */
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 14px;
+  }
+  body {
+    margin: 0;
+    padding: 0 12px;
+    font-family: "Kumbh Sans", sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Typography */
+  .vector p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== HERO SECTION ========== */
+  /* ================================== */
+  .hero {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .herobg {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Left Side */
+  .leftside1 {
+    width: 100%;
+    text-align: center;
+  }
+  .vector img {
+    width: 80%;
+    max-width: 220px;
+  }
+  .herotext {
+    padding: 0 10px;
+  }
+  .herotext h6 {
+    font-size: 14px;
+  }
+  .herotext h1 {
+    font-size: 26px;
+  }
+  .herotext p {
+    font-size: 15px;
+  }
+  .freeguideframe {
+    margin-top: 10px;
+  }
+
+  /* Right Side */
+  .right {
+    display: flex;
+    justify-content: center;
+  }
+  .heroimg {
+    width: 90%;
+  }
+  .image-container {
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 1 ========= */
+  /* ================================== */
+  .work1 {
+    padding: 30px 0;
+  }
+  .worktext1 {
+    text-align: center;
+  }
+  .workheading1 {
+    margin-bottom: 10px;
+  }
+  .worktext1 h5 {
+    font-size: 13px;
+  }
+  .worktext1 h2 {
+    font-size: 22px;
+  }
+  .worktext1 p {
+    font-size: 14px;
+  }
+  .workcontainer1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .workbox1 {
+    padding: 10px;
+  }
+  .workbox1 div {
+    text-align: center;
+  }
+  .workbox1 div img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  .workbox1 div h3 {
+    font-size: 17px;
+  }
+  .workbox1 div p {
+    font-size: 13px;
+  }
+
+  /* ================================== */
+  /* ========== WORK SECTION 2 ========= */
+  /* ================================== */
+  .Work2 {
+    padding: 30px 0;
+  }
+  .worktext2 {
+    text-align: center;
+  }
+  .workheading2 {
+    margin-bottom: 10px;
+  }
+  .workheading2 h5 {
+    font-size: 13px;
+  }
+  .workheading2 h2 {
+    font-size: 22px;
+  }
+  .workheading2 p {
+    font-size: 14px;
+  }
+  .workcontainer2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .workcontaine2r div {
+    padding: 10px;
+  }
+  .workcontainer2 h3 {
+    font-size: 17px;
+  }
+  .workcontainer2 p {
+    font-size: 13px;
+  }
+  .workbelow2 {
+    margin-top: 20px;
+  }
+  .workbelowcontainer2 {
+    flex-direction: column;
+  }
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ================================== */
+  /* ========== TESTIMONIALS ========== */
+  /* ================================== */
+  .testimonials {
+    padding: 30px 0;
+  }
+  .testimonials-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .testimonialstext {
+    text-align: center;
+  }
+  .testimonialstext h1 {
+    font-size: 24px;
+  }
+  .testimonialstext p {
+    font-size: 14px;
+  }
+  .startbutton {
+    display: flex;
+    justify-content: center;
+  }
+  .startbutton button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ================================== */
+  /* ========== REVIEWS ========== */
+  /* ================================== */
+  .reviews {
+    padding: 30px 0;
+  }
+  .reviewcards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .block {
+    padding: 10px;
+  }
+  .reviewcard {
+    padding: 15px;
+    background-color: #f5f5f5;
+  }
+  .reviewcard1img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* ================================== */
+  /* ========== FOR YOU OR NOT ========== */
+  /* ================================== */
+  .programfor {
+    padding: 30px 0;
+  }
+  .programforcontainer {
+    flex-direction: column;
+  }
+  .programfortext {
+    text-align: center;
+  }
+  .programfortext h5 {
+    font-size: 13px;
+  }
+  .programfortext h1 {
+    font-size: 22px;
+  }
+  .programforcompare {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .programforcompare div {
+    text-align: center;
+  }
+  .programforcompare h3 {
+    font-size: 17px;
+  }
+  .programforcompare p {
+    font-size: 13px;
+  }
+
+  .notforyou {
+    padding: 10px;
+  }
+  .notforyou div {
+    padding: 10px;
+  }
+  .foryou {
+    padding: 10px;
+  }
+  .foryou div {
+    padding: 10px;
+  }
+
+  /* ================================== */
+  /* ========== CALL TO ACTION (CTA) ========== */
+  /* ================================== */
+  .cta {
+    padding: 30px 0;
+  }
+  .ctacontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ctaleft {
+    text-align: center;
+  }
+  .ctaleft h2 {
+    font-size: 22px;
+  }
+  .ctaleft p {
+    font-size: 14px;
+  }
+  .ctaimg {
+    display: flex;
+    justify-content: center;
+  }
+  .ctaimg img {
+    width: 80%;
+    max-width: 280px;
+  }
+  .ctaright {
+    margin-top: 20px;
+  }
+  .booknow {
+    text-align: center;
+  }
+
+  /* ================================== */
+  /* ========== GUARANTEE ========== */
+  /* ================================== */
+  .guarantee {
+    padding: 30px 0;
+  }
+  .guarenteecontainer {
+    text-align: center;
+  }
+  .guarenteecontainer img {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  .guarenteecontainer h2 {
+    font-size: 20px;
+  }
+  .guarenteecontainer p {
+    font-size: 13px;
+  }
+
+  /* ================================== */
+  /* ========== KNOW MORE / FAQ ========== */
+  /* ================================== */
+  .knowmore {
+    padding: 30px 0;
+  }
+  .knowmoretext {
+    text-align: center;
+  }
+  .knowmoretext h2 {
+    font-size: 22px;
+  }
+  .knowmoretext p {
+    font-size: 13px;
+  }
+  .knowmorefaqs {
+    margin-top: 20px;
+  }
+
+  .faq {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .faq:hover {
+    background-color: #f0f0f0;
+  }
+  .faq h3 {
+    font-size: 16px;
+    position: relative;
+  }
+  .faq h3::after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+  }
+  .faq.active h3::after {
+    content: '-';
+  }
+  .faq p {
+    font-size: 13px;
+    display: none;
+  }
+  .faq.active p {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .anyquestions {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .anyquestions h2 {
+    font-size: 22px;
+  }
+  .anyquestions p {
+    font-size: 13px;
+  }
+  .anyquestions button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .anyquestions button:hover {
+    background-color: #222;
+    color: #fff;
+  }
 }
+
