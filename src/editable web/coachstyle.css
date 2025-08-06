@@ -30,11 +30,9 @@ body {
   color: #18692e;
 }
 /* ================================== */
-/* ========= GLOBAL CONFIG ========== */
+/* ========= Hero Section ========== */
 /* ================================== */
 
-
-/* Hero Section */
 .hero {
   width: 100%;
   display: flex;
@@ -133,7 +131,10 @@ body {
   z-index: 2;
 }
 
-/* Intro Section */
+/* ================================== */
+/* ========= Intro Section ========== */
+/* ================================== */
+
 .intro {
   width: 100%;
   height: 100%;
@@ -194,8 +195,10 @@ body {
   color: #5a5d77;
   margin-top: 10px;
 }
+/* ================================== */
+/* ========= Reviews Section ========== */
+/* ================================== */
 
-/* Reviews Section */
 .reviews {
   width: 100%;
   height: 100%;
@@ -272,7 +275,10 @@ body {
   width: 120px;
   height: 20px;
 }
-/* Blogs Section */
+/* ================================== */
+/* ========= Blogs Section ========== */
+/* ================================== */
+
 .blogs {
   width: 90%;
   height: 100%;
@@ -347,8 +353,10 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+/* ================================== */
+/* ======= Free Guide Section ======= */
+/* ================================== */
 
-/* Free Guide Section */
 .freeguide {
   width: 100%;
   height: 100%;
@@ -445,7 +453,10 @@ body {
   font-size: 17px;
   line-height: 100%;
 }
-/* CTA Section */
+/* ================================== */
+/* ========== CTA Section =========== */
+/* ================================== */
+
 .cta {
   width: 100%;
   height: 100%;
@@ -526,7 +537,9 @@ body {
   border-radius: 8px;
   padding: 10px;
 }
-/*responsive design */
+/* ================================== */
+/* ============= MEDIA ============== */
+/* ================================== */
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* General */
