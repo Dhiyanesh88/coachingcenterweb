@@ -516,99 +516,10 @@ body {
 }
 /*responsive design */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .headerbg,
-  .herotext,
-  .footer {
-    width: 100%;
-    max-width: 100%;
-  }
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px;
-  }
-
-  .leftside1,
-  .right {
-    flex: 1 1 100%;
-    min-width: unset;
-    text-align: center;
-  }
-
-  .heroimg img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .success {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .herotext {
-    padding: 20px;
-  }
-
-  .heroimg img {
-    width: 100%;
-    height: auto;
-  }
-
-  .introtext,
-  .introheading,
-  .introparagraph {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .introservices div {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .reviewcards,
-  .blogcards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reviewcard1,
-  .reviewcard2,
-  .reviewcard3,
-  .blogcard1,
-  .blogcard2,
-  .blogcard3 {
-    width: 90%;
-  }
-
-  .freeguide {
-    flex-direction: column;
-  }
-
-  .freeguideright,
-  .freeguideleft {
-    width: 100%;
-    height: auto;
-  }
-
-  .freeguideproduct img {
-    width: 100%;
-    height: auto;
-  }
-
-  .cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ctacontainer {
-    width: 90%;
-  }
 }
-/* Hide menu by default on small screens */
 
 @media (min-width: 481px) and (max-width: 768px) {
+  /* ========== NAVIGATION MENU ========== */
   .hamburger {
     display: flex;
   }
@@ -643,12 +554,24 @@ body {
     width: 100%;
   }
 
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+  }
+
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
   }
+
 }
 @media (max-width: 480px) {
+   /* ⏹️ Navigation */
   .hamburger {
     display: flex;
   }
@@ -686,5 +609,25 @@ body {
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
+  }
+  /* 📌 Hamburger Button */
+  .hamburger {
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+  }
+
+  /* ========== GLOBAL TEXT STYLES ========== */
+  h1,
+  h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+
+  p,
+  h5,
+  h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 }

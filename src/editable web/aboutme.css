@@ -427,9 +427,19 @@ body {
     padding: 50px 20px;
   }
 
+  .startupcompaniestext {
+    text-align: center;
+  }
+
   .startupcompaniestext h2 {
     font-size: 14px;
-    text-align: center;
+  }
+
+  .startupcompanieslogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 
   .startupcompanieslogos img {
@@ -445,53 +455,77 @@ body {
   .reviewtext {
     font-size: 20px;
     padding: 20px 0;
+    text-align: center;
+  }
+
+  .reviewtext h2 {
+    font-size: 28px;
   }
 
   .reviewcards {
     flex-direction: column;
     align-items: center;
+    display: flex;
+    gap: 20px;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
 
   .reviewcard1text {
     font-size: 18px;
+    flex: 1;
   }
 
   .reviewcard1text h1:hover {
     color: #1cc237;
   }
 
-  .reviewcard1 h3,
-  .reviewcard2 h3,
-  .reviewcard3 h3 {
-    font-size: 18px;
+  .reviewcard1text h1 {
+    font-size: 24px;
   }
 
-  .reviewcard1 p,
-  .reviewcard2 p,
-  .reviewcard3 p {
+  .reviewcard1text p {
     font-size: 14px;
   }
 
-  .reviewcard1 img,
-  .reviewcard2 img,
-  .reviewcard3 img {
+  .reviewcard1text h3 {
+    font-size: 18px;
+  }
+
+  .reviewcard1img {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .reviewcard1img img {
     width: 50px;
     height: 45px;
+    border-radius: 50%;
   }
 
   /* ========== WORK SECTION ========== */
+  .Work {
+    padding: 40px 20px;
+  }
+
   .worktext {
     padding: 20px 10px;
+    text-align: center;
   }
 
   .workheading {
     width: 90%;
+    margin: 0 auto;
   }
 
   .worktext h5 {
@@ -506,18 +540,36 @@ body {
     font-size: 18px;
   }
 
+  .workcontainer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .workbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .workbox div {
     width: 80%;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .workbox div img {
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
   }
 
   .workbox div h3 {
     font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .workbox div p {
@@ -531,6 +583,8 @@ body {
 
   .knowmoretext {
     width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .knowmoretext h2 {
@@ -543,6 +597,13 @@ body {
 
   .knowmorefaqs {
     width: 90%;
+    margin: 20px auto;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
   }
 
   .faq h3 {
@@ -551,10 +612,16 @@ body {
 
   .faq p {
     font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .faq i {
+    margin-right: 10px;
   }
 
   .anyquestions {
     padding: 20px;
+    text-align: center;
   }
 
   .anyquestions h2 {
@@ -563,14 +630,17 @@ body {
 
   .anyquestions p {
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .anyquestions button {
     font-size: 14px;
     padding: 8px 20px;
+    cursor: pointer;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  /* ========== NAVIGATION MENU ========== */
   .hamburger {
     display: flex;
   }
@@ -605,9 +675,19 @@ body {
     width: 100%;
   }
 
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+  }
+
   .freeguideframe {
     margin: 10px 20px;
     align-self: flex-start;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
   }
 
   /* ========== HERO SECTION ========== */
@@ -640,12 +720,6 @@ body {
     font-size: 16px;
   }
 
-  .freeguideframe {
-    width: 150px;
-    height: 40px;
-    font-size: 13px;
-  }
-
   .heroimg {
     width: 100%;
     margin-top: 20px;
@@ -661,9 +735,19 @@ body {
     padding: 40px 15px;
   }
 
+  .startupcompaniestext {
+    text-align: center;
+  }
+
   .startupcompaniestext h2 {
     font-size: 14px;
-    text-align: center;
+  }
+
+  .startupcompanieslogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .startupcompanieslogos img {
@@ -679,49 +763,73 @@ body {
   .reviewtext {
     font-size: 18px;
     padding: 15px 0;
+    text-align: center;
+  }
+
+  .reviewtext h2 {
+    font-size: 26px;
   }
 
   .reviewcards {
     flex-direction: column;
     align-items: center;
+    display: flex;
+    gap: 20px;
   }
 
   .reviewcard1,
   .reviewcard2,
   .reviewcard3 {
     width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
   }
 
   .reviewcard1text {
     font-size: 16px;
+    flex: 1;
   }
 
-  .reviewcard1 h3,
-  .reviewcard2 h3,
-  .reviewcard3 h3 {
-    font-size: 16px;
+  .reviewcard1text h1 {
+    font-size: 22px;
   }
 
-  .reviewcard1 p,
-  .reviewcard2 p,
-  .reviewcard3 p {
+  .reviewcard1text p {
     font-size: 14px;
   }
 
-  .reviewcard1 img,
-  .reviewcard2 img,
-  .reviewcard3 img {
+  .reviewcard1text h3 {
+    font-size: 16px;
+  }
+
+  .reviewcard1img {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .reviewcard1img img {
     width: 45px;
     height: 40px;
+    border-radius: 50%;
   }
 
   /* ========== WORK SECTION ========== */
+  .Work {
+    padding: 40px 15px;
+  }
+
   .worktext {
     padding: 20px 10px;
+    text-align: center;
   }
 
   .workheading {
     width: 100%;
+    margin: 0 auto;
   }
 
   .worktext h5 {
@@ -736,18 +844,36 @@ body {
     font-size: 16px;
   }
 
+  .workcontainer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .workbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
   .workbox div {
     width: 80%;
+    text-align: center;
     margin-bottom: 20px;
   }
 
   .workbox div img {
     width: 35px;
     height: 35px;
+    margin-bottom: 10px;
   }
 
   .workbox div h3 {
     font-size: 16px;
+    margin-bottom: 8px;
   }
 
   .workbox div p {
@@ -761,6 +887,7 @@ body {
 
   .knowmoretext {
     width: 100%;
+    text-align: center;
   }
 
   .knowmoretext h2 {
@@ -773,6 +900,13 @@ body {
 
   .knowmorefaqs {
     width: 100%;
+    margin: 20px auto;
+  }
+
+  .faq {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
   }
 
   .faq h3 {
@@ -781,10 +915,16 @@ body {
 
   .faq p {
     font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .faq i {
+    margin-right: 10px;
   }
 
   .anyquestions {
     padding: 20px;
+    text-align: center;
   }
 
   .anyquestions h2 {
@@ -793,15 +933,17 @@ body {
 
   .anyquestions p {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 
   .anyquestions button {
     font-size: 13px;
     padding: 8px 20px;
+    cursor: pointer;
   }
 }
-
 @media (max-width: 480px) {
+   /* ⏹️ Navigation */
   .hamburger {
     display: flex;
   }
@@ -840,6 +982,12 @@ body {
     margin: 10px 20px;
     align-self: flex-start;
   }
+  /* 📌 Hamburger Button */
+  .hamburger {
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+  }
 
   /* ========== GLOBAL TEXT STYLES ========== */
   h1,
@@ -855,14 +1003,6 @@ body {
     line-height: 1.5 !important;
   }
 
-  img {
-    display: flex !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-    max-width: 100% !important;
-  }
 
   /* ========== HERO SECTION ========== */
   .hero {
@@ -882,6 +1022,29 @@ body {
     text-align: center;
   }
 
+  .herotext h6 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .herotext h1 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .herotext p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .herotext button {
+    font-size: clamp(14px, 4vw, 16px) !important;
+    padding: 10px 15px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    border-radius: 4px !important;
+  }
+
   .freeguideframe {
     width: 140px;
     height: 35px;
@@ -893,13 +1056,33 @@ body {
     margin-top: 15px;
   }
 
+  .heroimg img {
+    display: flex !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    max-width: 100% !important;
+  }
+
   /* ========== STARTUP COMPANIES SECTION ========== */
   .startupcompanies {
     padding: 30px 10px;
   }
 
+  .startupcompaniestext {
+    width: 100%;
+  }
+
   .startupcompaniestext h2 {
     text-align: center;
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+
+  .startupcompanieslogos {
+    width: auto;
+    height: auto;
   }
 
   .startupcompanieslogos img {
@@ -912,6 +1095,16 @@ body {
     padding: 40px 10px;
   }
 
+  .reviewtext {
+     width: auto;
+    height: auto;
+  }
+
+  .reviewtext h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+
   .reviewcards {
     flex-direction: column;
     align-items: center;
@@ -921,6 +1114,24 @@ body {
   .reviewcard2,
   .reviewcard3 {
     width: 100%;
+  }
+
+  .reviewcard1text {
+     width: auto;
+    height: auto;
+  }
+
+  .reviewcard1text h1 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .reviewcard1text p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .reviewcard1text h3 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .reviewcard1 img,
@@ -936,7 +1147,31 @@ body {
   }
 
   .workheading {
-    width: 100%;
+     width: auto;
+    height: auto;
+  }
+
+  .workheading h5 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .workheading h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .workheading p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+
+  .workcontainer {
+     width: auto;
+    height: auto;
+  }
+
+  .workbox {
+     width: auto;
+    height: auto;
   }
 
   .workbox div {
@@ -944,9 +1179,23 @@ body {
     margin-bottom: 15px;
   }
 
+  .workbox img {
+     width: auto;
+    height: auto;
+  }
+
   .workbox div img {
     width: 30px !important;
     height: 30px !important;
+  }
+
+  .workbox div h3 {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+  .workbox div p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   /* ========== FAQ SECTION ========== */
@@ -958,12 +1207,40 @@ body {
     width: 100%;
   }
 
+  .knowmoretext h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .knowmoretext p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+
   .knowmorefaqs {
     width: 100%;
   }
 
+
+  .faq h3 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .faq p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
+  }
+
   .anyquestions {
     padding: 15px;
+  }
+
+  .anyquestions h2 {
+    font-size: clamp(24px, 6vw, 30px) !important;
+    line-height: 1.2 !important;
+  }
+  .anyquestions p {
+    font-size: clamp(14px, 4vw, 18px) !important;
+    line-height: 1.5 !important;
   }
 
   .anyquestions button {

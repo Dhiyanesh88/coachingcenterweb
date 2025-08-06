@@ -1270,6 +1270,12 @@ body {
     margin: 10px 20px;
     align-self: flex-start;
   }
+  /* 📌 Hamburger Button */
+  .hamburger {
+    font-size: 24px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+  }
 
   /* 🟦 Hero Section */
   .hero,
@@ -1737,10 +1743,5 @@ body {
     margin: 10px 0 !important;
   }
 
-  /* 📌 Hamburger Button */
-  .hamburger {
-    font-size: 24px !important;
-    padding: 8px 12px !important;
-    width: auto !important;
-  }
+  
 }
